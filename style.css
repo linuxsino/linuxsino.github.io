@@ -55,101 +55,80 @@ body {
 }
 
 
-/* ============ 出版物列表专用样式 ============ */
+/* ============ 最终修正版出版物列表样式 ============ */
 .main ol[reversed] {
     list-style-type: none;
     padding-left: 0;
-    counter-reset: publication-counter 64; /* 初始值设为64（因为第一项是63）*/
-    margin-top: -0.5em; /* 减少顶部空白 */
+    counter-reset: publication-counter 63; /* 正确初始化计数器 */
+    margin-top: -0.3em; /* 减少整体顶部间距 */
 }
 
 .main ol[reversed] li {
     position: relative;
-    padding-left: 3em; /* 减少左侧缩进 */
-    margin-bottom: 1.2em; /* 减少条目间距 */
-    line-height: 1.6;
-    border-left: 2px solid #eaeaea; /* 变细的边线 */
-    padding-bottom: 0.8em; /* 减少底部内边距 */
-    transition: all 0.3s ease;
+    padding-left: 2.8em; /* 更紧凑的左侧间距 */
+    margin-bottom: 0.8em; /* 大幅减少条目间距 */
+    line-height: 1.5;
+    border-left: 1px solid #e0e0e0; /* 更细的分隔线 */
+    padding-bottom: 0.5em; /* 减少底部内边距 */
+    transition: all 0.2s ease;
 }
 
-.main ol[reversed] li:before {
+.main ol[reversed] li::before {
     content: counter(publication-counter) ".";
-    counter-decrement: publication-counter;
     position: absolute;
     left: 0;
-    top: 0;
+    top: 0.1em;
     font-weight: bold;
-    font-size: 1em; /* 稍小的编号 */
+    font-size: 0.95em;
     color: #2c3e50;
-    background: #f8f9fa;
-    padding: 0.2em 0.7em; /* 更紧凑的编号 */
-    border-radius: 3px;
+    padding: 0.1em 0.6em;
 }
 
-/* 交互效果 */
-.main ol[reversed] li:hover {
-    border-left-color: #3498db;
-    background-color: #f8faff;
+/* 正确的递减编号逻辑 */
+.main ol[reversed] li:first-child::before {
+    counter-increment: publication-counter 0; /* 首项保持63 */
+}
+.main ol[reversed] li ~ li::before {
+    counter-increment: publication-counter -1; /* 后续项递减 */
 }
 
-/* 作者名字加粗 */
+/* 期刊/会议名称改为斜体 */
+.main ol[reversed] li i {
+    color: #00a0e9;
+    font-style: italic; /* 新增斜体效果 */
+    font-weight: 500;
+}
+
+/* 其他优化样式 */
 .main ol[reversed] li b {
     color: #2c3e50;
-    font-weight: 700;
-}
-
-/* 期刊/会议名称样式 - 改为天蓝色 */
-.main ol[reversed] li i {
-    color: #00a0e9; /* 天蓝色 */
-    font-style: normal;
-}
-
-/* 特别标注的期刊会议名 */
-.main ol[reversed] li i b {
-    color: #0077cc; /* 稍深的天蓝色 */
     font-weight: 600;
 }
 
-/* 源代码链接样式 */
+.main ol[reversed] li i b {
+    color: #0077cc;
+    font-style: italic; /* 重要期刊也保持斜体 */
+}
+
 .main ol[reversed] li a {
-    color: #3498db;
-    text-decoration: none;
-    margin-left: 0.4em; /* 更紧凑的间距 */
-    font-size: 0.9em;
+    color: #2980b9;
+    font-size: 0.85em;
     padding: 0.1em 0.3em;
-    border-radius: 2px;
-    background-color: #f0f7ff;
-    transition: all 0.2s;
+    margin-left: 0.3em;
 }
 
-.main ol[reversed] li a:hover {
-    color: #fff;
-    background-color: #2980b9;
-}
-
-/* 标题样式 */
 .main h2 {
-    color: #2c3e50;
-    border-bottom: 2px solid #3498db;
-    padding-bottom: 0.4em; /* 更紧凑的标题 */
-    margin-bottom: 1.2em; /* 减少底部间距 */
-    font-size: 1.7em;
+    margin-bottom: 1em;
+    padding-bottom: 0.3em;
 }
 
-/* ============ 响应式设计 ============ */
+/* 响应式调整 */
 @media (max-width: 768px) {
     .main ol[reversed] li {
-        padding-left: 2.5em;
-        margin-bottom: 1em; /* 移动端更紧凑 */
+        padding-left: 2.2em;
+        margin-bottom: 0.7em;
     }
-    
-    .main ol[reversed] li:before {
-        font-size: 0.9em;
-        padding: 0.1em 0.5em;
-    }
-    
-    .main ol[reversed] li a {
-        margin-top: 0.2em;
+    .main ol[reversed] li::before {
+        font-size: 0.85em;
     }
 }
