@@ -1,4 +1,4 @@
-
+/* ===== 全局样式 ===== */
 body {
   margin: 0;
   font-family: Arial, sans-serif;
@@ -43,6 +43,89 @@ body {
   padding: 2rem;
   background-color: #ffffff;
 }
+
+/* ===== 论文列表终极版 ===== */
+.main h2 {
+  color: #2c3e50;
+  border-bottom: 2px solid #3498db;
+  padding-bottom: 0.4em;
+  margin: 0 0 1em 0;
+  font-size: 1.7em;
+}
+
+.main ol[reversed] {
+  list-style-type: none;
+  padding-left: 0;
+  counter-reset: publication-counter 63;
+  margin-top: 0;
+}
+
+.main ol[reversed] li {
+  position: relative;
+  padding: 0.5em 0 0.5em 2.6em;
+  margin-bottom: 0.7em;
+  line-height: 1.5;
+  border-left: 2px solid #eaeaea;
+  transition: all 0.25s ease;
+}
+
+.main ol[reversed] li:hover {
+  background-color: #f5faff;
+  border-left-color: #3498db;
+  transform: translateX(3px);
+}
+
+.main ol[reversed] li::before {
+  content: counter(publication-counter) ".";
+  position: absolute;
+  left: 0.8em;
+  top: 0.5em;
+  font-weight: bold;
+  font-size: 0.95em;
+  color: #2c3e50;
+  transition: inherit;
+}
+
+.main ol[reversed] li:hover::before {
+  color: #3498db;
+}
+
+.main ol[reversed] li:first-child::before {
+  counter-increment: publication-counter 0;
+}
+.main ol[reversed] li ~ li::before {
+  counter-increment: publication-counter -1;
+}
+
+/* 期刊会议样式 */
+.main ol[reversed] li i {
+  color: #00a0e9;
+  font-style: italic;
+}
+
+.main ol[reversed] li i b {
+  color: #0077cc;
+  font-style: italic;
+}
+
+/* 源代码链接 */
+.main ol[reversed] li a {
+  color: #2980b9;
+  font-size: 0.85em;
+  padding: 0.1em 0.4em;
+  margin-left: 0.3em;
+  background: #f0f7ff;
+  border-radius: 3px;
+  text-decoration: none;
+  transition: all 0.2s;
+}
+
+.main ol[reversed] li a:hover {
+  background: #3498db;
+  color: white;
+}
+
+/* ===== 响应式设计 ===== */
 @media (max-width: 768px) {
   .container {
     flex-direction: column;
@@ -52,100 +135,8 @@ body {
     box-shadow: none;
     border-bottom: 1px solid #ddd;
   }
-}
-
-
-/* ============ 最终修正版出版物列表样式 ============ */
-.main ol[reversed] {
-    list-style-type: none;
-    padding-left: 0;
-    counter-reset: publication-counter 63; /* 正确初始化计数器 */
-    margin-top: -0.3em; /* 减少整体顶部间距 */
-}
-
-.main ol[reversed] li {
-    position: relative;
-    padding-left: 2.8em; /* 更紧凑的左侧间距 */
-    margin-bottom: 0.8em; /* 大幅减少条目间距 */
-    line-height: 1.5;
-    border-left: 1px solid #e0e0e0; /* 更细的分隔线 */
-    padding-bottom: 0.5em; /* 减少底部内边距 */
-    transition: all 0.2s ease;
-}
-
-.main ol[reversed] li::before {
-    content: counter(publication-counter) ".";
-    position: absolute;
-    left: 0;
-    top: 0.1em;
-    font-weight: bold;
-    font-size: 0.95em;
-    color: #2c3e50;
-    padding: 0.1em 0.6em;
-}
-
-/* 正确的递减编号逻辑 */
-.main ol[reversed] li:first-child::before {
-    counter-increment: publication-counter 0; /* 首项保持63 */
-}
-.main ol[reversed] li ~ li::before {
-    counter-increment: publication-counter -1; /* 后续项递减 */
-}
-
-/* 期刊/会议名称改为斜体 */
-.main ol[reversed] li i {
-    color: #00a0e9;
-    font-style: italic; /* 新增斜体效果 */
-    font-weight: 500;
-}
-
-/* 其他优化样式 */
-.main ol[reversed] li b {
-    color: #2c3e50;
-    font-weight: 600;
-}
-
-.main ol[reversed] li i b {
-    color: #0077cc;
-    font-style: italic; /* 重要期刊也保持斜体 */
-}
-
-.main ol[reversed] li a {
-    color: #2980b9;
-    font-size: 0.85em;
-    padding: 0.1em 0.3em;
-    margin-left: 0.3em;
-}
-
-.main h2 {
-    margin-bottom: 1em;
-    padding-bottom: 0.3em;
-}
-
-/* 响应式调整 */
-@media (max-width: 768px) {
-    .main ol[reversed] li {
-        padding-left: 2.2em;
-        margin-bottom: 0.7em;
-    }
-    .main ol[reversed] li::before {
-        font-size: 0.85em;
-    }
-}
-
-/* ============ 悬停效果修复 ============ */
-.main ol[reversed] li:hover {
-    background-color: #f5faff; /* 淡蓝色背景 */
-    border-left-color: #3498db; /* 左侧边框变蓝 */
-    transform: translateX(3px); /* 轻微右移效果 */
-}
-
-.main ol[reversed] li:hover::before {
-    background-color: #e1f0ff; /* 编号背景色变化 */
-    color: #2980b9; /* 编号颜色变化 */
-}
-
-.main ol[reversed] li:hover a {
-    background-color: #3498db; /* 链接背景变蓝 */
-    color: white; /* 链接文字变白 */
+  .main ol[reversed] li {
+    padding-left: 2.2em;
+    margin-bottom: 0.6em;
+  }
 }
