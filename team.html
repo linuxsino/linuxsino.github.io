@@ -3,126 +3,32 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Xin Liu – Students</title>
+  <title>Xin Liu – Team</title>
   <link rel="stylesheet" href="style.css">
-  <style>
-    body {
-      margin: 0;
-      font-family: sans-serif;
-      display: flex;
-      flex-direction: column;
-    }
-
-    .container {
-      display: flex;
-      min-height: 100vh;
-    }
-
-    .sidebar {
-      width: 250px;
-      background-color: #f3f3f3;
-      padding: 1rem;
-      box-sizing: border-box;
-    }
-
-    .sidebar img {
-      max-width: 100%;
-      border-radius: 50%;
-      margin-bottom: 0.5rem;
-    }
-
-    .sidebar h1 {
-      font-size: 1.2rem;
-      margin: 0.5rem 0;
-    }
-
-    .sidebar p {
-      font-size: 0.9rem;
-    }
-
-    .sidebar nav a {
-      display: block;
-      margin: 0.5rem 0;
-      text-decoration: none;
-      color: #333;
-    }
-
-    .updated {
-      margin-top: 1rem;
-      font-size: 0.75rem;
-      color: gray;
-    }
-
-    .main {
-      flex: 1;
-      padding: 1rem;
-    }
-
-    /* Mobile styles */
-    .menu-button {
-      display: none;
-      background: none;
-      border: none;
-      font-size: 1.5rem;
-      position: absolute;
-      top: 1rem;
-      left: 1rem;
-      z-index: 1000;
-    }
-
-    @media (max-width: 768px) {
-      .sidebar {
-        position: fixed;
-        left: -250px;
-        top: 0;
-        height: 100%;
-        transition: left 0.3s;
-        z-index: 999;
-      }
-
-      .sidebar.open {
-        left: 0;
-      }
-
-      .menu-button {
-        display: block;
-      }
-
-      .main {
-        margin-left: 0;
-        padding-top: 3rem;
-      }
-    }
-  </style>
 </head>
 <body>
-  <button class="menu-button" onclick="toggleSidebar()">☰</button>
   <div class="container">
-    <aside class="sidebar" id="sidebar">
-      <img src="images/xin_liu.jpg" alt="Xin Liu">
-      <h1>Xin Liu</h1>
-      <p>Associate Professor<br>CVPRL, LUT University</p>
-      <nav>
-        <a href="index.html">Home</a>
-        <a href="publication.html">Publications</a>
-        <a href="research.html">Research</a>
-        <a href="team.html">Team</a>
-        <a href="position.html">Position</a>
-      </nav>
-      <div class="updated">Last updated: July 5, 2025</div>
-    </aside>
+    
+<aside class="sidebar">
+  <img src="images/xin_liu.jpg" alt="Xin Liu">
+  <h1>Xin Liu</h1>
+  <p>Associate Professor<br>CVPRL, LUT University</p>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="publication.html">Publications</a>
+    <a href="research.html">Research</a>
+    <a href="team.html">Team</a>
+    <a href="position.html">Position</a>
+  </nav>
+  <div class="updated">Last updated: July 5, 2025</div>
+</aside>
 
     <main class="main">
-      <h2>Students</h2>
-      <p>Student list to be added.</p>
+      
+<h2>Team</h2>
+<p>Team information to be added.</p>
+
     </main>
   </div>
-
-  <script>
-    function toggleSidebar() {
-      const sidebar = document.getElementById('sidebar');
-      sidebar.classList.toggle('open');
-    }
-  </script>
 </body>
 </html>
