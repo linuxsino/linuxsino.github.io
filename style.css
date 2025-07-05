@@ -108,31 +108,4 @@ body {
   color: #2980b9;
 }
 
-/* Year grouping headers */
-.year-group {
-  font-size: 1.3em;
-  margin: 1.5em 0 0.5em 0;
-  padding-bottom: 5px;
-  border-bottom: 2px solid #eee;
-  color: #34495e;
-}
 
-
-.publication-list {
-  counter-reset: publication-counter 64; /* 初始值设为总数+1 */
-}
-
-.publication-list li {
-  position: relative;
-  padding-left: 2.5em;
-  margin-bottom: 1.2em;
-}
-
-.publication-list li::before {
-  content: counter(publication-counter);
-  counter-increment: publication-counter -1; /* 每次减1 */
-  position: absolute;
-  left: 0;
-  font-weight: bold;
-  color: #555;
-}
