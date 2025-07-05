@@ -53,36 +53,3 @@ body {
     border-bottom: 1px solid #ddd;
   }
 }
-
-/* 修正后的倒序编号样式 */
-.main ol[reversed] {
-    list-style-type: none;
-    padding-left: 0;
-    counter-reset: publication-counter 63; /* 从63开始计数 */
-}
-
-.main ol[reversed] li {
-    position: relative;
-    padding-left: 3.5em;
-    margin-bottom: 1.5em;
-    line-height: 1.6;
-    border-left: 3px solid #eaeaea;
-    padding-bottom: 1em;
-    transition: all 0.3s ease;
-    counter-increment: publication-counter -1; /* 每次递减1 */
-}
-
-.main ol[reversed] li:before {
-    content: counter(publication-counter) ".";
-    position: absolute;
-    left: 0;
-    top: 0;
-    font-weight: bold;
-    font-size: 1.1em;
-    color: #2c3e50;
-    background: #f8f9fa;
-    padding: 0.2em 0.8em;
-    border-radius: 3px;
-}
-
-/* 保持其他样式不变... */
