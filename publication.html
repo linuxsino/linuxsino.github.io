@@ -148,3 +148,106 @@
   </div>
 </body>
 </html>
+
+
+/* ============ 出版物列表专用样式 ============ */
+/* 倒序编号列表（从63开始）*/
+.main ol[reversed] {
+    list-style-type: none;
+    padding-left: 0;
+    counter-reset: publication-counter 64; /* 初始值设为64（因为第一项是63）*/
+}
+
+.main ol[reversed] li {
+    position: relative;
+    padding-left: 3.5em;
+    margin-bottom: 1.8em;
+    line-height: 1.7;
+    border-left: 3px solid #eaeaea;
+    padding-bottom: 1.2em;
+    transition: all 0.3s ease;
+}
+
+.main ol[reversed] li:before {
+    content: counter(publication-counter) ".";
+    counter-decrement: publication-counter; /* 递减计数器 */
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-weight: bold;
+    font-size: 1.1em;
+    color: #2c3e50;
+    background: #f8f9fa;
+    padding: 0.25em 0.8em;
+    border-radius: 4px;
+    box-shadow: 0 2px 3px rgba(0,0,0,0.05);
+}
+
+/* 交互效果 */
+.main ol[reversed] li:hover {
+    border-left-color: #3498db;
+    background-color: #f8faff;
+}
+
+/* 作者名字加粗 */
+.main ol[reversed] li b {
+    color: #2c3e50;
+    font-weight: 700;
+}
+
+/* 期刊/会议名称样式 */
+.main ol[reversed] li i {
+    color: #7f8c8d;
+    font-style: normal;
+}
+
+/* 特别标注的期刊会议名 */
+.main ol[reversed] li i b {
+    color: #e74c3c;
+    font-weight: 600;
+}
+
+/* 源代码链接样式 */
+.main ol[reversed] li a {
+    color: #3498db;
+    text-decoration: none;
+    margin-left: 0.5em;
+    font-size: 0.95em;
+    padding: 0.1em 0.4em;
+    border-radius: 3px;
+    background-color: #f0f7ff;
+    transition: all 0.2s;
+}
+
+.main ol[reversed] li a:hover {
+    color: #fff;
+    background-color: #3498db;
+    text-decoration: none;
+}
+
+/* 标题样式 */
+.main h2 {
+    color: #2c3e50;
+    border-bottom: 2px solid #3498db;
+    padding-bottom: 0.5em;
+    margin-bottom: 1.8em;
+    font-size: 1.8em;
+}
+
+/* ============ 响应式设计 ============ */
+@media (max-width: 768px) {
+    .main ol[reversed] li {
+        padding-left: 2.8em;
+        margin-bottom: 1.4em;
+    }
+    
+    .main ol[reversed] li:before {
+        font-size: 1em;
+        padding: 0.15em 0.6em;
+    }
+    
+    .main ol[reversed] li a {
+        display: inline-block;
+        margin-top: 0.3em;
+    }
+}
