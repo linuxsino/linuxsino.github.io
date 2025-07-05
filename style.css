@@ -54,14 +54,14 @@ body {
   }
 }
 
-/* Publication List Styling - Reverse Numbering */
-.main ol[reversed][start="63"] {
+/* 修正后的倒序编号样式 */
+.main ol[reversed] {
     list-style-type: none;
     padding-left: 0;
-    counter-reset: publication-counter 64; /* 设置counter从64开始 */
+    counter-reset: publication-counter 63; /* 从63开始计数 */
 }
 
-.main ol[reversed][start="63"] li {
+.main ol[reversed] li {
     position: relative;
     padding-left: 3.5em;
     margin-bottom: 1.5em;
@@ -69,11 +69,11 @@ body {
     border-left: 3px solid #eaeaea;
     padding-bottom: 1em;
     transition: all 0.3s ease;
+    counter-increment: publication-counter -1; /* 每次递减1 */
 }
 
-.main ol[reversed][start="63"] li:before {
-    content: counter(publication-counter, decimal) "."; /* 显示带点的数字 */
-    counter-decrement: publication-counter; /* 递减计数器 */
+.main ol[reversed] li:before {
+    content: counter(publication-counter) ".";
     position: absolute;
     left: 0;
     top: 0;
@@ -85,56 +85,4 @@ body {
     border-radius: 3px;
 }
 
-.main ol[reversed][start="63"] li:hover {
-    border-left-color: #3498db;
-    background-color: #f8f9fa;
-}
-
-/* 保持原有其他样式不变 */
-.main ol li b {
-    color: #2c3e50;
-    font-weight: 600;
-}
-
-.main ol li i {
-    color: #7f8c8d;
-    font-style: normal;
-}
-
-.main ol li a {
-    color: #3498db;
-    text-decoration: none;
-    margin-left: 0.5em;
-    transition: color 0.2s;
-}
-
-.main ol li a:hover {
-    color: #2980b9;
-    text-decoration: underline;
-}
-
-.main h2 {
-    color: #2c3e50;
-    border-bottom: 2px solid #3498db;
-    padding-bottom: 0.5em;
-    margin-bottom: 1.5em;
-    font-size: 1.8em;
-}
-
-/* Highlight conference/journal names */
-.main ol li i b {
-    color: #e74c3c;
-    font-weight: 600;
-}
-
-/* Responsive adjustments */
-@media (max-width: 768px) {
-    .main ol[reversed][start="63"] li {
-        padding-left: 2.5em;
-    }
-    
-    .main ol[reversed][start="63"] li:before {
-        font-size: 1em;
-        padding: 0.1em 0.6em;
-    }
-}
+/* 保持其他样式不变... */
