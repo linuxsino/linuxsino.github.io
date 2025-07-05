@@ -140,3 +140,57 @@ body {
     margin-bottom: 0.6em;
   }
 }
+
+.sidebar {
+  font-family: 'Lora', 'Source Serif Pro', serif;
+  padding: 2rem 1.5rem;
+  background: #f8f9fa;
+  border-right: 1px solid #eaeaea;
+}
+
+.profile-img {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 1.5rem;
+  border: 2px solid #e0e0e0;
+}
+
+.main-nav {
+  margin: 2rem 0;
+}
+
+.nav-item {
+  display: block;
+  padding: 0.5rem 0;
+  color: #333;
+  text-decoration: none;
+  transition: color 0.2s;
+  position: relative;
+}
+
+.nav-item:hover {
+  color: #0056b3;
+}
+
+.nav-item.active {
+  font-weight: 600;
+  color: #003366;
+}
+
+.ext-icon {
+  margin-left: 4px;
+  vertical-align: middle;
+}
+
+.sidebar-footer {
+  margin-top: 2rem;
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.contact {
+  margin-top: 0.5rem;
+  word-break: break-all;
+}
