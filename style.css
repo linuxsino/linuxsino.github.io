@@ -1,0 +1,12 @@
+
+body { margin: 0; font-family: Arial, sans-serif; background: #f9f9f9; }
+.container { display: flex; min-height: 100vh; }
+.sidebar { width: 280px; background: #fff; padding: 20px; box-shadow: 2px 0 5px rgba(0,0,0,0.1); }
+.sidebar img { width: 200px; height:200px; border-radius: 50%; object-fit:cover; }
+.sidebar h1 { margin: 15px 0 5px; font-size: 1.5em; }
+.sidebar p { margin:5px 0; color: #666; font-size: 0.9em; line-height:1.4; }
+.sidebar nav a { display: block; margin:10px 0; color:#0366d6; text-decoration:none; }
+.sidebar nav a.active, .sidebar nav a:hover { text-decoration: underline; }
+.sidebar .updated { margin-top:20px; font-size:0.8em; color:#999; }
+.main { flex:1; padding:40px; background:#fff; }
+.main h2 { margin-top:0; }
