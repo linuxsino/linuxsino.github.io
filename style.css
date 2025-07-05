@@ -132,3 +132,20 @@ body {
         font-size: 0.85em;
     }
 }
+
+/* ============ 悬停效果修复 ============ */
+.main ol[reversed] li:hover {
+    background-color: #f5faff; /* 淡蓝色背景 */
+    border-left-color: #3498db; /* 左侧边框变蓝 */
+    transform: translateX(3px); /* 轻微右移效果 */
+}
+
+.main ol[reversed] li:hover::before {
+    background-color: #e1f0ff; /* 编号背景色变化 */
+    color: #2980b9; /* 编号颜色变化 */
+}
+
+.main ol[reversed] li:hover a {
+    background-color: #3498db; /* 链接背景变蓝 */
+    color: white; /* 链接文字变白 */
+}
