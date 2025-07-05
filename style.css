@@ -56,26 +56,26 @@ body {
 
 
 /* ============ 出版物列表专用样式 ============ */
-/* 倒序编号列表（从63开始）*/
+/* 修正后的倒序编号样式 */
 .main ol[reversed] {
     list-style-type: none;
     padding-left: 0;
-    counter-reset: publication-counter 64; /* 初始值设为64（因为第一项是63）*/
+    counter-reset: publication-counter 64; /* 从63开始计数 */
 }
 
 .main ol[reversed] li {
     position: relative;
     padding-left: 3.5em;
-    margin-bottom: 1.8em;
-    line-height: 1.7;
+    margin-bottom: 1.5em;
+    line-height: 1.6;
     border-left: 3px solid #eaeaea;
-    padding-bottom: 1.2em;
+    padding-bottom: 1em;
     transition: all 0.3s ease;
+    counter-increment: publication-counter -1; /* 每次递减1 */
 }
 
 .main ol[reversed] li:before {
     content: counter(publication-counter) ".";
-    counter-decrement: publication-counter; /* 递减计数器 */
     position: absolute;
     left: 0;
     top: 0;
@@ -83,9 +83,8 @@ body {
     font-size: 1.1em;
     color: #2c3e50;
     background: #f8f9fa;
-    padding: 0.25em 0.8em;
-    border-radius: 4px;
-    box-shadow: 0 2px 3px rgba(0,0,0,0.05);
+    padding: 0.2em 0.8em;
+    border-radius: 3px;
 }
 
 /* 交互效果 */
