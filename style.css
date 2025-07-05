@@ -56,34 +56,34 @@ body {
 
 
 /* ============ 出版物列表专用样式 ============ */
-/* 修正后的倒序编号样式 */
 .main ol[reversed] {
     list-style-type: none;
     padding-left: 0;
-    counter-reset: publication-counter 64; /* 从63开始计数 */
+    counter-reset: publication-counter 64; /* 初始值设为64（因为第一项是63）*/
+    margin-top: -0.5em; /* 减少顶部空白 */
 }
 
 .main ol[reversed] li {
     position: relative;
-    padding-left: 3.5em;
-    margin-bottom: 1.5em;
+    padding-left: 3em; /* 减少左侧缩进 */
+    margin-bottom: 1.2em; /* 减少条目间距 */
     line-height: 1.6;
-    border-left: 3px solid #eaeaea;
-    padding-bottom: 1em;
+    border-left: 2px solid #eaeaea; /* 变细的边线 */
+    padding-bottom: 0.8em; /* 减少底部内边距 */
     transition: all 0.3s ease;
-    counter-increment: publication-counter -1; /* 每次递减1 */
 }
 
 .main ol[reversed] li:before {
     content: counter(publication-counter) ".";
+    counter-decrement: publication-counter;
     position: absolute;
     left: 0;
     top: 0;
     font-weight: bold;
-    font-size: 1.1em;
+    font-size: 1em; /* 稍小的编号 */
     color: #2c3e50;
     background: #f8f9fa;
-    padding: 0.2em 0.8em;
+    padding: 0.2em 0.7em; /* 更紧凑的编号 */
     border-radius: 3px;
 }
 
@@ -99,15 +99,15 @@ body {
     font-weight: 700;
 }
 
-/* 期刊/会议名称样式 */
+/* 期刊/会议名称样式 - 改为天蓝色 */
 .main ol[reversed] li i {
-    color: #7f8c8d;
+    color: #00a0e9; /* 天蓝色 */
     font-style: normal;
 }
 
 /* 特别标注的期刊会议名 */
 .main ol[reversed] li i b {
-    color: #e74c3c;
+    color: #0077cc; /* 稍深的天蓝色 */
     font-weight: 600;
 }
 
@@ -115,43 +115,41 @@ body {
 .main ol[reversed] li a {
     color: #3498db;
     text-decoration: none;
-    margin-left: 0.5em;
-    font-size: 0.95em;
-    padding: 0.1em 0.4em;
-    border-radius: 3px;
+    margin-left: 0.4em; /* 更紧凑的间距 */
+    font-size: 0.9em;
+    padding: 0.1em 0.3em;
+    border-radius: 2px;
     background-color: #f0f7ff;
     transition: all 0.2s;
 }
 
 .main ol[reversed] li a:hover {
     color: #fff;
-    background-color: #3498db;
-    text-decoration: none;
+    background-color: #2980b9;
 }
 
 /* 标题样式 */
 .main h2 {
     color: #2c3e50;
     border-bottom: 2px solid #3498db;
-    padding-bottom: 0.5em;
-    margin-bottom: 1.8em;
-    font-size: 1.8em;
+    padding-bottom: 0.4em; /* 更紧凑的标题 */
+    margin-bottom: 1.2em; /* 减少底部间距 */
+    font-size: 1.7em;
 }
 
 /* ============ 响应式设计 ============ */
 @media (max-width: 768px) {
     .main ol[reversed] li {
-        padding-left: 2.8em;
-        margin-bottom: 1.4em;
+        padding-left: 2.5em;
+        margin-bottom: 1em; /* 移动端更紧凑 */
     }
     
     .main ol[reversed] li:before {
-        font-size: 1em;
-        padding: 0.15em 0.6em;
+        font-size: 0.9em;
+        padding: 0.1em 0.5em;
     }
     
     .main ol[reversed] li a {
-        display: inline-block;
-        margin-top: 0.3em;
+        margin-top: 0.2em;
     }
 }
