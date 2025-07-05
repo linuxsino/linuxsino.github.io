@@ -53,3 +53,66 @@ body {
     border-bottom: 1px solid #ddd;
   }
 }
+
+/* Publication List Styling */
+.main ol {
+  list-style-type: none;
+  padding-left: 0;
+  counter-reset: publication-counter;
+}
+
+.main ol li {
+  counter-increment: publication-counter;
+  margin-bottom: 1.5em;
+  padding-left: 2.5em;
+  text-indent: -2.5em;
+  position: relative;
+  line-height: 1.5;
+}
+
+.main ol li::before {
+  content: counter(publication-counter);
+  position: absolute;
+  left: 0;
+  font-weight: bold;
+  color: #555;
+}
+
+.main ol li b {
+  color: #2c3e50;
+}
+
+.main ol li i {
+  color: #7f8c8d;
+}
+
+.main ol li a {
+  color: #3498db;
+  text-decoration: none;
+  margin-left: 5px;
+}
+
+.main ol li a:hover {
+  text-decoration: underline;
+}
+
+/* Highlight your name in author lists */
+.main ol li b[style*="font-weight:bold"] {
+  color: #e74c3c;
+  font-weight: bold !important;
+}
+
+/* Conference/journal name styling */
+.main ol li i b {
+  font-style: normal;
+  color: #2980b9;
+}
+
+/* Year grouping headers */
+.year-group {
+  font-size: 1.3em;
+  margin: 1.5em 0 0.5em 0;
+  padding-bottom: 5px;
+  border-bottom: 2px solid #eee;
+  color: #34495e;
+}
