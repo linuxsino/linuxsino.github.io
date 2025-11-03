@@ -26,19 +26,28 @@
       margin-bottom: 12px;
       line-height: 1.5;
       padding-left: 0;
+      color: #000; /* 改为黑色 */
     }
     
     .news-date {
       font-weight: 600;
-      color: #24292e;
+      color: #0366d6; /* 日期保持蓝色 */
+      margin-right: 8px;
     }
     
     .news-content {
-      color: #24292e;
+      color: #000; /* 改为黑色 */
     }
     
     .news-highlight {
       font-weight: 600;
+    }
+    
+    /* 出版物名称斜体加粗 */
+    .publications li strong {
+      font-style: italic; /* 斜体 */
+      font-weight: 700; /* 加粗 */
+      color: #0366d6; /* 保持蓝色 */
     }
   </style>
 </head>
@@ -87,68 +96,68 @@
         <h2>News</h2>
         <ul class="news-list">
           <li class="news-item">
-            <span class="news-date">[10.2025]</span>
+            <span class="news-date">[Oct 2025]</span>
             <span class="news-content">I will serve as Associate Editor at IEEE T-MM</span>
           </li>
           
           <li class="news-item">
-            <span class="news-date">[10.2025]</span>
+            <span class="news-date">[Oct 2025]</span>
             <span class="news-content">One paper on Mamba for Micro-Gesture Recognition is accepted by IEEE T-MM</span>
           </li>
           
           <li class="news-item">
-            <span class="news-date">[08.2025]</span>
+            <span class="news-date">[Aug 2025]</span>
             <span class="news-content">Invited to be a Senior Program Committee of AAAI 2026 AI Alignment Track</span>
           </li>
           
           <li class="news-item">
-            <span class="news-date">[08.2025]</span>
+            <span class="news-date">[Aug 2025]</span>
             <span class="news-content">One paper on Dynamic Collaboration of Multi-Language Models is accepted by EMNLP 2025 and selected for an <span class="news-highlight">ORAL presentation</span> at the Main Conference</span>
           </li>
           
           <li class="news-item">
-            <span class="news-date">[07.2025]</span>
+            <span class="news-date">[Jul 2025]</span>
             <span class="news-content">Three papers on MLLM for de-identity body and facial emotion understanding, and rPPG are accepted by ACMMM 2025</span>
           </li>
           
           <li class="news-item">
-            <span class="news-date">[06.2025]</span>
+            <span class="news-date">[Jun 2025]</span>
             <span class="news-content">One paper on face anti-spoofing is accepted by ICCV 2025</span>
           </li>
           
           <li class="news-item">
-            <span class="news-date">[06.2025]</span>
+            <span class="news-date">[Jun 2025]</span>
             <span class="news-content">One paper on Audio-visual Understanding with MLLM is accepted by IEEE T-PAMI</span>
           </li>
           
           <li class="news-item">
-            <span class="news-date">[05.2025]</span>
+            <span class="news-date">[May 2025]</span>
             <span class="news-content">One paper on rPPG via Integration of Explicit and Implicit Prior Knowledge is accepted by IEEE T-IP</span>
           </li>
           
           <li class="news-item">
-            <span class="news-date">[04.2025]</span>
+            <span class="news-date">[Apr 2025]</span>
             <span class="news-content">We are organizing the Multimodal Emotion Recognition Challenge and Workshop with ACMMM 2025</span>
           </li>
           
           <li class="news-item">
-            <span class="news-date">[03.2025]</span>
+            <span class="news-date">[Mar 2025]</span>
             <span class="news-content">We are organizing the Subtle Visual Computing Workshop & 1st Multimodal Deception Detection Competition with ACMMM 2025</span>
           </li>
           
           <li class="news-item">
-            <span class="news-date">[02.2025]</span>
+            <span class="news-date">[Feb 2025]</span>
             <span class="news-content">Two papers on Artistic Sports Understanding and Periodic Capability of Multimodal Large Language Model are accepted by CVPR 2025</span>
           </li>
           
           <li class="news-item">
-            <span class="news-date">[01.2025]</span>
+            <span class="news-date">[Jan 2025]</span>
             <span class="news-content">One paper on Vision Transformer for Camouflaged Object and Salient Object Detection is accepted by IEEE T-IP</span>
           </li>
         </ul>
       </div>
 
-      <!-- Selected Publications部分保持不变 -->
+      <!-- Selected Publications部分 - 出版物名称改为斜体加粗 -->
       <h2>Selected Publications</h2>
       <ul class="publications">
         <li><strong>DEEMO: De-identity Multimodal Emotion Recognition and Reasoning</strong>. Deng Li, Bohao Xing, Xin Liu, Baiqiang Xia, Bihan Wen, and Heikki Kälviäinen. <em>ACM International Conference on Multimedia (<b>ACMMM</b>)</em>, 2025.</li>
@@ -184,9 +193,6 @@
         .publications li {
           margin-bottom: 12px;
           line-height: 1.5;
-        }
-        .publications strong {
-          color: #0366d6; /* Paper titles in GitHub link blue */
         }
         .publications em {
           font-style: italic;
