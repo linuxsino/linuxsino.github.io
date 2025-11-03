@@ -99,9 +99,9 @@ body {
 }
 
 .publications li {
-  margin-bottom: 12px;
+  margin-bottom: 8px; /* 减少间距 */
   line-height: 1.5;
-  padding: 0.5em 0;
+  padding: 0.3em 0; /* 减少内边距 */
 }
 
 .publications li strong {
@@ -122,7 +122,7 @@ body {
 
 /* ===== News栏目样式 ===== */
 .news-section {
-  margin: 40px 0 30px;
+  margin: 30px 0 20px; /* 减少间距 */
 }
 
 .news-section h2 {
@@ -137,9 +137,9 @@ body {
 }
 
 .news-item {
-  margin-bottom: 12px;
-  line-height: 1.5;
-  padding: 0.5em 0;
+  margin-bottom: 8px; /* 减少间距 */
+  line-height: 1.4; /* 稍微减少行高 */
+  padding: 0.3em 0; /* 减少内边距 */
   color: #000;
 }
 
@@ -147,7 +147,7 @@ body {
   font-weight: 600;
   color: #0366d6;
   margin-right: 8px;
-  font-style: italic;
+  font-style: normal; /* 移除斜体 */
 }
 
 .news-content {
@@ -161,7 +161,7 @@ body {
 
 /* More链接样式 */
 .news-more {
-  margin-top: 15px;
+  margin-top: 12px; /* 减少间距 */
   text-align: right;
 }
 
@@ -207,11 +207,11 @@ body {
   .main h2 {
     font-size: 1.4em;
   }
+  
+  /* 移动端进一步减少间距 */
+  .publications li,
+  .news-item {
+    margin-bottom: 6px;
+    padding: 0.2em 0;
+  }
 }
-
-/* ===== 移除的旧样式 ===== */
-/* 以下样式已被上面的新样式替代，可以删除：
-   - 重复的 .sidebar 定义
-   - .main ol[reversed] 相关样式（如果不需要编号列表）
-   - 不一致的颜色定义
-*/
