@@ -183,7 +183,37 @@ body {
   font-style: italic;
 }
 
-/* 源代码链接 */
+/* ===== 源代码链接样式 ===== */
+.source-code-link {
+  display: inline-block;
+  background-color: #e8f4fd;
+  border: 1.5px solid #3498db;
+  border-radius: 6px;
+  padding: 3px 10px;
+  margin-left: 8px;
+  font-size: 0.82em;
+  font-weight: 700;
+  color: #2c5aa0;
+  text-decoration: none;
+  transition: all 0.25s ease;
+  box-shadow: 0 2px 4px rgba(52, 152, 219, 0.2);
+  font-family: Arial, sans-serif;
+}
+
+.source-code-link:hover {
+  background-color: #3498db;
+  color: white;
+  box-shadow: 0 4px 8px rgba(52, 152, 219, 0.3);
+  transform: translateY(-2px);
+  text-decoration: none;
+}
+
+.source-code-link::before {
+  content: "🔗 ";
+  font-size: 0.9em;
+}
+
+/* 保持原有链接样式作为备选 */
 .main ol[reversed] li a {
   color: #2980b9;
   font-size: 0.85em;
@@ -379,5 +409,12 @@ a:hover {
   .main ol[reversed] li::before {
     left: 0.6em;
     font-size: 0.9em;
+  }
+  
+  /* 源代码链接移动端调整 */
+  .source-code-link {
+    padding: 2px 8px;
+    font-size: 0.78em;
+    margin-left: 6px;
   }
 }
