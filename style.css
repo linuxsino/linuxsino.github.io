@@ -91,6 +91,12 @@ body {
   font-size: 1.7em;
 }
 
+/* ===== Biography段落样式 ===== */
+.main p {
+  line-height: 1.4;
+  margin-bottom: 1em;
+}
+
 /* ===== 出版物列表样式 ===== */
 .publications {
   list-style: none;
@@ -159,6 +165,21 @@ body {
   color: #d35400;
 }
 
+/* ===== News链接样式 ===== */
+.news-link {
+  color: #0366d6;
+  text-decoration: none;
+  font-weight: 600;
+  border-bottom: 1px solid transparent;
+  transition: all 0.2s ease;
+}
+
+.news-link:hover {
+  color: #0056b3;
+  border-bottom-color: #0366d6;
+  text-decoration: none;
+}
+
 /* More链接样式 */
 .news-more {
   margin-top: 12px; /* 减少间距 */
@@ -180,6 +201,27 @@ body {
   background: #0366d6;
   color: white;
   text-decoration: none;
+}
+
+/* ===== News页面特定样式 ===== */
+.news-year-group {
+  margin-bottom: 2rem;
+}
+
+.news-year-group h2 {
+  color: #2c3e50;
+  border-bottom: 2px solid #3498db;
+  padding-bottom: 0.3em;
+  margin: 0 0 1em 0;
+  font-size: 1.5em;
+}
+
+.main h1 {
+  color: #2c3e50;
+  border-bottom: 3px solid #3498db;
+  padding-bottom: 0.4em;
+  margin: 0 0 1.5em 0;
+  font-size: 2em;
 }
 
 /* ===== 响应式设计 ===== */
@@ -214,4 +256,43 @@ body {
     margin-bottom: 6px;
     padding: 0.2em 0;
   }
+  
+  /* News页面响应式调整 */
+  .news-year-group {
+    margin-bottom: 1.5rem;
+  }
+  
+  .main h1 {
+    font-size: 1.6em;
+  }
+  
+  .news-year-group h2 {
+    font-size: 1.3em;
+  }
+}
+
+/* ===== 通用链接样式 ===== */
+a {
+  color: #0366d6;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+a:hover {
+  color: #0056b3;
+  text-decoration: underline;
+}
+
+/* ===== 外部链接图标样式 ===== */
+.external {
+  display: inline-flex;
+  align-items: center;
+}
+
+/* ===== 位置信息样式 ===== */
+.position {
+  color: #666;
+  font-size: 0.9rem;
+  line-height: 1.4;
+  margin: 0;
 }
