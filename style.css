@@ -105,9 +105,9 @@ body {
 }
 
 .publications li {
-  margin-bottom: 2px; /* 减少间距 */
+  margin-bottom: 2px;
   line-height: 1.5;
-  padding: 0.3em 0; /* 减少内边距 */
+  padding: 0.3em 0;
 }
 
 .publications li strong {
@@ -126,9 +126,83 @@ body {
   color: inherit;
 }
 
+/* ===== 编号出版物列表样式 ===== */
+.main ol[reversed] {
+  list-style-type: none;
+  padding-left: 0;
+  counter-reset: publication-counter 63;
+  margin-top: 0;
+}
+
+.main ol[reversed] li {
+  position: relative;
+  padding: 0.5em 0 0.5em 2.6em;
+  margin-bottom: 0.7em;
+  line-height: 1.5;
+  border-left: 2px solid #eaeaea;
+  transition: all 0.25s ease;
+}
+
+.main ol[reversed] li:hover {
+  background-color: #f5faff;
+  border-left-color: #3498db;
+  transform: translateX(3px);
+}
+
+.main ol[reversed] li::before {
+  content: counter(publication-counter) ".";
+  position: absolute;
+  left: 0.8em;
+  top: 0.5em;
+  font-weight: bold;
+  font-size: 0.95em;
+  color: #2c3e50;
+  transition: inherit;
+}
+
+.main ol[reversed] li:hover::before {
+  color: #3498db;
+}
+
+.main ol[reversed] li:first-child::before {
+  counter-increment: publication-counter 0;
+}
+
+.main ol[reversed] li ~ li::before {
+  counter-increment: publication-counter -1;
+}
+
+/* 期刊会议样式 */
+.main ol[reversed] li i {
+  color: #00a0e9;
+  font-style: italic;
+}
+
+.main ol[reversed] li i b {
+  color: #0077cc;
+  font-style: italic;
+}
+
+/* 源代码链接 */
+.main ol[reversed] li a {
+  color: #2980b9;
+  font-size: 0.85em;
+  padding: 0.1em 0.4em;
+  margin-left: 0.3em;
+  background: #f0f7ff;
+  border-radius: 3px;
+  text-decoration: none;
+  transition: all 0.2s;
+}
+
+.main ol[reversed] li a:hover {
+  background: #3498db;
+  color: white;
+}
+
 /* ===== News栏目样式 ===== */
 .news-section {
-  margin: 30px 0 20px; /* 减少间距 */
+  margin: 30px 0 20px;
 }
 
 .news-section h2 {
@@ -143,9 +217,9 @@ body {
 }
 
 .news-item {
-  margin-bottom: 2px; /* 减少间距 */
-  line-height: 1.4; /* 稍微减少行高 */
-  padding: 0.3em 0; /* 减少内边距 */
+  margin-bottom: 2px;
+  line-height: 1.4;
+  padding: 0.3em 0;
   color: #000;
 }
 
@@ -153,7 +227,7 @@ body {
   font-weight: 600;
   color: #0366d6;
   margin-right: 8px;
-  font-style: normal; /* 移除斜体 */
+  font-style: normal;
 }
 
 .news-content {
@@ -182,7 +256,7 @@ body {
 
 /* More链接样式 */
 .news-more {
-  margin-top: 12px; /* 减少间距 */
+  margin-top: 12px;
   text-align: right;
 }
 
@@ -222,6 +296,32 @@ body {
   padding-bottom: 0.4em;
   margin: 0 0 1.5em 0;
   font-size: 2em;
+}
+
+/* ===== 通用链接样式 ===== */
+a {
+  color: #0366d6;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+a:hover {
+  color: #0056b3;
+  text-decoration: underline;
+}
+
+/* ===== 外部链接图标样式 ===== */
+.external {
+  display: inline-flex;
+  align-items: center;
+}
+
+/* ===== 位置信息样式 ===== */
+.position {
+  color: #666;
+  font-size: 0.9rem;
+  line-height: 1.4;
+  margin: 0;
 }
 
 /* ===== 响应式设计 ===== */
@@ -269,30 +369,15 @@ body {
   .news-year-group h2 {
     font-size: 1.3em;
   }
-}
-
-/* ===== 通用链接样式 ===== */
-a {
-  color: #0366d6;
-  text-decoration: none;
-  transition: color 0.2s ease;
-}
-
-a:hover {
-  color: #0056b3;
-  text-decoration: underline;
-}
-
-/* ===== 外部链接图标样式 ===== */
-.external {
-  display: inline-flex;
-  align-items: center;
-}
-
-/* ===== 位置信息样式 ===== */
-.position {
-  color: #666;
-  font-size: 0.9rem;
-  line-height: 1.4;
-  margin: 0;
+  
+  /* 出版物列表移动端调整 */
+  .main ol[reversed] li {
+    padding-left: 2.2em;
+    margin-bottom: 0.6em;
+  }
+  
+  .main ol[reversed] li::before {
+    left: 0.6em;
+    font-size: 0.9em;
+  }
 }
