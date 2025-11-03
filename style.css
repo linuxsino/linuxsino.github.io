@@ -3,145 +3,28 @@ body {
   margin: 0;
   font-family: Arial, sans-serif;
   background-color: #f5f5f5;
+  line-height: 1.6;
 }
+
 .container {
   display: flex;
   min-height: 100vh;
 }
-.sidebar {
-  background-color: #fff;
-  padding: 1rem;
-  width: 260px;
-  flex-shrink: 0;
-  box-shadow: 2px 0 5px rgba(0,0,0,0.1);
-}
-.sidebar h1 {
-  font-size: 1.5rem;
-  margin: 1rem 0 0.5rem;
-}
-.sidebar nav {
-  margin-top: 1rem;
-  display: flex;
-  flex-direction: column;
-}
-.sidebar nav a {
-  margin: 0.25rem 0;
-  text-decoration: none;
-  color: #333;
-}
-.updated {
-  margin-top: 2rem;
-  font-size: 0.9rem;
-  color: #777;
-}
-.main {
-  flex-grow: 1;
-  padding: 2rem;
-  background-color: #ffffff;
-}
 
-/* ===== 论文列表终极版 ===== */
-.main h2 {
-  color: #2c3e50;
-  border-bottom: 2px solid #3498db;
-  padding-bottom: 0.4em;
-  margin: 0 0 1em 0;
-  font-size: 1.7em;
-}
-
-.main ol[reversed] {
-  list-style-type: none;
-  padding-left: 0;
-  counter-reset: publication-counter 63;
-  margin-top: 0;
-}
-
-.main ol[reversed] li {
-  position: relative;
-  padding: 0.5em 0 0.5em 2.6em;
-  margin-bottom: 0.7em;
-  line-height: 1.5;
-  border-left: 2px solid #eaeaea;
-  transition: all 0.25s ease;
-}
-
-.main ol[reversed] li:hover {
-  background-color: #f5faff;
-  border-left-color: #3498db;
-  transform: translateX(3px);
-}
-
-.main ol[reversed] li::before {
-  content: counter(publication-counter) ".";
-  position: absolute;
-  left: 0.8em;
-  top: 0.5em;
-  font-weight: bold;
-  font-size: 0.95em;
-  color: #2c3e50;
-  transition: inherit;
-}
-
-.main ol[reversed] li:hover::before {
-  color: #3498db;
-}
-
-.main ol[reversed] li:first-child::before {
-  counter-increment: publication-counter 0;
-}
-.main ol[reversed] li ~ li::before {
-  counter-increment: publication-counter -1;
-}
-
-/* 期刊会议样式 */
-.main ol[reversed] li i {
-  color: #00a0e9;
-  font-style: italic;
-}
-
-.main ol[reversed] li i b {
-  color: #0077cc;
-  font-style: italic;
-}
-
-/* 源代码链接 */
-.main ol[reversed] li a {
-  color: #2980b9;
-  font-size: 0.85em;
-  padding: 0.1em 0.4em;
-  margin-left: 0.3em;
-  background: #f0f7ff;
-  border-radius: 3px;
-  text-decoration: none;
-  transition: all 0.2s;
-}
-
-.main ol[reversed] li a:hover {
-  background: #3498db;
-  color: white;
-}
-
-/* ===== 响应式设计 ===== */
-@media (max-width: 768px) {
-  .container {
-    flex-direction: column;
-  }
-  .sidebar {
-    width: 100%;
-    box-shadow: none;
-    border-bottom: 1px solid #ddd;
-  }
-  .main ol[reversed] li {
-    padding-left: 2.2em;
-    margin-bottom: 0.6em;
-  }
-}
-
+/* ===== 侧边栏样式 ===== */
 .sidebar {
   font-family: 'Lora', 'Source Serif Pro', serif;
   padding: 2rem 1.5rem;
+  width: 260px;
+  flex-shrink: 0;
   background: #f8f9fa;
   border-right: 1px solid #eaeaea;
+  box-shadow: 2px 0 5px rgba(0,0,0,0.1);
+}
+
+.sidebar h1 {
+  font-size: 1.5rem;
+  margin: 1rem 0 0.5rem;
 }
 
 .profile-img {
@@ -155,6 +38,8 @@ body {
 
 .main-nav {
   margin: 2rem 0;
+  display: flex;
+  flex-direction: column;
 }
 
 .nav-item {
@@ -191,14 +76,58 @@ body {
   word-break: break-all;
 }
 
+/* ===== 主内容区域样式 ===== */
+.main {
+  flex-grow: 1;
+  padding: 2rem;
+  background-color: #ffffff;
+}
+
+.main h2 {
+  color: #2c3e50;
+  border-bottom: 2px solid #3498db;
+  padding-bottom: 0.4em;
+  margin: 0 0 1em 0;
+  font-size: 1.7em;
+}
+
+/* ===== 出版物列表样式 ===== */
+.publications {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.publications li {
+  margin-bottom: 12px;
+  line-height: 1.5;
+  padding: 0.5em 0;
+}
+
+.publications li strong {
+  font-style: italic;
+  font-weight: 700;
+  color: #0366d6;
+}
+
+.publications em {
+  font-style: italic;
+  color: #24292e;
+}
+
+.publications em b {
+  font-weight: bold;
+  color: inherit;
+}
+
 /* ===== News栏目样式 ===== */
 .news-section {
   margin: 40px 0 30px;
 }
 
 .news-section h2 {
-  margin-bottom: 20px;
-  color: #000; /* News标题黑色 */
+  color: #000;
+  border-bottom-color: #0366d6;
 }
 
 .news-list {
@@ -210,7 +139,7 @@ body {
 .news-item {
   margin-bottom: 12px;
   line-height: 1.5;
-  padding-left: 0;
+  padding: 0.5em 0;
   color: #000;
 }
 
@@ -218,7 +147,7 @@ body {
   font-weight: 600;
   color: #0366d6;
   margin-right: 8px;
-  font-style: italic; /* 日期斜体 */
+  font-style: italic;
 }
 
 .news-content {
@@ -227,6 +156,7 @@ body {
 
 .news-highlight {
   font-weight: 600;
+  color: #d35400;
 }
 
 /* More链接样式 */
@@ -240,30 +170,48 @@ body {
   text-decoration: none;
   font-weight: 600;
   font-size: 14px;
+  padding: 0.3em 0.8em;
+  border: 1px solid #0366d6;
+  border-radius: 4px;
+  transition: all 0.2s ease;
 }
 
 .news-more-link:hover {
-  text-decoration: underline;
+  background: #0366d6;
+  color: white;
+  text-decoration: none;
 }
 
-/* 出版物名称斜体加粗 */
-.publications li strong {
-  font-style: italic;
-  font-weight: 700;
-  color: #0366d6;
+/* ===== 响应式设计 ===== */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+  
+  .sidebar {
+    width: 100%;
+    box-shadow: none;
+    border-bottom: 1px solid #ddd;
+    border-right: none;
+  }
+  
+  .profile-img {
+    width: 150px;
+    height: 150px;
+  }
+  
+  .main {
+    padding: 1rem;
+  }
+  
+  .main h2 {
+    font-size: 1.4em;
+  }
 }
 
-.publications li {
-  margin-bottom: 12px;
-  line-height: 1.5;
-}
-
-.publications em {
-  font-style: italic;
-  color: #24292e;
-}
-
-.publications em b {
-  font-weight: bold;
-  color: inherit;
-}
+/* ===== 移除的旧样式 ===== */
+/* 以下样式已被上面的新样式替代，可以删除：
+   - 重复的 .sidebar 定义
+   - .main ol[reversed] 相关样式（如果不需要编号列表）
+   - 不一致的颜色定义
+*/
