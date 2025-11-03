@@ -6,51 +6,39 @@
   <title>Xin Liu – Index</title>
   <link rel="stylesheet" href="style.css">
   <style>
-    /* News栏目样式 */
+    /* News栏目样式 - 与Publications保持一致 */
     .news-section {
       margin: 40px 0 30px;
-      padding: 20px;
-      background-color: #f8f9fa;
-      border-radius: 8px;
-      border-left: 4px solid #0366d6;
     }
     
     .news-section h2 {
-      margin-top: 0;
+      margin-bottom: 20px;
       color: #0366d6;
-      border-bottom: 1px solid #e1e4e8;
-      padding-bottom: 10px;
+    }
+    
+    .news-list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
     }
     
     .news-item {
-      margin-bottom: 15px;
-      padding-bottom: 15px;
-      border-bottom: 1px dashed #e1e4e8;
-    }
-    
-    .news-item:last-child {
-      border-bottom: none;
-      margin-bottom: 0;
-      padding-bottom: 0;
+      margin-bottom: 12px;
+      line-height: 1.5;
+      padding-left: 0;
     }
     
     .news-date {
-      font-size: 14px;
-      color: #6a737d;
-      font-weight: 500;
-      margin-bottom: 5px;
+      font-weight: 600;
+      color: #24292e;
     }
     
     .news-content {
-      line-height: 1.5;
+      color: #24292e;
     }
     
     .news-highlight {
-      background-color: #e6f3ff;
-      padding: 8px 12px;
-      border-radius: 4px;
-      margin-top: 5px;
-      font-size: 14px;
+      font-weight: 600;
     }
   </style>
 </head>
@@ -94,41 +82,70 @@
 
       <p>Previously, he was an Academy of Finland postdoc fellow at the University of Oulu (working with <a href="https://gyzhao-nm.github.io/Guoying/">Prof. Guoying Zhao</a> and <a href="https://en.wikipedia.org/wiki/Matti_Pietik%C3%A4inen_%28academic%29">Prof. Matti Pietikainen</a>), Endeavour Research Fellow at the University of Sydney (with <a href="https://scholar.google.com/citations?user=RwlJNLcAAAAJ&hl=en">Prof. Dacheng Tao</a>), and visiting researcher at Imperial College London (with <a href="https://wp.doc.ic.ac.uk/szafeiri/">Prof. Stefanos Zafeiriou</a>). His awards and grants include those from Academy of Finland, CSC - IT Center for Science, TES (The Finnish Foundation for Technology Promotion), Nokia Foundation, KAUTE Foundation, Otto A. Malm Foundation, Tauno Tonning Foundation, Riitta ja Jorma J. Takanen Foundation, and the Endeavour Leadership Program of Australian Government Department of Education. Dr. Liu is a Senior Member of IEEE and member of ACM, SPIE, ELLIS, and APA.</p>
 
-      <!-- 新增的News部分 -->
+      <!-- 新增的News部分 - 与Publications风格一致 -->
       <div class="news-section">
         <h2>News</h2>
-        
-        <div class="news-item">
-          <div class="news-date">March 15, 2025</div>
-          <div class="news-content">
-            Three papers accepted to <strong>ACM Multimedia 2025</strong>.
-          </div>
-        </div>
-        
-        <div class="news-item">
-          <div class="news-date">February 28, 2025</div>
-          <div class="news-content">
-            Received <strong>Best Paper Award</strong> at CVPR 2025 Workshop on Computer Vision for Sports.
-          </div>
-        </div>
-        
-        <div class="news-item">
-          <div class="news-date">January 10, 2025</div>
-          <div class="news-content">
-            Awarded new <strong>Academy of Finland Research Grant</strong> for project "Explainable AI for Multimodal Emotion Recognition".
-          </div>
-        </div>
-        
-        <div class="news-item">
-          <div class="news-date">December 5, 2024</div>
-          <div class="news-content">
-            Delivered keynote speech at International Conference on Affective Computing and Intelligent Interaction (ACII 2024).
-          </div>
-        </div>
-        
-        <div class="news-highlight">
-          <strong>Recent Highlight:</strong> Our team has published 15+ papers in top-tier conferences and journals in the past year. We're actively recruiting PhD students and postdocs.
-        </div>
+        <ul class="news-list">
+          <li class="news-item">
+            <span class="news-date">[10.2025]</span>
+            <span class="news-content">I will serve as Associate Editor at IEEE T-MM</span>
+          </li>
+          
+          <li class="news-item">
+            <span class="news-date">[10.2025]</span>
+            <span class="news-content">One paper on Mamba for Micro-Gesture Recognition is accepted by IEEE T-MM</span>
+          </li>
+          
+          <li class="news-item">
+            <span class="news-date">[08.2025]</span>
+            <span class="news-content">Invited to be a Senior Program Committee of AAAI 2026 AI Alignment Track</span>
+          </li>
+          
+          <li class="news-item">
+            <span class="news-date">[08.2025]</span>
+            <span class="news-content">One paper on Dynamic Collaboration of Multi-Language Models is accepted by EMNLP 2025 and selected for an <span class="news-highlight">ORAL presentation</span> at the Main Conference</span>
+          </li>
+          
+          <li class="news-item">
+            <span class="news-date">[07.2025]</span>
+            <span class="news-content">Three papers on MLLM for de-identity body and facial emotion understanding, and rPPG are accepted by ACMMM 2025</span>
+          </li>
+          
+          <li class="news-item">
+            <span class="news-date">[06.2025]</span>
+            <span class="news-content">One paper on face anti-spoofing is accepted by ICCV 2025</span>
+          </li>
+          
+          <li class="news-item">
+            <span class="news-date">[06.2025]</span>
+            <span class="news-content">One paper on Audio-visual Understanding with MLLM is accepted by IEEE T-PAMI</span>
+          </li>
+          
+          <li class="news-item">
+            <span class="news-date">[05.2025]</span>
+            <span class="news-content">One paper on rPPG via Integration of Explicit and Implicit Prior Knowledge is accepted by IEEE T-IP</span>
+          </li>
+          
+          <li class="news-item">
+            <span class="news-date">[04.2025]</span>
+            <span class="news-content">We are organizing the Multimodal Emotion Recognition Challenge and Workshop with ACMMM 2025</span>
+          </li>
+          
+          <li class="news-item">
+            <span class="news-date">[03.2025]</span>
+            <span class="news-content">We are organizing the Subtle Visual Computing Workshop & 1st Multimodal Deception Detection Competition with ACMMM 2025</span>
+          </li>
+          
+          <li class="news-item">
+            <span class="news-date">[02.2025]</span>
+            <span class="news-content">Two papers on Artistic Sports Understanding and Periodic Capability of Multimodal Large Language Model are accepted by CVPR 2025</span>
+          </li>
+          
+          <li class="news-item">
+            <span class="news-date">[01.2025]</span>
+            <span class="news-content">One paper on Vision Transformer for Camouflaged Object and Salient Object Detection is accepted by IEEE T-IP</span>
+          </li>
+        </ul>
       </div>
 
       <!-- Selected Publications部分保持不变 -->
