@@ -33,7 +33,7 @@
       font-weight: 600;
       color: #0366d6;
       margin-right: 8px;
-      font-style: normal; /* 日期改为斜体 italic*/
+      font-style: italic; /* 日期改为斜体 */
     }
     
     .news-content {
@@ -42,6 +42,23 @@
     
     .news-highlight {
       font-weight: 600;
+    }
+    
+    /* More链接样式 */
+    .news-more {
+      margin-top: 15px;
+      text-align: right;
+    }
+    
+    .news-more-link {
+      color: #0366d6;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 14px;
+    }
+    
+    .news-more-link:hover {
+      text-decoration: underline;
     }
     
     /* 出版物名称斜体加粗 */
@@ -68,6 +85,7 @@
     <a href="research.html" class="nav-item">Research</a>
     <a href="team.html" class="nav-item">Team</a>
     <a href="position.html" class="nav-item">Positions</a>
+    <a href="news.html" class="nav-item">News</a> <!-- 添加News页面链接 -->
     <a href="https://scholar.google.com/citations?user=xHkC5U0AAAAJ" target="_blank" class="nav-item external">
       Google Scholar
       <svg class="ext-icon" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor">
@@ -156,6 +174,11 @@
             <span class="news-content">One paper on Vision Transformer for Camouflaged Object and Salient Object Detection is accepted by <em><b>IEEE T-IP</b></em></span>
           </li>
         </ul>
+        
+        <!-- 添加More链接 -->
+        <div class="news-more">
+          <a href="news.html" class="news-more-link">More News &raquo;</a>
+        </div>
       </div>
 
       <!-- Selected Publications部分 - 出版物名称改为斜体加粗 -->
