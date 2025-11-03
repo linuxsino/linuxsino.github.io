@@ -190,3 +190,80 @@ body {
   margin-top: 0.5rem;
   word-break: break-all;
 }
+
+/* ===== News栏目样式 ===== */
+.news-section {
+  margin: 40px 0 30px;
+}
+
+.news-section h2 {
+  margin-bottom: 20px;
+  color: #000; /* News标题黑色 */
+}
+
+.news-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.news-item {
+  margin-bottom: 12px;
+  line-height: 1.5;
+  padding-left: 0;
+  color: #000;
+}
+
+.news-date {
+  font-weight: 600;
+  color: #0366d6;
+  margin-right: 8px;
+  font-style: italic; /* 日期斜体 */
+}
+
+.news-content {
+  color: #000;
+}
+
+.news-highlight {
+  font-weight: 600;
+}
+
+/* More链接样式 */
+.news-more {
+  margin-top: 15px;
+  text-align: right;
+}
+
+.news-more-link {
+  color: #0366d6;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.news-more-link:hover {
+  text-decoration: underline;
+}
+
+/* 出版物名称斜体加粗 */
+.publications li strong {
+  font-style: italic;
+  font-weight: 700;
+  color: #0366d6;
+}
+
+.publications li {
+  margin-bottom: 12px;
+  line-height: 1.5;
+}
+
+.publications em {
+  font-style: italic;
+  color: #24292e;
+}
+
+.publications em b {
+  font-weight: bold;
+  color: inherit;
+}
