@@ -137,7 +137,7 @@ body {
 }
 
 .news-item {
-  margin-bottom: 8px; /* 减少间距 */
+  margin-bottom: 2px; /* 减少间距 */
   line-height: 1.4; /* 稍微减少行高 */
   padding: 0.3em 0; /* 减少内边距 */
   color: #000;
