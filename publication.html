@@ -3,8 +3,105 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Micro-gesture & Behavior Analysis – Xin Liu</title>
+  <title>Xin Liu – Research</title>
   <link rel="stylesheet" href="style.css">
+  <style>
+    .research-section {
+      margin-bottom: 3rem;
+    }
+    
+    .research-section h3 {
+      color: #2c3e50;
+      border-bottom: 2px solid #3498db;
+      padding-bottom: 0.3em;
+      margin: 2rem 0 1rem 0;
+      font-size: 1.4em;
+    }
+    
+    .research-highlight {
+      background-color: #f8f9fa;
+      border-left: 4px solid #3498db;
+      padding: 1.5rem;
+      margin: 1.5rem 0;
+      border-radius: 0 4px 4px 0;
+    }
+    
+    .research-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2rem;
+      margin: 2rem 0;
+    }
+    
+    .research-card {
+      background: #f8f9fa;
+      padding: 1.5rem;
+      border-radius: 8px;
+      border: 1px solid #eaeaea;
+      transition: all 0.3s ease;
+    }
+    
+    .research-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+    }
+    
+    .research-card h4 {
+      color: #2c3e50;
+      margin-bottom: 1rem;
+      font-size: 1.2em;
+    }
+    
+    .research-keywords {
+      margin-top: 1rem;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+    }
+    
+    .keyword {
+      background: #3498db;
+      color: white;
+      padding: 0.3rem 0.8rem;
+      border-radius: 20px;
+      font-size: 0.85em;
+      font-weight: 500;
+    }
+    
+    .research-overview {
+      font-size: 1.1em;
+      line-height: 1.6;
+      color: #2c3e50;
+      margin-bottom: 2rem;
+    }
+    
+    .research-link {
+      display: inline-block;
+      background: #3498db;
+      color: white;
+      padding: 0.8rem 1.5rem;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: 600;
+      transition: all 0.3s ease;
+      margin-top: 1rem;
+    }
+    
+    .research-link:hover {
+      background: #2980b9;
+      transform: translateY(-2px);
+    }
+    
+    .publication-preview {
+      margin-top: 1rem;
+      font-size: 0.9em;
+    }
+    
+    .publication-preview li {
+      margin-bottom: 0.5rem;
+      line-height: 1.4;
+    }
+  </style>
 </head>
 <body>
   <div class="container">
@@ -40,40 +137,109 @@
 
     <main class="main">
       
-<h2>Micro-gesture & Behavior Analysis</h2>
+<h2>Research</h2>
 
 <div class="research-overview">
-  This research direction focuses on developing identity-free emotion recognition through micro-gestures and micro-movements, preserving privacy while maintaining accurate emotional assessment. We pioneer non-identity micro-gesture video data systems that eliminate facial and vocal identity information, establishing new paradigms for subconscious behavioral analysis.
+  My research focuses on the deep integration of artificial intelligence and psychological behavioral science, centered around the core theme of "Trustworthy Affective Computing." I have proposed and implemented a comprehensive psychological understanding system that spans from data collection to model construction, and from input security to output trustworthiness.
 </div>
 
-<ol reversed class="publication-list">
-  <li>D. Li, J. Shao, B. Xing, R. Gao, B. Wen, H. Kälviäinen, and <b>X. Liu*</b>. "MSF-Mamba: Motion-aware State Fusion Mamba for Efficient Micro-Gesture Recognition." <i><b>IEEE Transactions on Multimedia</b></i>, 2025.</li>
+<div class="research-highlight">
+  <strong>Research Vision:</strong> To develop AI systems that understand human emotions in a trustworthy, ethical, and psychologically-grounded manner, enabling applications in mental health, human-computer interaction, and public safety.
+</div>
 
-  <li>B. Xing, D. Li, R. Gao, <b>X. Liu*</b>, and H. Kälviäinen. "MGMILA: Eulerian Motion-Aware MILA for Micro-Gesture Recognition." <i><b>Machine Intelligence Research</b></i>, 2025.</li>
+<div class="research-section">
+  <h3>Research Areas</h3>
+  
+  <div class="research-grid">
+    <div class="research-card">
+      <h4>Micro-gesture & Behavior Analysis</h4>
+      <p>Developing identity-free emotion recognition through micro-gestures and micro-movements, preserving privacy while maintaining accurate emotional assessment.</p>
+      <div class="research-keywords">
+        <span class="keyword">Micro-gestures</span>
+        <span class="keyword">De-identification</span>
+        <span class="keyword">Behavioral Data</span>
+      </div>
+      <div class="publication-preview">
+        <strong>Key Publications:</strong>
+        <ul>
+          <li>iMiGUE (CVPR 2021)</li>
+          <li>SMG (IJCV 2023)</li>
+          <li>MSF-Mamba (T-MM 2025)</li>
+        </ul>
+      </div>
+      <a href="research-microgesture.html" class="research-link">View Publications</a>
+    </div>
+    
+    <div class="research-card">
+      <h4>Trustworthy Multimodal AI</h4>
+      <p>Ensuring AI emotion understanding is secure, identity-independent, and free from emotional hallucinations through robust verification mechanisms.</p>
+      <div class="research-keywords">
+        <span class="keyword">Face Anti-spoofing</span>
+        <span class="keyword">Multimodal LLMs</span>
+        <span class="keyword">Trustworthy AI</span>
+      </div>
+      <div class="publication-preview">
+        <strong>Key Publications:</strong>
+        <ul>
+          <li>DiffFAS (ECCV 2024)</li>
+          <li>DEEMO (ACMMM 2025)</li>
+          <li>CAT+ (TPAMI 2025)</li>
+        </ul>
+      </div>
+      <a href="research-trustworthy-ai.html" class="research-link">View Publications</a>
+    </div>
+    
+    <div class="research-card">
+      <h4>Remote Physiological Measurement</h4>
+      <p>Advancing non-contact physiological signal analysis through rPPG and implicit emotion modeling for mental health monitoring.</p>
+      <div class="research-keywords">
+        <span class="keyword">rPPG</span>
+        <span class="keyword">Physiological Signals</span>
+        <span class="keyword">Mental Health</span>
+      </div>
+      <div class="publication-preview">
+        <strong>Key Publications:</strong>
+        <ul>
+          <li>Period-LLM (CVPR 2025)</li>
+          <li>rPPG-MAE (TMM 2024)</li>
+          <li>CodePhys (JBHI 2025)</li>
+        </ul>
+      </div>
+      <a href="research-physiological.html" class="research-link">View Publications</a>
+    </div>
 
-  <li>D. Li, B. Xing, and <b>X. Liu*</b>. "Enhancing Micro Gesture Recognition for Emotion Understanding via Context-aware Visual-Text Contrastive Learning." <i><b>IEEE Signal Processing Letters</b></i>, 2024. <a href="https://github.com/linuxsino/Visual-Text-MG" target="_blank" rel="noopener noreferrer" class="source-code-link">source code</a></li>
+    <div class="research-card">
+      <h4>Computer Vision & Image Processing</h4>
+      <p>Developing fundamental computer vision algorithms for image restoration, enhancement, and visual understanding.</p>
+      <div class="research-keywords">
+        <span class="keyword">Image Restoration</span>
+        <span class="keyword">Video Enhancement</span>
+        <span class="keyword">Visual Computing</span>
+      </div>
+      <div class="publication-preview">
+        <strong>Key Publications:</strong>
+        <ul>
+          <li>LSD (TIP 2015) - ESI Highly Cited</li>
+          <li>Video Demoiréing (NeurIPS 2023)</li>
+          <li>Zero-shot Restoration (AAAI 2025)</li>
+        </ul>
+      </div>
+      <a href="research-vision.html" class="research-link">View Publications</a>
+    </div>
+  </div>
+</div>
 
-  <li>H. Chen, H. Shi, <b>X. Liu</b>, X. Li, and G. Zhao. "SMG: A Micro-Gesture Dataset Towards Spontaneous Body Gestures for Emotional Stress State Analysis." <i><b>International Journal of Computer Vision (IJCV)</b></i>, 2023.</li>
-
-  <li><b>X. Liu</b>, H. Shi, H. Chen, Z. Yu, X. Li, and G. Zhao. "iMiGUE: An Identity-free Video Dataset for Micro-Gesture Understanding and Emotion Analysis." <i><b>IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)</b></i>, pp. 10631-10642, 2021. <a href="https://github.com/linuxsino/iMiGUE" target="_blank" rel="noopener noreferrer" class="source-code-link">project page</a></li>
-
-  <li>H. Shi, W. Peng, H. Chen, <b>X. Liu</b>, and G. Zhao. "Multiscale 3D Shift Graph Convolution Network for Emotion Recognition from Human Actions." <i><b>IEEE Intelligent Systems</b></i>, Vol. 37, Issue 4, pp. 103-110, 2022.</li>
-
-  <li><b>X. Liu</b> and G. Zhao. "3D Skeletal Gesture Recognition using Sparse Coding of Time-Warping Invariant Riemannian Trajectories." <i><b>IEEE Transactions on Multimedia</b></i>, Vol. 23, pp. 1841–1854, 2021.</li>
-
-  <li>Z. Yu, B. Zhou, J. Wan, P. Wang, H. Chen, <b>X. Liu</b>, S. Li, and G. Zhao. "Searching Multi-Rate and Multi-Modal Temporal Enhanced Networks for Gesture Recognition." <i><b>IEEE Transactions on Image Processing</b></i>, Vol. 30, pp. 5626 - 5640, 2021. <b>The second prize of IEEE Finland Jt. Chapter SP/CAS Best Paper Award.</b></li>
-
-  <li><b>X. Liu</b>, H. Shi, X. Hong, H. Chen, D. Tao, and G. Zhao. "3D Skeletal Gesture Recognition via Hidden States Exploration." <i><b>IEEE Transactions on Image Processing</b></i>, vol. 29, pp. 4583–4597, 2020.</li>
-
-  <li>H. Chen, <b>X. Liu</b>, J. Shi, and G. Zhao. "Temporal hierarchical dictionary guided decoding for online gesture segmentation and recognition." <i><b>IEEE Transactions on Image Processing</b></i>, vol. 29, pp. 9689–9702, 2020.</li>
-
-  <li>H. Chen, <b>X. Liu</b>, X. Li, and G. Zhao. "Analyze Spontaneous Gestures for Emotional Stress State Recognition: A Micro-Gesture Dataset and Analysis with Deep Learning." <i><b>IEEE International Conference on Automatic Face & Gesture Recognition (FG)</b></i>, 2019.</li>
-
-  <li>H. Chen, <b>X. Liu</b>, and G. Zhao. "Temporal Hierarchical Dictionary with HMM for Fast Gesture Recognition." <i><b>International Conference on Pattern Recognition (ICPR)</b></i>, 2018.</li>
-</ol>
-
-<div style="margin-top: 2rem; text-align: center;">
-  <a href="research.html" class="news-more-link">&laquo; Back to Research Overview</a>
+<div class="research-section">
+  <h3>Research Impact</h3>
+  
+  <p>The integrated research framework establishes a complete trustworthy loop—from input source control through reasoning process modeling to output result correction and ethical control. This approach provides theoretical support and technical pathways for sustainable development of AI emotion recognition in critical domains including:</p>
+  
+  <ul>
+    <li><strong>Mental Health:</strong> Objective assessment tools for psychological well-being and emotional disorders</li>
+    <li><strong>Human-Computer Interaction:</strong> Ethical and psychologically-aware interactive systems</li>
+    <li><strong>Public Safety:</strong> Reliable emotional state monitoring in security-critical environments</li>
+    <li><strong>Healthcare:</strong> Non-contact physiological monitoring for clinical applications</li>
+  </ul>
 </div>
 
     </main>
