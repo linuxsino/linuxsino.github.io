@@ -74,6 +74,67 @@
       color: #2c3e50;
       margin-bottom: 2rem;
     }
+    
+    .achievement-item {
+      margin-bottom: 1.5rem;
+      padding-left: 1rem;
+      border-left: 3px solid #eaeaea;
+    }
+    
+    .achievement-title {
+      font-weight: 600;
+      color: #2c3e50;
+      margin-bottom: 0.5rem;
+    }
+    
+    .achievement-ref {
+      display: inline-block;
+      background: #e74c3c;
+      color: white;
+      padding: 0.2rem 0.6rem;
+      border-radius: 4px;
+      font-size: 0.8em;
+      font-weight: 600;
+      margin-right: 0.5rem;
+    }
+    
+    .achievement-ref.patent {
+      background: #27ae60;
+    }
+    
+    .citation {
+      font-style: italic;
+      color: #666;
+      border-left: 3px solid #f39c12;
+      padding-left: 1rem;
+      margin: 1rem 0;
+    }
+    
+    .impact-stats {
+      display: flex;
+      justify-content: space-around;
+      text-align: center;
+      margin: 2rem 0;
+      padding: 1.5rem;
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      color: white;
+      border-radius: 8px;
+    }
+    
+    .stat-item {
+      flex: 1;
+    }
+    
+    .stat-number {
+      font-size: 2em;
+      font-weight: bold;
+      margin-bottom: 0.5rem;
+    }
+    
+    .stat-label {
+      font-size: 0.9em;
+      opacity: 0.9;
+    }
   </style>
 </head>
 <body>
@@ -113,114 +174,166 @@
 <h2>Research</h2>
 
 <div class="research-overview">
-  My research focuses on the deep integration of artificial intelligence and psychological behavioral science, centered around the core theme of "Trustworthy Affective Computing." I have proposed and implemented a comprehensive psychological understanding system that spans from data collection to model construction, and from input security to output trustworthiness. This work advances emotion recognition from laboratory paradigms reliant on identity and explicit facial/speech signals toward de-identified, ethically-aware, psychologically-consistent, and practically-oriented general recognition frameworks.
+  My research focuses on the deep integration of artificial intelligence and psychological behavioral science, centered around the core theme of "Trustworthy Affective Computing." I have established a comprehensive research framework spanning computational infrastructure, multimodal trustworthy understanding, and implicit emotion modeling.
 </div>
 
-<div class="research-highlight">
-  <strong>Research Vision:</strong> To develop AI systems that understand human emotions in a trustworthy, ethical, and psychologically-grounded manner, enabling applications in mental health, human-computer interaction, and public safety.
+<div class="impact-stats">
+  <div class="stat-item">
+    <div class="stat-number">3</div>
+    <div class="stat-label">Core Research Directions</div>
+  </div>
+  <div class="stat-item">
+    <div class="stat-number">2/3</div>
+    <div class="stat-label">Core Resources in Micro-behavior Research</div>
+  </div>
+  <div class="stat-item">
+    <div class="stat-number">38</div>
+    <div class="stat-label">LLMs Evaluated for Emotional Hallucinations</div>
+  </div>
 </div>
 
 <div class="research-section">
-  <h3>Research Framework</h3>
+  <h3>1. Computational Infrastructure for Non-verbal Psychological Intelligence</h3>
+  
+  <p>Pioneering identity-free micro-gesture and micro-movement video data systems based on psychological theories of non-verbal subconscious micro-behaviors, establishing a new paradigm of "identity-unrecognizable yet emotion-sensitive" psychological decoding.</p>
+  
+  <div class="achievement-item">
+    <div class="achievement-title">
+      <span class="achievement-ref">A15</span>iMiGUE: The First Micro-gesture Emotion Understanding Benchmark
+    </div>
+    <p>Systematically collected over 18,000 natural interaction segments from post-match interviews with nearly 100 athletes across 28 countries, focusing on emotion cues from subconscious muscle movements with strong anti-spoofing characteristics.</p>
+  </div>
+  
+  <div class="achievement-item">
+    <div class="achievement-title">
+      <span class="achievement-ref">A14</span>SMG Dataset: Psychological Stress State Analysis
+    </div>
+    <p>First synchronized collection of individual psychological stress states and micro-gesture change signals, advancing fine-grained modeling for non-contact mental health monitoring.</p>
+  </div>
+  
+  <div class="achievement-item">
+    <div class="achievement-title">
+      <span class="achievement-ref">A6</span>FSBench: Artistic Performance Psychology Dataset
+    </div>
+    <p>First emotional expression video dataset for figure skating, systematically analyzing emotional expression in sports performance art and audience emotional resonance.</p>
+  </div>
+  
+  <div class="research-highlight">
+    <strong>Impact:</strong> These datasets constitute two-thirds of the core foundational resources in international subconscious micro-behavior research and have become the de facto standard testing benchmarks. Supported by multiple key patents (PT3, PT5, PT8) covering identity removal, micro-action modeling, and cross-modal emotion consistency verification.
+  </div>
+  
+  <div class="citation">
+    "Highly evaluated by international scholars including Prof. Cynthia Breazeal (AAAI Fellow), Prof. James Z. Wang (ACM Fellow), Prof. Michelle G. Newman (APA Fellow), Prof. Tsuhan Chen (Singapore Academy of Engineering), and Prof. Björn W. Schuller (Editor-in-Chief of IEEE Trans. Affective Computing) for its potential in understanding genuine emotions, assisting psychological assessment, and improving AI emotional sensitivity."
+  </div>
+</div>
+
+<div class="research-section">
+  <h3>2. Trustworthy Multimodal Emotion Understanding in Large Models</h3>
+  
+  <p>Addressing three critical challenges in AI emotion understanding: input authenticity, identity-independent reasoning, and emotional hallucination assessment.</p>
+  
+  <div class="achievement-item">
+    <div class="achievement-title">
+      <span class="achievement-ref">A11</span>DiffFAS: Generative Diffusion for Face Anti-spoofing
+    </div>
+    <p>First introduction of generative diffusion models to face anti-spoofing tasks through spatio-temporal progressive denoising mechanisms, significantly enhancing emotion analysis system security in cross-domain testing.</p>
+  </div>
+  
+  <div class="achievement-item">
+    <div class="achievement-title">
+      <span class="achievement-ref">A2</span>DEEMO: De-identity Multimodal Emotion Reasoning
+    </div>
+    <p>Breakthrough framework integrating identity information stripping with multimodal emotion reasoning, achieving input person identity desensitization while preserving emotional expression context consistency.</p>
+  </div>
+  
+  <div class="achievement-item">
+    <div class="achievement-title">
+      <span class="achievement-ref">A5</span>CAT+: Emotion Synergy in Multimodal LLMs
+    </div>
+    <p>Introducing emotion synergy mechanisms to model emotional resonance processes across facial, vocal, and textual modalities, enhancing psychological consistency and cross-modal robustness.</p>
+  </div>
+  
+  <div class="achievement-item">
+    <div class="achievement-title">
+      <span class="achievement-ref">A1</span>EmotionHallucer: Emotional Hallucination Assessment
+    </div>
+    <p>World's first evaluation system focused on emotional hallucination phenomena in large models, systematically assessing 38 mainstream models and establishing quantifiable hallucination degree indicators.</p>
+  </div>
+  
+  <div class="research-highlight">
+    <strong>Technical Defense Systems:</strong> Reconstructed Vision Transformer and Masked Autoencoder architectures (IJCV 2024), consistency regularization methods (TIFS 2023), and domain-modality dual alignment frameworks (ICCV 2025) to address cross-domain challenges.
+  </div>
+</div>
+
+<div class="research-section">
+  <h3>3. Implicit Emotion Modeling: From Micro-visual Signals to Autonomic Decoding</h3>
+  
+  <p>Establishing a complete pathway from micro-visual signal capture to physiological rhythm modeling and implicit psychological state recognition, based on psychophysiological mechanisms of autonomic nervous responses.</p>
+  
+  <div class="achievement-item">
+    <div class="achievement-title">
+      <span class="achievement-ref">A7</span>Period-LLM: Multimodal LLM for rPPG Modeling
+    </div>
+    <p>First introduction of AI large models into rPPG modeling pipeline, significantly improving extraction accuracy and cross-scene adaptation of non-contact physiological signals including heart rate variability, respiratory patterns, and blood flow dynamics.</p>
+  </div>
+  
+  <div class="achievement-item">
+    <div class="achievement-title">
+      <span class="achievement-ref">A13</span>rPPG-MAE: Self-supervised Micro-visual Modeling
+    </div>
+    <p>Utilizing self-supervised micro-visual modeling strategies to enhance rPPG signal stability and individual generalization capability.</p>
+  </div>
+  
+  <div class="achievement-item">
+    <div class="achievement-title">
+      <span class="achievement-ref">A9</span>Vision Transformer for Subtle Target Detection
+    </div>
+    <p>Pioneering simultaneous detection theoretical framework for salient and implicit targets, advancing subtle emotion signal recovery.</p>
+  </div>
+  
+  <div class="achievement-item">
+    <div class="achievement-title">
+      <span class="achievement-ref">A20</span>LSD: Low-rank and Structured Sparse Decomposition
+    </div>
+    <p>ESI highly cited paper providing fundamental modeling framework for implicit signal analysis, widely cited by international leading scholars including Academy Fellows Dacheng Tao, Wenwu Zhu, Xuelong Li, and IEEE Life Fellows Mubarak Shah, Matti Pietikäinen.</p>
+  </div>
+  
+  <div class="research-highlight">
+    <strong>Patent Portfolio:</strong> Multiple core patents (PT2, PT6, PT9, PT12) covering rPPG signal extraction, micro-visual behavior perception, subtle target enhancement, and temporal rhythm reconstruction, enabling end-to-end modeling from perceptual signals to psychological mechanisms.
+  </div>
+</div>
+
+<div class="research-section">
+  <h3>Research Impact and Applications</h3>
   
   <div class="research-grid">
     <div class="research-card">
-      <h4>Data Foundation</h4>
-      <p>Pioneering non-identity micro-gesture and micro-movement video data systems that eliminate facial and vocal identity information. Establishing research paradigms for micro-behavior analysis and long-term emotional motivation tracing.</p>
+      <h4>Mental Health</h4>
+      <p>Objective assessment tools for psychological well-being, stress detection, and emotional disorders through non-contact physiological monitoring.</p>
       <div class="research-keywords">
-        <span class="keyword">Micro-gestures</span>
-        <span class="keyword">De-identification</span>
-        <span class="keyword">Behavioral Data</span>
+        <span class="keyword">Stress Detection</span>
+        <span class="keyword">Anxiety Assessment</span>
       </div>
     </div>
     
     <div class="research-card">
-      <h4>Technical Innovation</h4>
-      <p>Systematic design across three core components: input authenticity verification, causal emotion reasoning, and trustworthy output control. Integrating psychological theories into AI model architectures for explainable and consistent emotion understanding.</p>
+      <h4>Human-Computer Interaction</h4>
+      <p>Ethical and psychologically-aware interactive systems with identity-preserving emotion understanding capabilities.</p>
       <div class="research-keywords">
-        <span class="keyword">Causal Reasoning</span>
-        <span class="keyword">Psychology-AI</span>
-        <span class="keyword">Trustworthy AI</span>
+        <span class="keyword">Social Robotics</span>
+        <span class="keyword">Ethical HCI</span>
       </div>
     </div>
     
     <div class="research-card">
-      <h4>Application Domains</h4>
-      <p>Developing practical solutions for mental health assessment, ethical human-computer interaction, and public safety applications. Ensuring AI emotional intelligence aligns with human psychological principles and ethical standards.</p>
+      <h4>Public Safety & Healthcare</h4>
+      <p>Reliable emotional state monitoring in security-critical environments and clinical mental health support systems.</p>
       <div class="research-keywords">
-        <span class="keyword">Mental Health</span>
-        <span class="keyword">HCI</span>
-        <span class="keyword">Public Safety</span>
+        <span class="keyword">Fatigue Detection</span>
+        <span class="keyword">Clinical Assessment</span>
       </div>
     </div>
   </div>
-</div>
-
-<div class="research-section">
-  <h3>Key Research Directions</h3>
-  
-  <div class="research-section">
-    <h4>1. De-identified Affective Computing</h4>
-    <p>Developing emotion recognition systems that operate without relying on identity-revealing facial or vocal features. This approach preserves privacy while maintaining accurate emotional assessment through micro-behavioral analysis and physiological signals.</p>
-    
-    <div class="research-highlight">
-      <strong>Key Innovation:</strong> First comprehensive framework for identity-free emotional state analysis using micro-gestures and micro-movements, addressing privacy concerns in real-world applications.
-    </div>
-  </div>
-  
-  <div class="research-section">
-    <h4>2. Input Authenticity and Security</h4>
-    <p>Implementing robust anti-spoofing mechanisms through liveness detection, micro-expression dynamic consistency analysis, and temporal physiological signal verification. This ensures systems can distinguish genuine human emotional expressions from synthetic or manipulated inputs.</p>
-    
-    <div class="research-highlight">
-      <strong>Technical Focus:</strong> Multi-modal authenticity verification combining facial action units, micro-expressions, and physiological signals for reliable input validation.
-    </div>
-  </div>
-  
-  <div class="research-section">
-    <h4>3. Psychology-Guided AI Reasoning</h4>
-    <p>Integrating established psychological theories—such as subconscious micro-behavior analysis and facial action unit-emotion mapping—into large AI model architectures. This transforms emotion recognition from black-box classification to psychologically-constrained causal understanding.</p>
-    
-    <div class="research-highlight">
-      <strong>Theoretical Foundation:</strong> Systematic embedding of psychological constraints in AI reasoning processes, enhancing model interpretability, controllability, and psychological consistency.
-    </div>
-  </div>
-  
-  <div class="research-section">
-    <h4>4. Trustworthy Output and Ethical Control</h4>
-    <p>Addressing emotional "hallucinations" in large models through causal chain-constrained correction mechanisms and ethical intervention modules. This ensures AI emotional feedback maintains ethical consistency and psychological credibility.</p>
-    
-    <div class="research-highlight">
-      <strong>Ethical Framework:</strong> Novel approaches for identifying and correcting unreasonable emotional judgments or potential manipulation risks in model outputs.
-    </div>
-  </div>
-</div>
-
-<div class="research-section">
-  <h3>Research Impact</h3>
-  
-  <p>The integrated research framework establishes a complete trustworthy loop—from input source control through reasoning process modeling to output result correction and ethical control. This three-in-one approach provides theoretical support and technical pathways for sustainable development of AI emotion recognition in critical domains including:</p>
-  
-  <ul>
-    <li><strong>Mental Health:</strong> Objective assessment tools for psychological well-being and emotional disorders</li>
-    <li><strong>Human-Computer Interaction:</strong> Ethical and psychologically-aware interactive systems</li>
-    <li><strong>Public Safety:</strong> Reliable emotional state monitoring in security-critical environments</li>
-    <li><strong>Education:</strong> Adaptive learning systems responsive to student emotional states</li>
-  </ul>
-</div>
-
-<div class="research-section">
-  <h3>Future Directions</h3>
-  
-  <p>Current research efforts are expanding toward:</p>
-  
-  <ul>
-    <li>Cross-cultural emotional intelligence in AI systems</li>
-    <li>Real-time trustworthy emotion recognition for dynamic environments</li>
-    <li>Integration of neurophysiological signals with behavioral analysis</li>
-    <li>Development of standardized benchmarks for trustworthy affective computing</li>
-    <li>Ethical frameworks for emotion AI deployment in sensitive applications</li>
-  </ul>
 </div>
 
     </main>
