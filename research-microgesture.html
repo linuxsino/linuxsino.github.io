@@ -21,28 +21,16 @@
       padding: 2rem;
       background: #f8f9fa;
       border-radius: 12px;
-      border: 2px dashed #3498db;
+      border: 2px solid #3498db;
     }
     
     .research-gif {
+      width: 600px;
       max-width: 100%;
       height: auto;
       border-radius: 8px;
-      box-shadow: 0 8px 25px rgba(0,0,0,0.1);
-    }
-    
-    .gif-placeholder {
-      width: 100%;
-      height: 300px;
-      background: linear-gradient(45deg, #f8f9fa 25%, #e9ecef 25%, #e9ecef 50%, #f8f9fa 50%, #f8f9fa 75%, #e9ecef 75%);
-      background-size: 20px 20px;
-      border-radius: 8px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: #6c757d;
-      font-size: 1.1em;
-      border: 2px dashed #adb5bd;
+      box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+      border: 1px solid #eaeaea;
     }
     
     .research-visual-icon {
@@ -62,6 +50,13 @@
       border-radius: 8px;
       margin: 2rem 0;
       border-left: 4px solid #667eea;
+    }
+    
+    .gif-caption {
+      margin-top: 1rem;
+      font-size: 0.9em;
+      color: #666;
+      line-height: 1.4;
     }
   </style>
 </head>
@@ -112,24 +107,55 @@
   <h3>Research Demonstration</h3>
   <p>Micro-gesture analysis in real-world scenarios</p>
   
-  <!-- 这里放置GIF图片 -->
-  <div class="gif-placeholder">
-    [GIF: Micro-gesture Detection Demo]
-    <img src="images/research/imigue.gif" alt="Micro-gesture Analysis Demo" class="research-gif">
-  </div>
+  <img src="images/research/imigue.gif" alt="Micro-gesture Analysis Demo" class="research-gif">
   
-  <p style="margin-top: 1rem; font-size: 0.9em; color: #666;">
-    <em>Demonstration of our micro-gesture recognition system analyzing subtle behavioral cues</em>
-  </p>
+  <div class="gif-caption">
+    <em>Demonstration of our iMiGUE dataset and micro-gesture recognition system analyzing subtle behavioral cues from post-match interviews. The system identifies micro-gestures while preserving identity privacy.</em>
+  </div>
 </div>
 
 <div class="research-description">
   <p>This research direction focuses on developing identity-free emotion recognition through micro-gestures and micro-movements. We pioneer non-identity micro-gesture video data systems that eliminate facial and vocal identity information, establishing new paradigms for subconscious behavioral analysis. Our work enables emotion understanding while preserving individual privacy, making it suitable for real-world applications where identity protection is crucial.</p>
 </div>
 
-<!-- 论文列表保持不变 -->
 <ol reversed class="publication-list">
-  <!-- 论文内容 -->
+  <li>D. Li, J. Shao, B. Xing, R. Gao, B. Wen, H. Kälviäinen, and <b>X. Liu*</b>. "MSF-Mamba: Motion-aware State Fusion Mamba for Efficient Micro-Gesture Recognition." <i><b>IEEE Transactions on Multimedia</b></i>, 2025.</li>
+
+  <li>B. Xing, D. Li, R. Gao, <b>X. Liu*</b>, and H. Kälviäinen. "MGMILA: Eulerian Motion-Aware MILA for Micro-Gesture Recognition." <i><b>Machine Intelligence Research</b></i>, 2025.</li>
+
+  <li>D. Li, B. Xing, and <b>X. Liu*</b>. "Enhancing Micro Gesture Recognition for Emotion Understanding via Context-aware Visual-Text Contrastive Learning." <i><b>IEEE Signal Processing Letters</b></i>, 2024. <a href="https://github.com/linuxsino/Visual-Text-MG" target="_blank" rel="noopener noreferrer" class="source-code-link">source code</a></li>
+
+  <li>H. Chen, H. Shi, <b>X. Liu</b>, X. Li, and G. Zhao. "SMG: A Micro-Gesture Dataset Towards Spontaneous Body Gestures for Emotional Stress State Analysis." <i><b>International Journal of Computer Vision (IJCV)</b></i>, 2023.</li>
+
+  <li><b>X. Liu</b>, H. Shi, H. Chen, Z. Yu, X. Li, and G. Zhao. "iMiGUE: An Identity-free Video Dataset for Micro-Gesture Understanding and Emotion Analysis." <i><b>IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)</b></i>, pp. 10631-10642, 2021. <a href="https://github.com/linuxsino/iMiGUE" target="_blank" rel="noopener noreferrer" class="source-code-link">project page</a></li>
+
+  <li>H. Shi, W. Peng, H. Chen, <b>X. Liu</b>, and G. Zhao. "Multiscale 3D Shift Graph Convolution Network for Emotion Recognition from Human Actions." <i><b>IEEE Intelligent Systems</b></i>, Vol. 37, Issue 4, pp. 103-110, 2022.</li>
+
+  <li><b>X. Liu</b> and G. Zhao. "3D Skeletal Gesture Recognition using Sparse Coding of Time-Warping Invariant Riemannian Trajectories." <i><b>IEEE Transactions on Multimedia</b></i>, Vol. 23, pp. 1841–1854, 2021.</li>
+
+  <li>Z. Yu, B. Zhou, J. Wan, P. Wang, H. Chen, <b>X. Liu</b>, S. Li, and G. Zhao. "Searching Multi-Rate and Multi-Modal Temporal Enhanced Networks for Gesture Recognition." <i><b>IEEE Transactions on Image Processing</b></i>, Vol. 30, pp. 5626 - 5640, 2021. <b>The second prize of IEEE Finland Jt. Chapter SP/CAS Best Paper Award.</b></li>
+
+  <li><b>X. Liu</b>, H. Shi, X. Hong, H. Chen, D. Tao, and G. Zhao. "3D Skeletal Gesture Recognition via Hidden States Exploration." <i><b>IEEE Transactions on Image Processing</b></i>, vol. 29, pp. 4583–4597, 2020.</li>
+
+  <li>H. Chen, <b>X. Liu</b>, J. Shi, and G. Zhao. "Temporal hierarchical dictionary guided decoding for online gesture segmentation and recognition." <i><b>IEEE Transactions on Image Processing</b></i>, vol. 29, pp. 9689–9702, 2020.</li>
+
+  <li>H. Chen, <b>X. Liu</b>, X. Li, and G. Zhao. "Analyze Spontaneous Gestures for Emotional Stress State Recognition: A Micro-Gesture Dataset and Analysis with Deep Learning." <i><b>IEEE International Conference on Automatic Face & Gesture Recognition (FG)</b></i>, 2019.</li>
+
+  <li>H. Chen, <b>X. Liu</b>, and G. Zhao. "Temporal Hierarchical Dictionary with HMM for Fast Gesture Recognition." <i><b>International Conference on Pattern Recognition (ICPR)</b></i>, 2018.</li>
+
+  <li><b>X. Liu</b>, H. Shi, X. Hong, H. Chen, D. Tao, and G. Zhao. "Hidden states exploration for 3D skeleton-based gesture recognition." <i><b>IEEE/CVF Winter Conference on Applications of Computer Vision (WACV)</b></i>, pp. 1846–1855, 2019.</li>
+
+  <li><b>X. Liu</b> and G. Zhao. "3D Skeletal Gesture Recognition via Sparse Coding of Time-Warping Invariant Riemannian Trajectories." <i><b>International Conference on Multimedia Modeling (MMM)</b></i>, pp. 678–690, 2019.</li>
+
+  <li>H. Shi, <b>X. Liu</b>, and G. Zhao. "Graph Adversarial Learning for Noisy Skeleton-based Action Recognition." <i><b>IS&T International Symposium on Electronic Imaging (EI)</b></i>, 2021.</li>
+
+  <li>C. Le and <b>X. Liu</b>. "Spatio-temporal Attention Graph Convolutional Networks for Skeleton-based Action Recognition." <i><b>Scandinavian Conference on Image Analysis (SCIA)</b></i>, 2023. <a href="https://github.com/MCuongLe/STA-GCN" target="_blank" rel="noopener noreferrer" class="source-code-link">source code</a></li>
+
+  <li>R. Gao, <b>X. Liu</b>, J. Yang, and H. Yue. "CdCLR: Clip-Driven Contrastive Learning for Skeleton-Based Action Recognition." <i><b>IEEE International Conference on Visual Communications and Image Processing (VCIP)</b></i>, 2022. <a href="https://github.com/Erich-G/CdCLR" target="_blank" rel="noopener noreferrer" class="source-code-link">source code</a></li>
+
+  <li>C. Liu, <b>X. Liu*</b>, Z. Yu, Y. Hou, H. Yue, and J. Yang. "Adversarial Robustness in RGB-Skeleton Action Recognition: Leveraging Attention Modality Reweighter." <i><b>IEEE International Joint Conference on Biometrics (IJCB)</b></i>, 2024.</li>
+
+  <li><b>X. Liu</b>, C. Hao, Z. Yu, H. Yue, and J. Yang. "From Recognition to Prediction: Leveraging Sequence Reasoning for Action Anticipation." <i><b>ACM Transactions on Multimedia Computing, Communications, and Applications</b></i>, 2024.</li>
 </ol>
 
 <div style="margin-top: 2rem; text-align: center;">
