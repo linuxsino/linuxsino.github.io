@@ -5,6 +5,76 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Xin Liu – Research</title>
   <link rel="stylesheet" href="style.css">
+  <style>
+    .research-section {
+      margin-bottom: 3rem;
+    }
+    
+    .research-section h3 {
+      color: #2c3e50;
+      border-bottom: 2px solid #3498db;
+      padding-bottom: 0.3em;
+      margin: 2rem 0 1rem 0;
+      font-size: 1.4em;
+    }
+    
+    .research-highlight {
+      background-color: #f8f9fa;
+      border-left: 4px solid #3498db;
+      padding: 1.5rem;
+      margin: 1.5rem 0;
+      border-radius: 0 4px 4px 0;
+    }
+    
+    .research-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2rem;
+      margin: 2rem 0;
+    }
+    
+    .research-card {
+      background: #f8f9fa;
+      padding: 1.5rem;
+      border-radius: 8px;
+      border: 1px solid #eaeaea;
+      transition: all 0.3s ease;
+    }
+    
+    .research-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+    }
+    
+    .research-card h4 {
+      color: #2c3e50;
+      margin-bottom: 1rem;
+      font-size: 1.2em;
+    }
+    
+    .research-keywords {
+      margin-top: 1rem;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+    }
+    
+    .keyword {
+      background: #3498db;
+      color: white;
+      padding: 0.3rem 0.8rem;
+      border-radius: 20px;
+      font-size: 0.85em;
+      font-weight: 500;
+    }
+    
+    .research-overview {
+      font-size: 1.1em;
+      line-height: 1.6;
+      color: #2c3e50;
+      margin-bottom: 2rem;
+    }
+  </style>
 </head>
 <body>
   <div class="container">
@@ -17,11 +87,12 @@
   </div>
   
   <nav class="main-nav">
-    <a href="index.html" class="nav-item active">Home</a>
+    <a href="index.html" class="nav-item">Home</a>
     <a href="publication.html" class="nav-item">Publications</a>
-    <a href="research.html" class="nav-item">Research</a>
+    <a href="research.html" class="nav-item active">Research</a>
     <a href="team.html" class="nav-item">Team</a>
     <a href="position.html" class="nav-item">Positions</a>
+    <a href="news.html" class="nav-item">News</a>
     <a href="https://scholar.google.com/citations?user=xHkC5U0AAAAJ" target="_blank" class="nav-item external">
       Google Scholar
       <svg class="ext-icon" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor">
@@ -40,13 +111,117 @@
     <main class="main">
       
 <h2>Research</h2>
-<p>Research topics include:</p>
-<ul>
-  <li>Emotion AI</li>
-  <li>Human behavior analysis</li>
-  <li>Image restoration</li>
-  <li>Generative AI</li>
-</ul>
+
+<div class="research-overview">
+  My research focuses on the deep integration of artificial intelligence and psychological behavioral science, centered around the core theme of "Trustworthy Affective Computing." I have proposed and implemented a comprehensive psychological understanding system that spans from data collection to model construction, and from input security to output trustworthiness. This work advances emotion recognition from laboratory paradigms reliant on identity and explicit facial/speech signals toward de-identified, ethically-aware, psychologically-consistent, and practically-oriented general recognition frameworks.
+</div>
+
+<div class="research-highlight">
+  <strong>Research Vision:</strong> To develop AI systems that understand human emotions in a trustworthy, ethical, and psychologically-grounded manner, enabling applications in mental health, human-computer interaction, and public safety.
+</div>
+
+<div class="research-section">
+  <h3>Research Framework</h3>
+  
+  <div class="research-grid">
+    <div class="research-card">
+      <h4>Data Foundation</h4>
+      <p>Pioneering non-identity micro-gesture and micro-movement video data systems that eliminate facial and vocal identity information. Establishing research paradigms for micro-behavior analysis and long-term emotional motivation tracing.</p>
+      <div class="research-keywords">
+        <span class="keyword">Micro-gestures</span>
+        <span class="keyword">De-identification</span>
+        <span class="keyword">Behavioral Data</span>
+      </div>
+    </div>
+    
+    <div class="research-card">
+      <h4>Technical Innovation</h4>
+      <p>Systematic design across three core components: input authenticity verification, causal emotion reasoning, and trustworthy output control. Integrating psychological theories into AI model architectures for explainable and consistent emotion understanding.</p>
+      <div class="research-keywords">
+        <span class="keyword">Causal Reasoning</span>
+        <span class="keyword">Psychology-AI</span>
+        <span class="keyword">Trustworthy AI</span>
+      </div>
+    </div>
+    
+    <div class="research-card">
+      <h4>Application Domains</h4>
+      <p>Developing practical solutions for mental health assessment, ethical human-computer interaction, and public safety applications. Ensuring AI emotional intelligence aligns with human psychological principles and ethical standards.</p>
+      <div class="research-keywords">
+        <span class="keyword">Mental Health</span>
+        <span class="keyword">HCI</span>
+        <span class="keyword">Public Safety</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="research-section">
+  <h3>Key Research Directions</h3>
+  
+  <div class="research-section">
+    <h4>1. De-identified Affective Computing</h4>
+    <p>Developing emotion recognition systems that operate without relying on identity-revealing facial or vocal features. This approach preserves privacy while maintaining accurate emotional assessment through micro-behavioral analysis and physiological signals.</p>
+    
+    <div class="research-highlight">
+      <strong>Key Innovation:</strong> First comprehensive framework for identity-free emotional state analysis using micro-gestures and micro-movements, addressing privacy concerns in real-world applications.
+    </div>
+  </div>
+  
+  <div class="research-section">
+    <h4>2. Input Authenticity and Security</h4>
+    <p>Implementing robust anti-spoofing mechanisms through liveness detection, micro-expression dynamic consistency analysis, and temporal physiological signal verification. This ensures systems can distinguish genuine human emotional expressions from synthetic or manipulated inputs.</p>
+    
+    <div class="research-highlight">
+      <strong>Technical Focus:</strong> Multi-modal authenticity verification combining facial action units, micro-expressions, and physiological signals for reliable input validation.
+    </div>
+  </div>
+  
+  <div class="research-section">
+    <h4>3. Psychology-Guided AI Reasoning</h4>
+    <p>Integrating established psychological theories—such as subconscious micro-behavior analysis and facial action unit-emotion mapping—into large AI model architectures. This transforms emotion recognition from black-box classification to psychologically-constrained causal understanding.</p>
+    
+    <div class="research-highlight">
+      <strong>Theoretical Foundation:</strong> Systematic embedding of psychological constraints in AI reasoning processes, enhancing model interpretability, controllability, and psychological consistency.
+    </div>
+  </div>
+  
+  <div class="research-section">
+    <h4>4. Trustworthy Output and Ethical Control</h4>
+    <p>Addressing emotional "hallucinations" in large models through causal chain-constrained correction mechanisms and ethical intervention modules. This ensures AI emotional feedback maintains ethical consistency and psychological credibility.</p>
+    
+    <div class="research-highlight">
+      <strong>Ethical Framework:</strong> Novel approaches for identifying and correcting unreasonable emotional judgments or potential manipulation risks in model outputs.
+    </div>
+  </div>
+</div>
+
+<div class="research-section">
+  <h3>Research Impact</h3>
+  
+  <p>The integrated research framework establishes a complete trustworthy loop—from input source control through reasoning process modeling to output result correction and ethical control. This three-in-one approach provides theoretical support and technical pathways for sustainable development of AI emotion recognition in critical domains including:</p>
+  
+  <ul>
+    <li><strong>Mental Health:</strong> Objective assessment tools for psychological well-being and emotional disorders</li>
+    <li><strong>Human-Computer Interaction:</strong> Ethical and psychologically-aware interactive systems</li>
+    <li><strong>Public Safety:</strong> Reliable emotional state monitoring in security-critical environments</li>
+    <li><strong>Education:</strong> Adaptive learning systems responsive to student emotional states</li>
+  </ul>
+</div>
+
+<div class="research-section">
+  <h3>Future Directions</h3>
+  
+  <p>Current research efforts are expanding toward:</p>
+  
+  <ul>
+    <li>Cross-cultural emotional intelligence in AI systems</li>
+    <li>Real-time trustworthy emotion recognition for dynamic environments</li>
+    <li>Integration of neurophysiological signals with behavioral analysis</li>
+    <li>Development of standardized benchmarks for trustworthy affective computing</li>
+    <li>Ethical frameworks for emotion AI deployment in sensitive applications</li>
+  </ul>
+</div>
 
     </main>
   </div>
