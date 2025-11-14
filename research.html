@@ -26,54 +26,140 @@
       border-radius: 0 4px 4px 0;
     }
     
-    .research-grid {
+    .research-framework {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+      gap: 2rem;
+      margin: 3rem 0;
+    }
+    
+    .framework-stage {
+      background: white;
+      padding: 2rem;
+      border-radius: 12px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+      border-top: 4px solid;
+      position: relative;
+    }
+    
+    .stage-1 { border-top-color: #e74c3c; }
+    .stage-2 { border-top-color: #f39c12; }
+    .stage-3 { border-top-color: #27ae60; }
+    
+    .stage-number {
+      position: absolute;
+      top: -20px;
+      left: 20px;
+      background: inherit;
+      border-top-color: inherit;
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: bold;
+      color: white;
+      font-size: 1.2em;
+    }
+    
+    .stage-1 .stage-number { background: #e74c3c; }
+    .stage-2 .stage-number { background: #f39c12; }
+    .stage-3 .stage-number { background: #27ae60; }
+    
+    .framework-stage h4 {
+      color: #2c3e50;
+      margin: 1rem 0 0.5rem 0;
+      font-size: 1.3em;
+    }
+    
+    .stage-description {
+      color: #666;
+      line-height: 1.6;
+      margin-bottom: 1rem;
+    }
+    
+    .stage-techniques {
+      margin-top: 1rem;
+    }
+    
+    .technique-item {
+      background: #f8f9fa;
+      padding: 0.8rem;
+      margin: 0.5rem 0;
+      border-radius: 6px;
+      border-left: 3px solid;
+    }
+    
+    .stage-1 .technique-item { border-left-color: #e74c3c; }
+    .stage-2 .technique-item { border-left-color: #f39c12; }
+    .stage-3 .technique-item { border-left-color: #27ae60; }
+    
+    .research-overview {
+      font-size: 1.1em;
+      line-height: 1.7;
+      color: #2c3e50;
+      margin-bottom: 2rem;
+      text-align: justify;
+    }
+    
+    .paradigm-shift {
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      color: white;
+      padding: 2.5rem;
+      border-radius: 12px;
+      margin: 2rem 0;
+      text-align: center;
+    }
+    
+    .paradigm-shift h3 {
+      color: white;
+      border-bottom: 2px solid rgba(255,255,255,0.3);
+      margin-bottom: 1rem;
+    }
+    
+    .research-impact {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.5rem;
+      margin: 2rem 0;
+    }
+    
+    .impact-item {
+      text-align: center;
+      padding: 1.5rem;
+      background: #f8f9fa;
+      border-radius: 8px;
+      transition: transform 0.3s ease;
+    }
+    
+    .impact-item:hover {
+      transform: translateY(-5px);
+    }
+    
+    .impact-icon {
+      font-size: 2.5em;
+      margin-bottom: 1rem;
+    }
+    
+    .research-areas-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
       gap: 2rem;
       margin: 2rem 0;
     }
     
-    .research-card {
-      background: #f8f9fa;
+    .research-area-card {
+      background: white;
       padding: 1.5rem;
       border-radius: 8px;
-      border: 1px solid #eaeaea;
-      transition: all 0.3s ease;
-      position: relative;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+      border-left: 4px solid #3498db;
     }
     
-    .research-card:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 8px 25px rgba(0,0,0,0.1);
-    }
-    
-    .research-card h4 {
+    .research-area-card h4 {
       color: #2c3e50;
       margin-bottom: 1rem;
-      font-size: 1.2em;
-    }
-    
-    .research-keywords {
-      margin-top: 1rem;
-      display: flex;
-      flex-wrap: wrap;
-      gap: 0.5rem;
-    }
-    
-    .keyword {
-      background: #3498db;
-      color: white;
-      padding: 0.3rem 0.8rem;
-      border-radius: 20px;
-      font-size: 0.85em;
-      font-weight: 500;
-    }
-    
-    .research-overview {
-      font-size: 1.1em;
-      line-height: 1.6;
-      color: #2c3e50;
-      margin-bottom: 2rem;
     }
     
     .research-link {
@@ -91,56 +177,6 @@
     .research-link:hover {
       background: #2980b9;
       transform: translateY(-2px);
-    }
-    
-    .publication-preview {
-      margin-top: 1rem;
-      font-size: 0.9em;
-    }
-    
-    .publication-preview li {
-      margin-bottom: 0.5rem;
-      line-height: 1.4;
-    }
-    
-    .research-icon {
-      width: 60px;
-      height: 60px;
-      margin-bottom: 1rem;
-      background: #3498db;
-      border-radius: 12px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: white;
-      font-size: 1.5em;
-    }
-    
-    .research-vision {
-      text-align: center;
-      padding: 2rem;
-      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-      color: white;
-      border-radius: 12px;
-      margin: 2rem 0;
-    }
-    
-    .research-vision h3 {
-      color: white;
-      border-bottom: 2px solid rgba(255,255,255,0.3);
-      margin-bottom: 1rem;
-    }
-    
-    .foundation-card {
-      border-left: 4px solid #27ae60;
-    }
-    
-    .foundation-card .research-icon {
-      background: #27ae60;
-    }
-    
-    .foundation-card .keyword {
-      background: #27ae60;
     }
   </style>
 </head>
@@ -178,145 +214,157 @@
 
     <main class="main">
       
-<h2>Research</h2>
+<h2>Trustworthy Affective Computing</h2>
 
 <div class="research-overview">
-  My research at the intersection of Psychology and Artificial Intelligence focuses on developing trustworthy affective computing systems that understand human emotions in psychologically-grounded and ethically-aware ways. By combining insights from psychological science with advanced AI techniques, we aim to create emotion AI systems that are not only technically advanced but also psychologically valid and socially responsible.
+  My research focuses on the deep integration of Artificial Intelligence and Psychological Behavioral Science, centered around the core theme of "Trustworthy Affective Computing." I have proposed and implemented a comprehensive psychological understanding system that spans from data collection to model construction, and from input security to output trustworthiness. This work advances emotion recognition from laboratory paradigms reliant on identity and explicit facial/speech signals toward de-identified, ethically-aware, psychologically-consistent, and practically-oriented general recognition frameworks.
 </div>
 
-<div class="research-vision">
-  <h3>Bridging Psychology and AI for Trustworthy Emotion Understanding</h3>
-  <p>Developing psychologically-informed AI systems that understand human emotions while preserving privacy, ensuring security, and maintaining ethical standards.</p>
+<div class="paradigm-shift">
+  <h3>Paradigm Shift in Emotion AI</h3>
+  <p>From <strong>identity-dependent, explicit signal-based laboratory paradigms</strong> to <strong>de-identified, ethically-constrained, psychologically-grounded real-world recognition frameworks</strong></p>
 </div>
 
 <div class="research-section">
-  <h3>Research Areas</h3>
+  <h3>The Three-Stage Trustworthy Framework</h3>
   
-  <div class="research-grid">
-    <div class="research-card">
-      <div class="research-icon">👐</div>
-      <h4>Micro-gesture & Behavior Analysis</h4>
-      <p>Developing identity-free emotion recognition through subconscious micro-gestures and micro-movements. Our work enables privacy-preserving emotion understanding by analyzing subtle behavioral cues while eliminating identity-revealing information.</p>
-      <div class="research-keywords">
-        <span class="keyword">Micro-gestures</span>
-        <span class="keyword">De-identification</span>
-        <span class="keyword">Behavioral Psychology</span>
+  <div class="research-framework">
+    <!-- Stage 1: Input Authenticity -->
+    <div class="framework-stage stage-1">
+      <div class="stage-number">1</div>
+      <h4>Input Authenticity & Security</h4>
+      <p class="stage-description">Ensuring the genuineness of emotional input signals through robust verification mechanisms</p>
+      
+      <div class="stage-techniques">
+        <div class="technique-item">
+          <strong>Liveness Detection:</strong> Anti-spoofing mechanisms to distinguish genuine human expressions from synthetic inputs
+        </div>
+        <div class="technique-item">
+          <strong>Micro-expression Consistency:</strong> Dynamic analysis of micro-expressions for authenticity verification
+        </div>
+        <div class="technique-item">
+          <strong>Temporal Physiological Signals:</strong> Utilizing physiological patterns for real human signal identification
+        </div>
       </div>
-      <div class="publication-preview">
-        <strong>Key Publications:</strong>
-        <ul>
-          <li>iMiGUE (CVPR 2021)</li>
-          <li>SMG (IJCV 2023)</li>
-          <li>MSF-Mamba (T-MM 2025)</li>
-        </ul>
-      </div>
-      <a href="research-microgesture.html" class="research-link">View Publications</a>
     </div>
     
-    <div class="research-card">
-      <div class="research-icon">🛡️</div>
-      <h4>Trustworthy Multimodal AI</h4>
-      <p>Ensuring AI emotion understanding is secure, identity-independent, and free from emotional hallucinations. We develop robust verification mechanisms and multimodal frameworks that maintain security and ethical standards in emotion AI systems.</p>
-      <div class="research-keywords">
-        <span class="keyword">Face Anti-spoofing</span>
-        <span class="keyword">Multimodal LLMs</span>
-        <span class="keyword">Trustworthy AI</span>
+    <!-- Stage 2: Causal Reasoning -->
+    <div class="framework-stage stage-2">
+      <div class="stage-number">2</div>
+      <h4>Psychology-Guided Causal Reasoning</h4>
+      <p class="stage-description">Transforming from black-box classification to psychologically-constrained causal understanding</p>
+      
+      <div class="stage-techniques">
+        <div class="technique-item">
+          <strong>Subconscious Micro-behavior Analysis:</strong> Integrating psychological theories of non-conscious behaviors
+        </div>
+        <div class="technique-item">
+          <strong>Facial Action Unit Mapping:</strong> Systematic emotion-expression mapping based on psychological mechanisms
+        </div>
+        <div class="technique-item">
+          <strong>Long-term Motivation Tracing:</strong> Analyzing persistent emotional states beyond instantaneous expressions
+        </div>
       </div>
-      <div class="publication-preview">
-        <strong>Key Publications:</strong>
-        <ul>
-          <li>DiffFAS (ECCV 2024)</li>
-          <li>DEEMO (ACMMM 2025)</li>
-          <li>CAT+ (TPAMI 2025)</li>
-        </ul>
-      </div>
-      <a href="research-trustworthy-ai.html" class="research-link">View Publications</a>
     </div>
     
-    <div class="research-card">
-      <div class="research-icon">💓</div>
-      <h4>Remote Physiological Measurement</h4>
-      <p>Advancing non-contact physiological signal analysis through rPPG and implicit emotion modeling for mental health monitoring. Our work bridges psychophysiology and computer vision to enable objective assessment of emotional states through physiological signals.</p>
-      <div class="research-keywords">
-        <span class="keyword">rPPG</span>
-        <span class="keyword">Psychophysiology</span>
-        <span class="keyword">Mental Health</span>
+    <!-- Stage 3: Trustworthy Output -->
+    <div class="framework-stage stage-3">
+      <div class="stage-number">3</div>
+      <h4>Trustworthy Output & Ethical Control</h4>
+      <p class="stage-description">Ensuring AI emotional feedback maintains ethical consistency and psychological credibility</p>
+      
+      <div class="stage-techniques">
+        <div class="technique-item">
+          <strong>Emotional Hallucination Detection:</strong> Identifying and correcting unreasonable emotional judgments
+        </div>
+        <div class="technique-item">
+          <strong>Causal Chain Constraints:</strong> Correction mechanisms based on psychological causal relationships
+        </div>
+        <div class="technique-item">
+          <strong>Ethical Intervention Modules:</strong> Preventing potential manipulation risks in model outputs
+        </div>
       </div>
-      <div class="publication-preview">
-        <strong>Key Publications:</strong>
-        <ul>
-          <li>Period-LLM (CVPR 2025)</li>
-          <li>rPPG-MAE (TMM 2024)</li>
-          <li>CodePhys (JBHI 2025)</li>
-        </ul>
-      </div>
-      <a href="research-physiological.html" class="research-link">View Publications</a>
-    </div>
-
-    <div class="research-card foundation-card">
-      <div class="research-icon">🔬</div>
-      <h4>Research Foundation: Subtle Signal Processing</h4>
-      <p>Developing fundamental algorithms for subtle signal extraction and analysis. This foundational work provides the core computational techniques that enable our applied research in emotion understanding and physiological measurement.</p>
-      <div class="research-keywords">
-        <span class="keyword">Signal Processing</span>
-        <span class="keyword">Computer Vision</span>
-        <span class="keyword">AI Foundations</span>
-      </div>
-      <div class="publication-preview">
-        <strong>Key Publications:</strong>
-        <ul>
-          <li>LSD (TIP 2015) - ESI Highly Cited</li>
-          <li>Video Demoiréing (NeurIPS 2023)</li>
-          <li>Zero-shot Restoration (AAAI 2025)</li>
-        </ul>
-      </div>
-      <a href="research-foundation.html" class="research-link">View Publications</a>
     </div>
   </div>
-</div>
-
-<div class="research-section">
-  <h3>Research Philosophy</h3>
   
   <div class="research-highlight">
-    <strong>Psychology-AI Integration:</strong> We believe that truly effective emotion AI must be grounded in psychological science. Our research integrates theories from cognitive psychology, psychophysiology, and behavioral science with state-of-the-art AI techniques.
+    <strong>Complete Trustworthy Loop:</strong> This three-in-one approach establishes a comprehensive framework from input source control through reasoning process modeling to output result correction and ethical control, providing theoretical support and technical pathways for sustainable development of AI emotion recognition.
   </div>
-  
-  <p>Our research follows a principled approach that emphasizes:</p>
-  
-  <ul>
-    <li><strong>Psychological Validity:</strong> Ensuring our models align with established psychological theories and empirical findings</li>
-    <li><strong>Technical Innovation:</strong> Developing novel AI algorithms that address real challenges in emotion understanding</li>
-    <li><strong>Ethical Considerations:</strong> Prioritizing privacy, fairness, and transparency in all our systems</li>
-    <li><strong>Real-world Impact:</strong> Creating technologies that can be practically deployed in mental health, education, and human-computer interaction</li>
-  </ul>
 </div>
 
 <div class="research-section">
-  <h3>Research Impact</h3>
+  <h3>Research Areas & Technical Foundations</h3>
   
-  <p>Our work establishes a complete trustworthy loop—from input source control through psychologically-informed reasoning to output result correction and ethical control. This integrated approach provides theoretical support and technical pathways for sustainable development of AI emotion recognition in critical domains including:</p>
+  <div class="research-areas-grid">
+    <div class="research-area-card">
+      <h4>De-identified Micro-gesture Analysis</h4>
+      <p>Pioneering identity-free emotion recognition through micro-gestures and micro-movements, establishing new paradigms for subconscious behavioral analysis while preserving privacy.</p>
+      <a href="research-microgesture.html" class="research-link">Explore Research</a>
+    </div>
+    
+    <div class="research-area-card">
+      <h4>Trustworthy Multimodal AI</h4>
+      <p>Developing secure and reliable emotion understanding systems with robust verification mechanisms and identity-independent reasoning frameworks.</p>
+      <a href="research-trustworthy-ai.html" class="research-link">Explore Research</a>
+    </div>
+    
+    <div class="research-area-card">
+      <h4>Remote Physiological Measurement</h4>
+      <p>Advancing non-contact physiological signal analysis through rPPG and implicit emotion modeling for objective mental health assessment.</p>
+      <a href="research-physiological.html" class="research-link">Explore Research</a>
+    </div>
+    
+    <div class="research-area-card">
+      <h4>Fundamental Signal Processing</h4>
+      <p>Developing core computational techniques for subtle signal extraction and analysis that enable our applied research in trustworthy affective computing.</p>
+      <a href="research-foundation.html" class="research-link">Explore Research</a>
+    </div>
+  </div>
+</div>
+
+<div class="research-section">
+  <h3>Research Impact & Applications</h3>
   
-  <div class="research-grid">
-    <div class="research-card">
+  <div class="research-impact">
+    <div class="impact-item">
+      <div class="impact-icon">🧠</div>
       <h4>Mental Health</h4>
-      <p>Objective assessment tools for psychological well-being, stress detection, and emotional disorders through non-contact monitoring</p>
+      <p>Objective assessment tools for psychological well-being and emotional disorders through privacy-preserving monitoring</p>
     </div>
     
-    <div class="research-card">
+    <div class="impact-item">
+      <div class="impact-icon">🤖</div>
       <h4>Human-Computer Interaction</h4>
-      <p>Ethical and psychologically-aware interactive systems with privacy-preserving emotion understanding</p>
+      <p>Ethical and psychologically-aware interactive systems with trustworthy emotion understanding</p>
     </div>
     
-    <div class="research-card">
-      <h4>Education & Learning</h4>
+    <div class="impact-item">
+      <div class="impact-icon">🎓</div>
+      <h4>Education</h4>
       <p>Adaptive learning systems responsive to student emotional states and engagement levels</p>
     </div>
     
-    <div class="research-card">
+    <div class="impact-item">
+      <div class="impact-icon">🛡️</div>
       <h4>Public Safety</h4>
       <p>Reliable emotional state monitoring in security-critical environments while preserving individual privacy</p>
     </div>
+  </div>
+</div>
+
+<div class="research-section">
+  <h3>Key Innovations</h3>
+  
+  <div class="research-highlight">
+    <strong>Data Foundation:</strong> Introduced identity-free micro-gesture and micro-movement video data systems, establishing the first research paradigm for micro-behavior analysis and long-term emotional motivation tracing that breaks through the limitation of focusing only on instantaneous emotions.
+  </div>
+  
+  <div class="research-highlight">
+    <strong>Technical Breakthrough:</strong> Systematically embedded psychological constraints in AI reasoning processes, achieving the leap from "black-box data classification" to "causal emotion understanding under psychological constraints," significantly enhancing model interpretability, controllability, and psychological consistency.
+  </div>
+  
+  <div class="research-highlight">
+    <strong>Ethical Framework:</strong> Pioneered the exploration of emotional "hallucinations" in large models, constructing correction mechanisms and ethical intervention modules based on causal chain constraints to ensure AI emotional feedback maintains ethical consistency and psychological credibility.
   </div>
 </div>
 
