@@ -39,6 +39,56 @@
       margin-bottom: 2rem;
       color: #2c3e50;
     }
+
+    /* 独立的编号样式 */
+    .research-publication-list {
+      list-style-type: none;
+      padding-left: 0;
+      counter-reset: research-counter;
+      margin-top: 0;
+    }
+
+    .research-publication-list li {
+      position: relative;
+      padding: 0.5em 0 0.5em 2.6em;
+      margin-bottom: 0.7em;
+      line-height: 1.5;
+      border-left: 2px solid #eaeaea;
+      transition: all 0.25s ease;
+    }
+
+    .research-publication-list li:hover {
+      background-color: #f5faff;
+      border-left-color: #3498db;
+      transform: translateX(3px);
+    }
+
+    .research-publication-list li::before {
+      content: counter(research-counter) ".";
+      position: absolute;
+      left: 0.8em;
+      top: 0.5em;
+      font-weight: bold;
+      font-size: 0.95em;
+      color: #2c3e50;
+      counter-increment: research-counter;
+      transition: inherit;
+    }
+
+    .research-publication-list li:hover::before {
+      color: #3498db;
+    }
+
+    /* 期刊会议样式 */
+    .research-publication-list li i {
+      color: #00a0e9;
+      font-style: italic;
+    }
+
+    .research-publication-list li i b {
+      color: #0077cc;
+      font-style: italic;
+    }
   </style>
 </head>
 <body>
@@ -94,16 +144,16 @@
   </div>
 </div>
 
-<ol reversed class="publication-list">
+<ol reversed class="research-publication-list">
+  <li><b>X. Liu</b>, H. Shi, H. Chen, Z. Yu, X. Li, and G. Zhao. "iMiGUE: An Identity-free Video Dataset for Micro-Gesture Understanding and Emotion Analysis." <i><b>IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)</b></i>, pp. 10631-10642, 2021. <a href="https://github.com/linuxsino/iMiGUE" target="_blank" rel="noopener noreferrer" class="source-code-link">project page</a></li>
+
+  <li>H. Chen, H. Shi, <b>X. Liu</b>, X. Li, and G. Zhao. "SMG: A Micro-Gesture Dataset Towards Spontaneous Body Gestures for Emotional Stress State Analysis." <i><b>International Journal of Computer Vision (IJCV)</b></i>, 2023.</li>
+ 
   <li>D. Li, J. Shao, B. Xing, R. Gao, B. Wen, H. Kälviäinen, and <b>X. Liu*</b>. "MSF-Mamba: Motion-aware State Fusion Mamba for Efficient Micro-Gesture Recognition." <i><b>IEEE Transactions on Multimedia</b></i>, 2025.</li>
 
   <li>B. Xing, D. Li, R. Gao, <b>X. Liu*</b>, and H. Kälviäinen. "MGMILA: Eulerian Motion-Aware MILA for Micro-Gesture Recognition." <i><b>Machine Intelligence Research</b></i>, 2025.</li>
 
   <li>D. Li, B. Xing, and <b>X. Liu*</b>. "Enhancing Micro Gesture Recognition for Emotion Understanding via Context-aware Visual-Text Contrastive Learning." <i><b>IEEE Signal Processing Letters</b></i>, 2024. <a href="https://github.com/linuxsino/Visual-Text-MG" target="_blank" rel="noopener noreferrer" class="source-code-link">source code</a></li>
-
-  <li>H. Chen, H. Shi, <b>X. Liu</b>, X. Li, and G. Zhao. "SMG: A Micro-Gesture Dataset Towards Spontaneous Body Gestures for Emotional Stress State Analysis." <i><b>International Journal of Computer Vision (IJCV)</b></i>, 2023.</li>
-
-  <li><b>X. Liu</b>, H. Shi, H. Chen, Z. Yu, X. Li, and G. Zhao. "iMiGUE: An Identity-free Video Dataset for Micro-Gesture Understanding and Emotion Analysis." <i><b>IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)</b></i>, pp. 10631-10642, 2021. <a href="https://github.com/linuxsino/iMiGUE" target="_blank" rel="noopener noreferrer" class="source-code-link">project page</a></li>
 
   <li>H. Shi, W. Peng, H. Chen, <b>X. Liu</b>, and G. Zhao. "Multiscale 3D Shift Graph Convolution Network for Emotion Recognition from Human Actions." <i><b>IEEE Intelligent Systems</b></i>, Vol. 37, Issue 4, pp. 103-110, 2022.</li>
 
