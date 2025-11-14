@@ -7,12 +7,9 @@
   <link rel="stylesheet" href="../style.css">
   <style>
     .technique-header {
-      text-align: center;
       margin: 2rem 0;
-      padding: 2rem;
-      background: #f8f9fa;
-      border-radius: 8px;
-      border-left: 4px solid #f39c12;
+      padding-bottom: 1rem;
+      border-bottom: 2px solid #f39c12;
     }
     
     .technique-description {
@@ -24,9 +21,9 @@
     .technique-details {
       background: white;
       padding: 1.5rem;
-      border-radius: 8px;
-      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+      border-radius: 4px;
       margin: 2rem 0;
+      border-left: 3px solid #f39c12;
     }
     
     .back-link {
@@ -39,6 +36,40 @@
     
     .back-link:hover {
       text-decoration: underline;
+    }
+    
+    .publication-item {
+      background: white;
+      padding: 1.5rem;
+      border-radius: 4px;
+      margin: 1.5rem 0;
+      border-left: 3px solid #3498db;
+    }
+    
+    .publication-title {
+      font-weight: bold;
+      margin-bottom: 0.5rem;
+      color: #2c3e50;
+    }
+    
+    .publication-authors {
+      color: #666;
+      font-style: italic;
+      margin-bottom: 0.5rem;
+    }
+    
+    .publication-venue {
+      color: #3498db;
+      font-weight: 600;
+      margin-bottom: 1rem;
+    }
+    
+    .research-highlight {
+      background-color: #f8f9fa;
+      border-left: 4px solid #f39c12;
+      padding: 1.5rem;
+      margin: 1.5rem 0;
+      border-radius: 0 4px 4px 0;
     }
   </style>
 </head>
@@ -79,32 +110,59 @@
 <h2>Subconscious Micro-behavior Analysis</h2>
 
 <div class="technique-header">
-  <h3>Integrating psychological theories of non-conscious behaviors for authentic emotion understanding</h3>
+  <h3>Integrating psychological theories of non-conscious behaviors</h3>
 </div>
 
 <div class="technique-description">
-  <p>Subconscious micro-behaviors provide authentic windows into genuine emotional states that are difficult to consciously control or manipulate. Our research integrates established psychological theories of non-conscious behaviors with advanced AI techniques to develop more accurate and psychologically-grounded emotion recognition systems.</p>
+  <p>Our research in subconscious micro-behavior analysis focuses on understanding and interpreting involuntary, subtle bodily movements that reveal genuine emotional states. These micro-behaviors occur outside conscious control and provide authentic cues about a person's true emotional and psychological state.</p>
+</div>
+
+<div class="research-highlight">
+  <strong>Research Focus:</strong> Developing identity-free artificial emotional intelligence through comprehensive micro-gesture understanding, enabling privacy-preserving emotion analysis without personal identification.
 </div>
 
 <div class="technique-details">
   <h4>Key Contributions</h4>
   <ul>
-    <li><strong>Identity-free Micro-gesture Recognition:</strong> Developing systems that analyze subtle behavioral cues while eliminating identity-revealing information</li>
-    <li><strong>Psychological Theory Integration:</strong> Grounding AI models in established psychological theories of subconscious expression</li>
-    <li><strong>Real-world Dataset Creation:</strong> Building comprehensive datasets of spontaneous micro-behaviors in naturalistic settings</li>
-    <li><strong>Cross-cultural Validation:</strong> Ensuring models capture universal aspects of subconscious expression across different cultures</li>
+    <li><strong>Identity-free AI Emotion Intelligence:</strong> Pioneering frameworks for emotion analysis without personal identification</li>
+    <li><strong>iMiGUE Dataset:</strong> First identity-free video dataset for micro-gesture understanding and emotion analysis</li>
+    <li><strong>MSF-Mamba Framework:</strong> Motion-aware state fusion with Mamba architecture for efficient micro-gesture recognition</li>
+    <li><strong>MGMILA Method:</strong> Eulerian motion-aware MILA for advanced micro-gesture recognition</li>
+    <li><strong>SMG Dataset:</strong> Comprehensive dataset for spontaneous body gestures in emotional stress state analysis</li>
   </ul>
 </div>
 
-<ol class="research-publication-list">
-  <li><b>X. Liu</b>, H. Shi, H. Chen, Z. Yu, X. Li, and G. Zhao. "iMiGUE: An Identity-free Video Dataset for Micro-Gesture Understanding and Emotion Analysis." <i><b>IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)</b></i>, pp. 10631-10642, 2021. <a href="https://github.com/linuxsino/iMiGUE" target="_blank" rel="noopener noreferrer" class="source-code-link">project page</a></li>
+<!-- Publications -->
+<div class="publication-item">
+  <div class="publication-title">Identity-free Artificial Emotional Intelligence via Micro-Gesture Understanding</div>
+  <div class="publication-authors">R. Gao, X. Liu*, B. Xing, Z. Yu, B. W. Schuller, and H. Kälviäinen</div>
+  <div class="publication-venue">IEEE Transactions on Affective Computing, 2025</div>
+</div>
 
-  <li>H. Chen, H. Shi, <b>X. Liu</b>, X. Li, and G. Zhao. "SMG: A Micro-Gesture Dataset Towards Spontaneous Body Gestures for Emotional Stress State Analysis." <i><b>International Journal of Computer Vision (IJCV)</b></i>, 2023.</li>
+<div class="publication-item">
+  <div class="publication-title">iMiGUE: An Identity-free Video Dataset for Micro-Gesture Understanding and Emotion Analysis</div>
+  <div class="publication-authors">X. Liu, H. Shi, H. Chen, Z. Yu, X. Li, and G. Zhao</div>
+  <div class="publication-venue">IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR), pp. 10631-10642, 2021</div>
+  <a href="https://github.com/linuxsino/iMiGUE" target="_blank" rel="noopener noreferrer" class="source-code-link">project page</a>
+</div>
 
-  <li>D. Li, B. Xing, and <b>X. Liu*</b>. "Enhancing Micro Gesture Recognition for Emotion Understanding via Context-aware Visual-Text Contrastive Learning." <i><b>IEEE Signal Processing Letters</b></i>, 2024. <a href="https://github.com/linuxsino/Visual-Text-MG" target="_blank" rel="noopener noreferrer" class="source-code-link">source code</a></li>
+<div class="publication-item">
+  <div class="publication-title">MSF-Mamba: Motion-aware State Fusion Mamba for Efficient Micro-Gesture Recognition</div>
+  <div class="publication-authors">D. Li, J. Shao, B. Xing, R. Gao, B. Wen, H. Kälviäinen, and X. Liu*</div>
+  <div class="publication-venue">IEEE Transactions on Multimedia, 2025</div>
+</div>
 
-  <li>D. Li, J. Shao, B. Xing, R. Gao, B. Wen, H. Kälviäinen, and <b>X. Liu*</b>. "MSF-Mamba: Motion-aware State Fusion Mamba for Efficient Micro-Gesture Recognition." <i><b>IEEE Transactions on Multimedia</b></i>, 2025.</li>
-</ol>
+<div class="publication-item">
+  <div class="publication-title">MGMILA: Eulerian Motion-Aware MILA for Micro-Gesture Recognition</div>
+  <div class="publication-authors">B. Xing, D. Li, R. Gao, X. Liu*, and H. Kälviäinen</div>
+  <div class="publication-venue">Machine Intelligence Research, 2025</div>
+</div>
+
+<div class="publication-item">
+  <div class="publication-title">SMG: A Micro-Gesture Dataset Towards Spontaneous Body Gestures for Emotional Stress State Analysis</div>
+  <div class="publication-authors">H. Chen, H. Shi, X. Liu, X. Li, and G. Zhao</div>
+  <div class="publication-venue">International Journal of Computer Vision (IJCV), 2023</div>
+</div>
 
 <a href="../research.html" class="back-link">&laquo; Back to Research Framework</a>
 
