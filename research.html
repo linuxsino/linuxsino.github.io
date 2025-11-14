@@ -89,11 +89,39 @@
       margin: 0.5rem 0;
       border-radius: 6px;
       border-left: 3px solid;
+      transition: all 0.3s ease;
+    }
+    
+    .technique-item:hover {
+      transform: translateX(5px);
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
     }
     
     .stage-1 .technique-item { border-left-color: #e74c3c; }
     .stage-2 .technique-item { border-left-color: #f39c12; }
     .stage-3 .technique-item { border-left-color: #27ae60; }
+    
+    .technique-link {
+      color: inherit;
+      text-decoration: none;
+      display: block;
+    }
+    
+    .technique-link:hover {
+      text-decoration: none;
+    }
+    
+    .technique-title {
+      font-weight: bold;
+      margin-bottom: 0.3rem;
+      color: #2c3e50;
+    }
+    
+    .technique-description {
+      color: #666;
+      font-size: 0.9em;
+      line-height: 1.4;
+    }
     
     .research-overview {
       font-size: 1.1em;
@@ -140,43 +168,6 @@
     .impact-icon {
       font-size: 2.5em;
       margin-bottom: 1rem;
-    }
-    
-    .research-areas-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-      gap: 2rem;
-      margin: 2rem 0;
-    }
-    
-    .research-area-card {
-      background: white;
-      padding: 1.5rem;
-      border-radius: 8px;
-      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-      border-left: 4px solid #3498db;
-    }
-    
-    .research-area-card h4 {
-      color: #2c3e50;
-      margin-bottom: 1rem;
-    }
-    
-    .research-link {
-      display: inline-block;
-      background: #3498db;
-      color: white;
-      padding: 0.8rem 1.5rem;
-      border-radius: 6px;
-      text-decoration: none;
-      font-weight: 600;
-      transition: all 0.3s ease;
-      margin-top: 1rem;
-    }
-    
-    .research-link:hover {
-      background: #2980b9;
-      transform: translateY(-2px);
     }
   </style>
 </head>
@@ -236,15 +227,24 @@
       <p class="stage-description">Ensuring the genuineness of emotional input signals through robust verification mechanisms</p>
       
       <div class="stage-techniques">
-        <div class="technique-item">
-          <strong>Liveness Detection:</strong> Anti-spoofing mechanisms to distinguish genuine human expressions from synthetic inputs
-        </div>
-        <div class="technique-item">
-          <strong>Micro-expression Consistency:</strong> Dynamic analysis of micro-expressions for authenticity verification
-        </div>
-        <div class="technique-item">
-          <strong>Temporal Physiological Signals:</strong> Utilizing physiological patterns for real human signal identification
-        </div>
+        <a href="research-liveness-detection.html" class="technique-link">
+          <div class="technique-item">
+            <div class="technique-title">Liveness Detection</div>
+            <div class="technique-description">Anti-spoofing mechanisms to distinguish genuine human expressions from synthetic inputs</div>
+          </div>
+        </a>
+        <a href="research-micro-expression-consistency.html" class="technique-link">
+          <div class="technique-item">
+            <div class="technique-title">Micro-expression Consistency</div>
+            <div class="technique-description">Dynamic analysis of micro-expressions for authenticity verification</div>
+          </div>
+        </a>
+        <a href="research-temporal-physiological-signals.html" class="technique-link">
+          <div class="technique-item">
+            <div class="technique-title">Temporal Physiological Signals</div>
+            <div class="technique-description">Utilizing physiological patterns for real human signal identification</div>
+          </div>
+        </a>
       </div>
     </div>
     
@@ -255,15 +255,24 @@
       <p class="stage-description">Transforming from black-box classification to psychologically-constrained causal understanding</p>
       
       <div class="stage-techniques">
-        <div class="technique-item">
-          <strong>Subconscious Micro-behavior Analysis:</strong> Integrating psychological theories of non-conscious behaviors
-        </div>
-        <div class="technique-item">
-          <strong>Facial Action Unit Mapping:</strong> Systematic emotion-expression mapping based on psychological mechanisms
-        </div>
-        <div class="technique-item">
-          <strong>Long-term Motivation Tracing:</strong> Analyzing persistent emotional states beyond instantaneous expressions
-        </div>
+        <a href="research-subconscious-micro-behavior.html" class="technique-link">
+          <div class="technique-item">
+            <div class="technique-title">Subconscious Micro-behavior Analysis</div>
+            <div class="technique-description">Integrating psychological theories of non-conscious behaviors</div>
+          </div>
+        </a>
+        <a href="research-facial-action-unit-mapping.html" class="technique-link">
+          <div class="technique-item">
+            <div class="technique-title">Facial Action Unit Mapping</div>
+            <div class="technique-description">Systematic emotion-expression mapping based on psychological mechanisms</div>
+          </div>
+        </a>
+        <a href="research-long-term-motivation-tracing.html" class="technique-link">
+          <div class="technique-item">
+            <div class="technique-title">Long-term Motivation Tracing</div>
+            <div class="technique-description">Analyzing persistent emotional states beyond instantaneous expressions</div>
+          </div>
+        </a>
       </div>
     </div>
     
@@ -274,51 +283,30 @@
       <p class="stage-description">Ensuring AI emotional feedback maintains ethical consistency and psychological credibility</p>
       
       <div class="stage-techniques">
-        <div class="technique-item">
-          <strong>Emotional Hallucination Detection:</strong> Identifying and correcting unreasonable emotional judgments
-        </div>
-        <div class="technique-item">
-          <strong>Causal Chain Constraints:</strong> Correction mechanisms based on psychological causal relationships
-        </div>
-        <div class="technique-item">
-          <strong>Ethical Intervention Modules:</strong> Preventing potential manipulation risks in model outputs
-        </div>
+        <a href="research-emotional-hallucination-detection.html" class="technique-link">
+          <div class="technique-item">
+            <div class="technique-title">Emotional Hallucination Detection</div>
+            <div class="technique-description">Identifying and correcting unreasonable emotional judgments</div>
+          </div>
+        </a>
+        <a href="research-causal-chain-constraints.html" class="technique-link">
+          <div class="technique-item">
+            <div class="technique-title">Causal Chain Constraints</div>
+            <div class="technique-description">Correction mechanisms based on psychological causal relationships</div>
+          </div>
+        </a>
+        <a href="research-ethical-intervention-modules.html" class="technique-link">
+          <div class="technique-item">
+            <div class="technique-title">Ethical Intervention Modules</div>
+            <div class="technique-description">Preventing potential manipulation risks in model outputs</div>
+          </div>
+        </a>
       </div>
     </div>
   </div>
   
   <div class="research-highlight">
     <strong>Complete Trustworthy Loop:</strong> This three-in-one approach establishes a comprehensive framework from input source control through reasoning process modeling to output result correction and ethical control, providing theoretical support and technical pathways for sustainable development of AI emotion recognition.
-  </div>
-</div>
-
-<div class="research-section">
-  <h3>Research Areas & Technical Foundations</h3>
-  
-  <div class="research-areas-grid">
-    <div class="research-area-card">
-      <h4>De-identified Micro-gesture Analysis</h4>
-      <p>Pioneering identity-free emotion recognition through micro-gestures and micro-movements, establishing new paradigms for subconscious behavioral analysis while preserving privacy.</p>
-      <a href="research-microgesture.html" class="research-link">Explore Research</a>
-    </div>
-    
-    <div class="research-area-card">
-      <h4>Trustworthy Multimodal AI</h4>
-      <p>Developing secure and reliable emotion understanding systems with robust verification mechanisms and identity-independent reasoning frameworks.</p>
-      <a href="research-trustworthy-ai.html" class="research-link">Explore Research</a>
-    </div>
-    
-    <div class="research-area-card">
-      <h4>Remote Physiological Measurement</h4>
-      <p>Advancing non-contact physiological signal analysis through rPPG and implicit emotion modeling for objective mental health assessment.</p>
-      <a href="research-physiological.html" class="research-link">Explore Research</a>
-    </div>
-    
-    <div class="research-area-card">
-      <h4>Fundamental Signal Processing</h4>
-      <p>Developing core computational techniques for subtle signal extraction and analysis that enable our applied research in trustworthy affective computing.</p>
-      <a href="research-foundation.html" class="research-link">Explore Research</a>
-    </div>
   </div>
 </div>
 
