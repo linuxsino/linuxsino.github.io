@@ -84,6 +84,43 @@
       margin-top: 1rem;
       font-size: 0.95em;
     }
+    
+    .media-section {
+      margin: 2rem 0;
+    }
+    
+    .video-container {
+      max-width: 800px;
+      margin: 2rem auto;
+      background: #f8f9fa;
+      padding: 1rem;
+      border-radius: 4px;
+    }
+    
+    .video-container video {
+      width: 100%;
+      border-radius: 4px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+    
+    .image-container {
+      max-width: 600px;
+      margin: 2rem auto;
+      text-align: center;
+    }
+    
+    .image-container img {
+      max-width: 100%;
+      border-radius: 4px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+    
+    .image-caption {
+      margin-top: 0.5rem;
+      color: #666;
+      font-style: italic;
+      font-size: 0.9em;
+    }
   </style>
 </head>
 <body>
@@ -130,6 +167,16 @@
   <p>Our research in artistic sports understanding bridges the gap between technical performance analysis and emotional expression evaluation in sports like figure skating, gymnastics, and dance. We develop multimodal frameworks that capture both the technical precision and artistic interpretation required in these performance-based sports.</p>
 </div>
 
+<!-- 视频展示部分 -->
+<div class="media-section">
+  <div class="video-container">
+    <video controls poster="../images/fsbench-poster.jpg">
+      <source src="../videos/fsbench-demo.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </div>
+</div>
+
 <div class="technique-details">
   <h4>Research Challenge</h4>
   <p>Figure skating, known as the "Art on Ice," represents one of the most artistic sports that challenges computational understanding due to its unique blend of:</p>
@@ -139,6 +186,14 @@
     <li><strong>Performance Quality:</strong> Flow, extension, carriage, and overall presentation</li>
     <li><strong>Emotional Storytelling:</strong> Narrative development and character portrayal through movement</li>
   </ul>
+</div>
+
+<!-- 图片展示部分 -->
+<div class="media-section">
+  <div class="image-container">
+    <img src="../images/fsbench-framework.jpg" alt="FSBench Framework Architecture">
+    <div class="image-caption">Figure 1: FSBench framework architecture showing multimodal data processing and evaluation pipeline</div>
+  </div>
 </div>
 
 <div class="research-framework">
