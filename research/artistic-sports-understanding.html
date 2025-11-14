@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Artistic Sports Understanding – Xin Liu</title>
+  <link rel="stylesheet" href="../style.css">
+  <style>
+    .technique-header {
+      text-align: center;
+      margin: 2rem 0;
+      padding: 2rem;
+      background: #f8f9fa;
+      border-radius: 8px;
+      border-left: 4px solid #9b59b6;
+    }
+    
+    .technique-description {
+      line-height: 1.6;
+      margin-bottom: 2rem;
+      color: #2c3e50;
+    }
+    
+    .technique-details {
+      background: white;
+      padding: 1.5rem;
+      border-radius: 8px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+      margin: 2rem 0;
+    }
+    
+    .back-link {
+      display: inline-block;
+      margin-top: 2rem;
+      color: #3498db;
+      text-decoration: none;
+      font-weight: 600;
+    }
+    
+    .back-link:hover {
+      text-decoration: underline;
+    }
+    
+    .dataset-highlight {
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      color: white;
+      padding: 2rem;
+      border-radius: 12px;
+      margin: 2rem 0;
+    }
+    
+    .dataset-features {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 1.5rem;
+      margin: 2rem 0;
+    }
+    
+    .feature-card {
+      background: white;
+      padding: 1.5rem;
+      border-radius: 8px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+      border-left: 4px solid #9b59b6;
+    }
+    
+    .benchmark-structure {
+      background: #e8f4fd;
+      padding: 1.5rem;
+      border-radius: 8px;
+      margin: 2rem 0;
+      border-left: 4px solid #3498db;
+    }
+    
+    .research-framework {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2rem;
+      margin: 3rem 0;
+    }
+    
+    .framework-stage {
+      background: white;
+      padding: 2rem;
+      border-radius: 12px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+      border-top: 4px solid #9b59b6;
+      position: relative;
+    }
+    
+    .stage-number {
+      position: absolute;
+      top: -20px;
+      left: 20px;
+      background: #9b59b6;
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: bold;
+      color: white;
+      font-size: 1.2em;
+    }
+    
+    .framework-stage h4 {
+      color: #2c3e50;
+      margin: 1rem 0 0.5rem 0;
+      font-size: 1.3em;
+    }
+    
+    .stage-description {
+      color: #666;
+      line-height: 1.6;
+      margin-bottom: 1rem;
+    }
+    
+    .research-highlight {
+      background-color: #f8f9fa;
+      border-left: 4px solid #9b59b6;
+      padding: 1.5rem;
+      margin: 1.5rem 0;
+      border-radius: 0 4px 4px 0;
+    }
+    
+    .publication-item {
+      background: white;
+      padding: 1.5rem;
+      border-radius: 8px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+      margin: 1.5rem 0;
+      border-left: 4px solid #3498db;
+    }
+    
+    .publication-title {
+      font-weight: bold;
+      margin-bottom: 0.5rem;
+      color: #2c3e50;
+    }
+    
+    .publication-authors {
+      color: #666;
+      font-style: italic;
+      margin-bottom: 0.5rem;
+    }
+    
+    .publication-venue {
+      color: #3498db;
+      font-weight: 600;
+      margin-bottom: 1rem;
+    }
+    
+    .publication-abstract {
+      color: #555;
+      line-height: 1.6;
+      margin-top: 1rem;
+      font-size: 0.95em;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    
+<aside class="sidebar">
+  <div class="profile-section">
+    <img src="../images/xin_liu.jpg" alt="Xin Liu" class="profile-img">
+    <h1>Xin Liu</h1>
+    <p class="position">Associate Professor<br>CVPRL, LUT University</p>
+  </div>
+  
+  <nav class="main-nav">
+    <a href="../index.html" class="nav-item">Home</a>
+    <a href="../publication.html" class="nav-item">Publications</a>
+    <a href="../research.html" class="nav-item active">Research</a>
+    <a href="../team.html" class="nav-item">Team</a>
+    <a href="../position.html" class="nav-item">Positions</a>
+    <a href="../news.html" class="nav-item">News</a>
+    <a href="https://scholar.google.com/citations?user=xHkC5U0AAAAJ" target="_blank" class="nav-item external">
+      Google Scholar
+      <svg class="ext-icon" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+        <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+        <polyline points="15 3 21 3 21 9"></polyline>
+        <line x1="10" y1="14" x2="21" y2="3"></line>
+      </svg>
+    </a>
+  </nav>
+  
+  <div class="sidebar-footer">
+    <div class="contact">Email: linuxsino@gmail.com</div>
+  </div>
+</aside>
+
+    <main class="main">
+      
+<h2>Artistic Sports Understanding</h2>
+
+<div class="technique-header">
+  <h3>Comprehensive evaluation of technical and artistic performance in sports requiring emotional expression</h3>
+</div>
+
+<div class="technique-description">
+  <p>Our research in artistic sports understanding bridges the gap between technical performance analysis and emotional expression evaluation in sports like figure skating, gymnastics, and dance. We develop multimodal frameworks that capture both the technical precision and artistic interpretation required in these performance-based sports.</p>
+</div>
+
+<div class="dataset-highlight">
+  <h3>FSBench: A Figure Skating Benchmark for Advancing Artistic Sports Understanding</h3>
+  <p><strong>R. Gao, X. Liu*, Z. Hu, B. Xing, B. Xia, Z. Yu, and H. Kälviäinen</strong><br>
+  IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR), 2025</p>
+</div>
+
+<div class="technique-details">
+  <h4>Research Challenge</h4>
+  <p>Figure skating, known as the "Art on Ice," represents one of the most artistic sports that challenges computational understanding due to its unique blend of:</p>
+  <ul>
+    <li><strong>Technical Elements:</strong> Jumps, spins, footwork sequences with precise biomechanical requirements</li>
+    <li><strong>Artistic Expression:</strong> Emotional conveyance, musical interpretation, and choreographic creativity</li>
+    <li><strong>Performance Quality:</strong> Flow, extension, carriage, and overall presentation</li>
+    <li><strong>Emotional Storytelling:</strong> Narrative development and character portrayal through movement</li>
+  </ul>
+</div>
+
+<div class="research-framework">
+  <div class="framework-stage">
+    <div class="stage-number">1</div>
+    <h4>Technical Element Recognition</h4>
+    <p class="stage-description">Precise identification and evaluation of athletic components</p>
+    <ul>
+      <li>Jump detection and quality assessment</li>
+      <li>Spin classification and scoring</li>
+      <li>Footwork sequence analysis</li>
+      <li>Biomechanical performance metrics</li>
+    </ul>
+  </div>
+  
+  <div class="framework-stage">
+    <div class="stage-number">2</div>
+    <h4>Artistic Expression Analysis</h4>
+    <p class="stage-description">Quantifying emotional and artistic components</p>
+    <ul>
+      <li>Musical interpretation assessment</li>
+      <li>Choreographic creativity evaluation</li>
+      <li>Emotional conveyance metrics</li>
+      <li>Performance quality scoring</li>
+    </ul>
+  </div>
+  
+  <div class="framework-stage">
+    <div class="stage-number">3</div>
+    <h4>Integrated Performance Evaluation</h4>
+    <p class="stage-description">Holistic assessment combining technical and artistic dimensions</p>
+    <ul>
+      <li>Overall performance scoring</li>
+      <li>Technical-artistic balance analysis</li>
+      <li>Performance commentary generation</li>
+      <li>Judgment consistency evaluation</li>
+    </ul>
+  </div>
+</div>
+
+<div class="dataset-features">
+  <div class="feature-card">
+    <h4>FSAnno Dataset</h4>
+    <p>Large-scale dataset with comprehensive annotations for both technical and artistic evaluation, including:</p>
+    <ul>
+      <li>Element identification and quality assessment</li>
+      <li>Artistic component scoring</li>
+      <li>Performance commentary generation</li>
+      <li>Multimodal data integration</li>
+      <li>Temporal performance tracking</li>
+    </ul>
+  </div>
+  
+  <div class="feature-card">
+    <h4>FSBench Benchmark</h4>
+    <p>Comprehensive evaluation framework consisting of:</p>
+    <ul>
+      <li><strong>FSBench-Text:</strong> Multiple-choice questions with explanations</li>
+      <li><strong>FSBench-Motion:</strong> Multimodal data with QA pairs</li>
+      <li>Technical analysis to performance commentary tasks</li>
+      <li>Cross-modal understanding evaluation</li>
+    </ul>
+  </div>
+</div>
+
+<div class="benchmark-structure">
+  <h4>Benchmark Components</h4>
+  <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; margin-top: 1rem;">
+    <div>
+      <h5>FSBench-Text</h5>
+      <ul>
+        <li>Multiple-choice questions with detailed explanations</li>
+        <li>Technical knowledge testing and reasoning</li>
+        <li>Artistic interpretation and evaluation</li>
+        <li>Performance analysis and commentary</li>
+      </ul>
+    </div>
+    <div>
+      <h5>FSBench-Motion</h5>
+      <ul>
+        <li>Multimodal data streams (video, audio, motion)</li>
+        <li>Video-text question-answer pairs</li>
+        <li>Real-time performance evaluation</li>
+        <li>Temporal sequence understanding</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<div class="technique-details">
+  <h4>Key Innovations</h4>
+  <ul>
+    <li><strong>First Comprehensive Benchmark:</strong> Addressing both technical and artistic dimensions of figure skating in a unified framework</li>
+    <li><strong>Multimodal Understanding:</strong> Integrating visual, textual, audio, and motion data for holistic assessment</li>
+    <li><strong>Emotional Expression Analysis:</strong> Quantifying artistic performance through emotional conveyance and storytelling metrics</li>
+    <li><strong>Cross-domain Applications:</strong> Framework extensible to other artistic sports and performance arts</li>
+    <li><strong>Trustworthy Evaluation:</strong> Incorporating psychological principles for consistent and fair performance assessment</li>
+  </ul>
+</div>
+
+<div class="research-highlight">
+  <strong>Emotional Intelligence in Sports:</strong> Our approach extends beyond traditional sports analytics by incorporating affective computing principles to understand how athletes convey emotion and tell stories through their performances, creating a new paradigm for artistic sports evaluation.
+</div>
+
+<div class="technique-details">
+  <h4>Research Impact</h4>
+  <ul>
+    <li><strong>Sports Science:</strong> Objective evaluation tools for artistic sports training and competition judging</li>
+    <li><strong>Entertainment Technology:</strong> Enhanced broadcasting, commentary, and viewer engagement systems</li>
+    <li><strong>Education & Training:</strong> Advanced tools for coaches, judges, and athletes' performance improvement</li>
+    <li><strong>Affective Computing:</strong> New methodologies for understanding emotional expression in physical performance</li>
+    <li><strong>Sports Analytics:</strong> Bridging the gap between quantitative metrics and qualitative artistic evaluation</li>
+  </ul>
+</div>
+
+<div class="publication-item">
+  <div class="publication-title">FSBench: A Figure Skating Benchmark for Advancing Artistic Sports Understanding</div>
+  <div class="publication-authors">R. Gao, X. Liu*, Z. Hu, B. Xing, B. Xia, Z. Yu, and H. Kälviäinen</div>
+  <div class="publication-venue">IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR), 2025</div>
+  <div class="publication-abstract">
+    <strong>Abstract:</strong> Figure skating, known as the "Art on Ice," is among the most artistic sports, challenging to understand due to its blend of technical elements (like jumps and spins) and overall artistic expression. Existing figure skating datasets mainly focus on single tasks, such as action recognition or scoring, lacking comprehensive annotations for both technical and artistic evaluation. Current sports research is largely centered on ball games, with limited relevance to artistic sports like figure skating. To address this, we introduce FSAnno, a large-scale dataset advancing artistic sports understanding through figure skating. FSAnno includes an open-access training and test dataset, alongside a benchmark dataset, FSBench, for fair model evaluation. FSBench consists of FSBench-Text, with multiple-choice questions and explanations, and FSBench-Motion, containing multimodal data and Question and Answer (QA) pairs, supporting tasks from technical analysis to performance commentary. Initial tests on FSBench reveal significant limitations in existing models' understanding of artistic sports. We hope FSBench will become a key tool for evaluating and enhancing model comprehension of figure skating.
+  </div>
+</div>
+
+<a href="../research.html" class="back-link">&laquo; Back to Research Framework</a>
+
+    </main>
+  </div>
+</body>
+</html>
