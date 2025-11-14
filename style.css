@@ -418,3 +418,53 @@ a:hover {
     margin-left: 6px;
   }
 }
+
+/* ===== 研究页面专用样式 ===== */
+.research-publication-list {
+  list-style-type: none;
+  padding-left: 0;
+  counter-reset: research-counter;
+  margin-top: 0;
+}
+
+.research-publication-list li {
+  position: relative;
+  padding: 0.5em 0 0.5em 2.6em;
+  margin-bottom: 0.7em;
+  line-height: 1.5;
+  border-left: 2px solid #eaeaea;
+  transition: all 0.25s ease;
+}
+
+.research-publication-list li:hover {
+  background-color: #f5faff;
+  border-left-color: #3498db;
+  transform: translateX(3px);
+}
+
+.research-publication-list li::before {
+  content: counter(research-counter) ".";
+  position: absolute;
+  left: 0.8em;
+  top: 0.5em;
+  font-weight: bold;
+  font-size: 0.95em;
+  color: #2c3e50;
+  counter-increment: research-counter;
+  transition: inherit;
+}
+
+.research-publication-list li:hover::before {
+  color: #3498db;
+}
+
+/* 研究页面期刊会议样式 */
+.research-publication-list li i {
+  color: #00a0e9;
+  font-style: italic;
+}
+
+.research-publication-list li i b {
+  color: #0077cc;
+  font-style: italic;
+}
