@@ -28,7 +28,7 @@
     
     .research-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
       gap: 2rem;
       margin: 2rem 0;
     }
@@ -39,6 +39,7 @@
       border-radius: 8px;
       border: 1px solid #eaeaea;
       transition: all 0.3s ease;
+      position: relative;
     }
     
     .research-card:hover {
@@ -114,6 +115,33 @@
       color: white;
       font-size: 1.5em;
     }
+    
+    .research-vision {
+      text-align: center;
+      padding: 2rem;
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      color: white;
+      border-radius: 12px;
+      margin: 2rem 0;
+    }
+    
+    .research-vision h3 {
+      color: white;
+      border-bottom: 2px solid rgba(255,255,255,0.3);
+      margin-bottom: 1rem;
+    }
+    
+    .foundation-card {
+      border-left: 4px solid #27ae60;
+    }
+    
+    .foundation-card .research-icon {
+      background: #27ae60;
+    }
+    
+    .foundation-card .keyword {
+      background: #27ae60;
+    }
   </style>
 </head>
 <body>
@@ -153,11 +181,12 @@
 <h2>Research</h2>
 
 <div class="research-overview">
-  My research focuses on the deep integration of artificial intelligence and psychological behavioral science, centered around the core theme of "Trustworthy Affective Computing." I have proposed and implemented a comprehensive psychological understanding system that spans from data collection to model construction, and from input security to output trustworthiness.
+  My research at the intersection of Psychology and Artificial Intelligence focuses on developing trustworthy affective computing systems that understand human emotions in psychologically-grounded and ethically-aware ways. By combining insights from psychological science with advanced AI techniques, we aim to create emotion AI systems that are not only technically advanced but also psychologically valid and socially responsible.
 </div>
 
-<div class="research-highlight">
-  <strong>Research Vision:</strong> To develop AI systems that understand human emotions in a trustworthy, ethical, and psychologically-grounded manner, enabling applications in mental health, human-computer interaction, and public safety.
+<div class="research-vision">
+  <h3>Bridging Psychology and AI for Trustworthy Emotion Understanding</h3>
+  <p>Developing psychologically-informed AI systems that understand human emotions while preserving privacy, ensuring security, and maintaining ethical standards.</p>
 </div>
 
 <div class="research-section">
@@ -167,11 +196,11 @@
     <div class="research-card">
       <div class="research-icon">👐</div>
       <h4>Micro-gesture & Behavior Analysis</h4>
-      <p>Developing identity-free emotion recognition through micro-gestures and micro-movements, preserving privacy while maintaining accurate emotional assessment.</p>
+      <p>Developing identity-free emotion recognition through subconscious micro-gestures and micro-movements. Our work enables privacy-preserving emotion understanding by analyzing subtle behavioral cues while eliminating identity-revealing information.</p>
       <div class="research-keywords">
         <span class="keyword">Micro-gestures</span>
         <span class="keyword">De-identification</span>
-        <span class="keyword">Behavioral Data</span>
+        <span class="keyword">Behavioral Psychology</span>
       </div>
       <div class="publication-preview">
         <strong>Key Publications:</strong>
@@ -187,7 +216,7 @@
     <div class="research-card">
       <div class="research-icon">🛡️</div>
       <h4>Trustworthy Multimodal AI</h4>
-      <p>Ensuring AI emotion understanding is secure, identity-independent, and free from emotional hallucinations through robust verification mechanisms.</p>
+      <p>Ensuring AI emotion understanding is secure, identity-independent, and free from emotional hallucinations. We develop robust verification mechanisms and multimodal frameworks that maintain security and ethical standards in emotion AI systems.</p>
       <div class="research-keywords">
         <span class="keyword">Face Anti-spoofing</span>
         <span class="keyword">Multimodal LLMs</span>
@@ -207,10 +236,10 @@
     <div class="research-card">
       <div class="research-icon">💓</div>
       <h4>Remote Physiological Measurement</h4>
-      <p>Advancing non-contact physiological signal analysis through rPPG and implicit emotion modeling for mental health monitoring.</p>
+      <p>Advancing non-contact physiological signal analysis through rPPG and implicit emotion modeling for mental health monitoring. Our work bridges psychophysiology and computer vision to enable objective assessment of emotional states through physiological signals.</p>
       <div class="research-keywords">
         <span class="keyword">rPPG</span>
-        <span class="keyword">Physiological Signals</span>
+        <span class="keyword">Psychophysiology</span>
         <span class="keyword">Mental Health</span>
       </div>
       <div class="publication-preview">
@@ -224,14 +253,14 @@
       <a href="research-physiological.html" class="research-link">View Publications</a>
     </div>
 
-    <div class="research-card">
-      <div class="research-icon">👁️</div>
-      <h4>Computer Vision & Image Processing</h4>
-      <p>Developing fundamental computer vision algorithms for image restoration, enhancement, and visual understanding.</p>
+    <div class="research-card foundation-card">
+      <div class="research-icon">🔬</div>
+      <h4>Research Foundation: Subtle Signal Processing</h4>
+      <p>Developing fundamental algorithms for subtle signal extraction and analysis. This foundational work provides the core computational techniques that enable our applied research in emotion understanding and physiological measurement.</p>
       <div class="research-keywords">
-        <span class="keyword">Image Restoration</span>
-        <span class="keyword">Video Enhancement</span>
-        <span class="keyword">Visual Computing</span>
+        <span class="keyword">Signal Processing</span>
+        <span class="keyword">Computer Vision</span>
+        <span class="keyword">AI Foundations</span>
       </div>
       <div class="publication-preview">
         <strong>Key Publications:</strong>
@@ -241,22 +270,54 @@
           <li>Zero-shot Restoration (AAAI 2025)</li>
         </ul>
       </div>
-      <a href="research-vision.html" class="research-link">View Publications</a>
+      <a href="research-foundation.html" class="research-link">View Publications</a>
     </div>
   </div>
 </div>
 
 <div class="research-section">
-  <h3>Research Impact</h3>
+  <h3>Research Philosophy</h3>
   
-  <p>The integrated research framework establishes a complete trustworthy loop—from input source control through reasoning process modeling to output result correction and ethical control. This approach provides theoretical support and technical pathways for sustainable development of AI emotion recognition in critical domains including:</p>
+  <div class="research-highlight">
+    <strong>Psychology-AI Integration:</strong> We believe that truly effective emotion AI must be grounded in psychological science. Our research integrates theories from cognitive psychology, psychophysiology, and behavioral science with state-of-the-art AI techniques.
+  </div>
+  
+  <p>Our research follows a principled approach that emphasizes:</p>
   
   <ul>
-    <li><strong>Mental Health:</strong> Objective assessment tools for psychological well-being and emotional disorders</li>
-    <li><strong>Human-Computer Interaction:</strong> Ethical and psychologically-aware interactive systems</li>
-    <li><strong>Public Safety:</strong> Reliable emotional state monitoring in security-critical environments</li>
-    <li><strong>Healthcare:</strong> Non-contact physiological monitoring for clinical applications</li>
+    <li><strong>Psychological Validity:</strong> Ensuring our models align with established psychological theories and empirical findings</li>
+    <li><strong>Technical Innovation:</strong> Developing novel AI algorithms that address real challenges in emotion understanding</li>
+    <li><strong>Ethical Considerations:</strong> Prioritizing privacy, fairness, and transparency in all our systems</li>
+    <li><strong>Real-world Impact:</strong> Creating technologies that can be practically deployed in mental health, education, and human-computer interaction</li>
   </ul>
+</div>
+
+<div class="research-section">
+  <h3>Research Impact</h3>
+  
+  <p>Our work establishes a complete trustworthy loop—from input source control through psychologically-informed reasoning to output result correction and ethical control. This integrated approach provides theoretical support and technical pathways for sustainable development of AI emotion recognition in critical domains including:</p>
+  
+  <div class="research-grid">
+    <div class="research-card">
+      <h4>Mental Health</h4>
+      <p>Objective assessment tools for psychological well-being, stress detection, and emotional disorders through non-contact monitoring</p>
+    </div>
+    
+    <div class="research-card">
+      <h4>Human-Computer Interaction</h4>
+      <p>Ethical and psychologically-aware interactive systems with privacy-preserving emotion understanding</p>
+    </div>
+    
+    <div class="research-card">
+      <h4>Education & Learning</h4>
+      <p>Adaptive learning systems responsive to student emotional states and engagement levels</p>
+    </div>
+    
+    <div class="research-card">
+      <h4>Public Safety</h4>
+      <p>Reliable emotional state monitoring in security-critical environments while preserving individual privacy</p>
+    </div>
+  </div>
 </div>
 
     </main>
