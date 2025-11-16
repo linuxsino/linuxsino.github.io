@@ -7,22 +7,22 @@
   <link rel="stylesheet" href="style.css">
   <style>
     .team-section {
-      margin-bottom: 4rem;
+      margin-bottom: 3rem;
     }
     
     .team-section h3 {
       color: #2c3e50;
       border-bottom: 2px solid #3498db;
       padding-bottom: 0.5em;
-      margin: 3rem 0 2rem 0;
-      font-size: 1.5em;
+      margin: 2rem 0 1.5rem 0;
+      font-size: 1.4em;
     }
     
     .phd-grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
       gap: 2rem;
-      margin: 2rem 0;
+      margin: 1.5rem 0;
     }
     
     .phd-member {
@@ -44,18 +44,19 @@
       justify-content: center;
       color: #bdc3c7;
       font-size: 0.9em;
+      border: 3px solid #e9ecef;
     }
     
     .member-name {
       font-weight: bold;
       font-size: 1.2em;
-      margin-bottom: 0.5rem;
+      margin-bottom: 0.3rem;
       color: #2c3e50;
     }
     
     .member-name-chinese {
       color: #666;
-      margin-bottom: 1rem;
+      margin-bottom: 0.8rem;
       font-size: 1em;
     }
     
@@ -69,11 +70,17 @@
       color: #666;
       font-style: italic;
       font-size: 0.9em;
+      margin-bottom: 0.5rem;
+    }
+    
+    .university {
+      color: #7f8c8d;
+      font-size: 0.9em;
     }
     
     .student-list {
       background: white;
-      padding: 2rem;
+      padding: 1.5rem;
       border-radius: 8px;
       box-shadow: 0 2px 10px rgba(0,0,0,0.1);
       margin: 1rem 0;
@@ -91,6 +98,12 @@
       border-bottom: none;
     }
     
+    .student-info {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+    }
+    
     .student-name {
       font-weight: 600;
       color: #2c3e50;
@@ -98,26 +111,25 @@
     
     .student-name-chinese {
       color: #666;
-      margin-left: 1rem;
     }
     
-    .student-role {
+    .student-university {
       color: #7f8c8d;
       font-size: 0.9em;
     }
     
+    .former-students {
+      background: #f8f9fa;
+    }
+    
     .university-badge {
       display: inline-block;
-      padding: 0.3rem 0.8rem;
+      padding: 0.2rem 0.6rem;
       background: #e8f4fd;
       color: #3498db;
       border-radius: 4px;
       font-size: 0.8em;
-      margin-left: 1rem;
-    }
-    
-    .former-students {
-      background: #f8f9fa;
+      margin-left: 0.5rem;
     }
   </style>
 </head>
@@ -157,153 +169,126 @@
       
 <h2>Research Team</h2>
 
-<!-- LUT University Section -->
+<!-- PhD Students -->
 <div class="team-section">
-  <h3>LUT University</h3>
-
-  <!-- PhD Students -->
-  <div class="team-section">
-    <h4>PhD Students</h4>
-    <div class="phd-grid">
-      <div class="phd-member">
-        <div class="phd-photo">Photo</div>
-        <div class="member-name">Bohao Xing</div>
-        <div class="member-name-chinese">邢博浩</div>
-        <div class="member-role">PhD Student</div>
-        <div class="member-advisors">Co-advised by Prof. Heikki Kälviäinen</div>
-      </div>
-      
-      <div class="phd-member">
-        <div class="phd-photo">Photo</div>
-        <div class="member-name">Rong Gao</div>
-        <div class="member-name-chinese">高榕</div>
-        <div class="member-role">PhD Student</div>
-        <div class="member-advisors">Co-advised by Prof. Heikki Kälviäinen</div>
-      </div>
-      
-      <div class="phd-member">
-        <div class="phd-photo">Photo</div>
-        <div class="member-name">Deng Li</div>
-        <div class="member-role">PhD Student</div>
-        <div class="member-advisors">Co-advised by Prof. Bihan Wen</div>
-      </div>
+  <h3>PhD Students</h3>
+  <div class="phd-grid">
+    <div class="phd-member">
+      <div class="phd-photo">Photo</div>
+      <div class="member-name">Bohao Xing</div>
+      <div class="member-name-chinese">邢博浩</div>
+      <div class="member-role">PhD Student</div>
+      <div class="member-advisors">Co-advised by Prof. Heikki Kälviäinen</div>
+      <div class="university">@ LUT University</div>
     </div>
-  </div>
-
-  <!-- Master Students -->
-  <div class="team-section">
-    <h4>Master Students</h4>
-    <div class="student-list">
-      <div class="student-item">
-        <div>
-          <span class="student-name">Xinrui Li</span>
-        </div>
-        <div class="student-role">Master Student</div>
-      </div>
-      
-      <div class="student-item">
-        <div>
-          <span class="student-name">Durbar Partha</span>
-        </div>
-        <div class="student-role">Master Student</div>
-      </div>
+    
+    <div class="phd-member">
+      <div class="phd-photo">Photo</div>
+      <div class="member-name">Rong Gao</div>
+      <div class="member-name-chinese">高榕</div>
+      <div class="member-role">PhD Student</div>
+      <div class="member-advisors">Co-advised by Prof. Heikki Kälviäinen</div>
+      <div class="university">@ LUT University</div>
+    </div>
+    
+    <div class="phd-member">
+      <div class="phd-photo">Photo</div>
+      <div class="member-name">Deng Li</div>
+      <div class="member-role">PhD Student</div>
+      <div class="member-advisors">Co-advised by Prof. Bihan Wen</div>
+      <div class="university">@ LUT University</div>
     </div>
   </div>
 </div>
 
-<!-- Tianjin University Section -->
+<!-- Master Students -->
 <div class="team-section">
-  <h3>Tianjin University</h3>
-
-  <!-- Master Students -->
-  <div class="team-section">
-    <h4>Master Students</h4>
-    <div class="student-list">
-      <div class="student-item">
-        <div>
-          <span class="student-name">Rong Gao</span>
-          <span class="student-name-chinese">高榕</span>
-        </div>
-        <div class="student-role">Master Student</div>
-      </div>
-      
-      <div class="student-item">
-        <div>
-          <span class="student-name">Bohao Xing</span>
-          <span class="student-name-chinese">邢博浩</span>
-        </div>
-        <div class="student-role">Master Student</div>
-      </div>
-      
-      <div class="student-item">
-        <div>
-          <span class="student-name">Yuting Zhang</span>
-          <span class="student-name-chinese">张雨婷</span>
-        </div>
-        <div class="student-role">Master Student</div>
-      </div>
-      
-      <div class="student-item">
-        <div>
-          <span class="student-name">Chao Liu</span>
-          <span class="student-name-chinese">刘超</span>
-        </div>
-        <div class="student-role">Master Student</div>
-      </div>
-      
-      <div class="student-item">
-        <div>
-          <span class="student-name">Kaishen Yuan</span>
-          <span class="student-name-chinese">苑凯深</span>
-        </div>
-        <div class="student-role">Master Student</div>
-      </div>
-      
-      <div class="student-item">
-        <div>
-          <span class="student-name">Chao Hao</span>
-          <span class="student-name-chinese">郝超</span>
-        </div>
-        <div class="student-role">Master Student</div>
-      </div>
-      
-      <div class="student-item">
-        <div>
-          <span class="student-name">Zhuozhao Hu</span>
-          <span class="student-name-chinese">胡卓昭</span>
-        </div>
-        <div class="student-role">Master Student</div>
-      </div>
-      
-      <div class="student-item">
-        <div>
-          <span class="student-name">Xinxu Ge</span>
-          <span class="student-name-chinese">葛新旭</span>
-        </div>
-        <div class="student-role">Master Student</div>
-      </div>
-      
-      <div class="student-item">
-        <div>
-          <span class="student-name">Chao Gao</span>
-          <span class="student-name-chinese">高超</span>
-        </div>
-        <div class="student-role">Master Student</div>
-      </div>
-    </div>
-  </div>
-</div>
-
-<!-- Visiting Researchers -->
-<div class="team-section">
-  <h3>Visiting Researchers</h3>
+  <h3>Master Students</h3>
   <div class="student-list">
     <div class="student-item">
-      <div>
-        <span class="student-name">Assoc. Prof. Ling Chen</span>
-        <span class="university-badge">Southwest University, China</span>
+      <div class="student-info">
+        <span class="student-name">Rong Gao</span>
+        <span class="student-name-chinese">高榕</span>
       </div>
-      <div class="student-role">Visiting Researcher</div>
+      <div class="student-university">@ Tianjin University</div>
+    </div>
+    
+    <div class="student-item">
+      <div class="student-info">
+        <span class="student-name">Bohao Xing</span>
+        <span class="student-name-chinese">邢博浩</span>
+      </div>
+      <div class="student-university">@ Tianjin University</div>
+    </div>
+    
+    <div class="student-item">
+      <div class="student-info">
+        <span class="student-name">Yuting Zhang</span>
+        <span class="student-name-chinese">张雨婷</span>
+      </div>
+      <div class="student-university">@ Tianjin University</div>
+    </div>
+    
+    <div class="student-item">
+      <div class="student-info">
+        <span class="student-name">Chao Liu</span>
+        <span class="student-name-chinese">刘超</span>
+      </div>
+      <div class="student-university">@ Tianjin University</div>
+    </div>
+    
+    <div class="student-item">
+      <div class="student-info">
+        <span class="student-name">Kaishen Yuan</span>
+        <span class="student-name-chinese">苑凯深</span>
+      </div>
+      <div class="student-university">@ Tianjin University</div>
+    </div>
+    
+    <div class="student-item">
+      <div class="student-info">
+        <span class="student-name">Chao Hao</span>
+        <span class="student-name-chinese">郝超</span>
+      </div>
+      <div class="student-university">@ Tianjin University</div>
+    </div>
+    
+    <div class="student-item">
+      <div class="student-info">
+        <span class="student-name">Zhuozhao Hu</span>
+        <span class="student-name-chinese">胡卓昭</span>
+      </div>
+      <div class="student-university">@ Tianjin University</div>
+    </div>
+    
+    <div class="student-item">
+      <div class="student-info">
+        <span class="student-name">Xinxu Ge</span>
+        <span class="student-name-chinese">葛新旭</span>
+      </div>
+      <div class="student-university">@ Tianjin University</div>
+    </div>
+    
+    <div class="student-item">
+      <div class="student-info">
+        <span class="student-name">Chao Gao</span>
+        <span class="student-name-chinese">高超</span>
+      </div>
+      <div class="student-university">@ Tianjin University</div>
+    </div>
+    
+    <div class="student-item">
+      <div class="student-info">
+        <span class="student-name">Xinrui Li</span>
+      </div>
+      <div class="student-university">@ LUT University</div>
+    </div>
+    
+    <div class="student-item">
+      <div class="student-info">
+        <span class="student-name">Durbar Partha</span>
+      </div>
+      <div class="student-university">@ LUT University</div>
     </div>
   </div>
 </div>
@@ -313,81 +298,81 @@
   <h3>Former Students</h3>
   <div class="student-list former-students">
     <div class="student-item">
-      <div>
+      <div class="student-info">
         <span class="student-name">Manh Cuong Le</span>
         <span class="university-badge">Now PhD @ Linkoping University</span>
       </div>
-      <div class="student-role">Master Student</div>
+      <div class="student-university">@ LUT University</div>
     </div>
     
     <div class="student-item">
-      <div>
+      <div class="student-info">
         <span class="student-name">Aime Barema</span>
       </div>
-      <div class="student-role">Master Student</div>
+      <div class="student-university">@ LUT University</div>
     </div>
     
     <div class="student-item">
-      <div>
+      <div class="student-info">
         <span class="student-name">Socrates Waka Onyando</span>
       </div>
-      <div class="student-role">Master Student</div>
+      <div class="student-university">@ LUT University</div>
     </div>
     
     <div class="student-item">
-      <div>
+      <div class="student-info">
         <span class="student-name">Liu Yang</span>
       </div>
-      <div class="student-role">Master Student</div>
+      <div class="student-university">@ LUT University</div>
     </div>
     
     <div class="student-item">
-      <div>
+      <div class="student-info">
         <span class="student-name">Leevi Hovatov</span>
       </div>
-      <div class="student-role">Master Student</div>
+      <div class="student-university">@ LUT University</div>
     </div>
     
     <div class="student-item">
-      <div>
+      <div class="student-info">
         <span class="student-name">Ali Lzadkhah</span>
       </div>
-      <div class="student-role">Master Student</div>
+      <div class="student-university">@ LUT University</div>
     </div>
     
     <div class="student-item">
-      <div>
+      <div class="student-info">
         <span class="student-name">Swapnil Baad</span>
       </div>
-      <div class="student-role">Master Student</div>
+      <div class="student-university">@ LUT University</div>
     </div>
     
     <div class="student-item">
-      <div>
+      <div class="student-info">
         <span class="student-name">Simone Gherardi</span>
       </div>
-      <div class="student-role">Master Student</div>
+      <div class="student-university">@ LUT University</div>
     </div>
     
     <div class="student-item">
-      <div>
+      <div class="student-info">
         <span class="student-name">Josline Banza Mwape</span>
       </div>
-      <div class="student-role">Master Student</div>
+      <div class="student-university">@ LUT University</div>
     </div>
     
     <div class="student-item">
-      <div>
+      <div class="student-info">
         <span class="student-name">Matti Aalto</span>
       </div>
-      <div class="student-role">Bachelor Student</div>
+      <div class="student-university">@ LUT University</div>
     </div>
     
     <div class="student-item">
-      <div>
+      <div class="student-info">
         <span class="student-name">Lihtamo Atte Oskari</span>
       </div>
-      <div class="student-role">Bachelor Student</div>
+      <div class="student-university">@ LUT University</div>
     </div>
   </div>
 </div>
