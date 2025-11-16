@@ -54,6 +54,15 @@
       color: #2c3e50;
     }
     
+    .member-name a {
+      color: inherit;
+      text-decoration: none;
+    }
+    
+    .member-name a:hover {
+      color: #3498db;
+    }
+    
     .member-name-chinese {
       color: #666;
       margin-bottom: 0.8rem;
@@ -109,6 +118,15 @@
       color: #2c3e50;
     }
     
+    .student-name a {
+      color: inherit;
+      text-decoration: none;
+    }
+    
+    .student-name a:hover {
+      color: #3498db;
+    }
+    
     .student-name-chinese {
       color: #666;
     }
@@ -130,6 +148,26 @@
       border-radius: 4px;
       font-size: 0.8em;
       margin-left: 0.5rem;
+    }
+    
+    .current-status {
+      color: #27ae60;
+      font-weight: 600;
+      font-size: 0.9em;
+      margin-top: 0.3rem;
+    }
+    
+    .external-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.3rem;
+      color: #3498db;
+      text-decoration: none;
+      font-size: 0.9em;
+    }
+    
+    .external-link:hover {
+      text-decoration: underline;
     }
   </style>
 </head>
@@ -175,7 +213,9 @@
   <div class="phd-grid">
     <div class="phd-member">
       <div class="phd-photo">Photo</div>
-      <div class="member-name">Bohao Xing</div>
+      <div class="member-name">
+        <a href="https://xxtars.github.io/" target="_blank">Bohao Xing</a>
+      </div>
       <div class="member-name-chinese">邢博浩</div>
       <div class="member-role">PhD Student</div>
       <div class="member-advisors">Co-advised by Prof. Heikki Kälviäinen</div>
@@ -184,7 +224,9 @@
     
     <div class="phd-member">
       <div class="phd-photo">Photo</div>
-      <div class="member-name">Rong Gao</div>
+      <div class="member-name">
+        <a href="https://sites.google.com/view/ronggao/" target="_blank">Rong Gao</a>
+      </div>
       <div class="member-name-chinese">高榕</div>
       <div class="member-role">PhD Student</div>
       <div class="member-advisors">Co-advised by Prof. Heikki Kälviäinen</div>
@@ -193,7 +235,9 @@
     
     <div class="phd-member">
       <div class="phd-photo">Photo</div>
-      <div class="member-name">Deng Li</div>
+      <div class="member-name">
+        <a href="https://sites.google.com/view/dengli/" target="_blank">Deng Li</a>
+      </div>
       <div class="member-role">PhD Student</div>
       <div class="member-advisors">Co-advised by Prof. Bihan Wen</div>
       <div class="university">@ LUT University</div>
@@ -223,24 +267,8 @@
     
     <div class="student-item">
       <div class="student-info">
-        <span class="student-name">Yuting Zhang</span>
-        <span class="student-name-chinese">张雨婷</span>
-      </div>
-      <div class="student-university">@ Tianjin University</div>
-    </div>
-    
-    <div class="student-item">
-      <div class="student-info">
         <span class="student-name">Chao Liu</span>
         <span class="student-name-chinese">刘超</span>
-      </div>
-      <div class="student-university">@ Tianjin University</div>
-    </div>
-    
-    <div class="student-item">
-      <div class="student-info">
-        <span class="student-name">Kaishen Yuan</span>
-        <span class="student-name-chinese">苑凯深</span>
       </div>
       <div class="student-university">@ Tianjin University</div>
     </div>
@@ -297,6 +325,39 @@
 <div class="team-section">
   <h3>Former Students</h3>
   <div class="student-list former-students">
+    <div class="student-item">
+      <div class="student-info">
+        <span class="student-name">
+          <a href="https://yuankaishen2001.github.io/Kkkkkkyle/" target="_blank">Kaishen Yuan</a>
+        </span>
+        <span class="student-name-chinese">苑凯深</span>
+        <span class="university-badge">Now PhD @ HKUST(GZ)</span>
+      </div>
+      <div class="student-university">@ Tianjin University</div>
+    </div>
+    
+    <div class="student-item">
+      <div class="student-info">
+        <span class="student-name">
+          <a href="https://keke-nice.github.io/" target="_blank">Yuting Zhang</a>
+        </span>
+        <span class="student-name-chinese">张雨婷</span>
+        <span class="university-badge">Now PhD @ HKUST(GZ)</span>
+      </div>
+      <div class="student-university">@ Tianjin University</div>
+    </div>
+    
+    <div class="student-item">
+      <div class="student-info">
+        <span class="student-name">
+          <a href="https://scholar.google.com/citations?user=c4yDMc8AAAAJ&hl=en" target="_blank">Chao Hao</a>
+        </span>
+        <span class="student-name-chinese">郝超</span>
+        <span class="university-badge">Now PhD @ PolyU</span>
+      </div>
+      <div class="student-university">@ Tianjin University</div>
+    </div>
+    
     <div class="student-item">
       <div class="student-info">
         <span class="student-name">Manh Cuong Le</span>
