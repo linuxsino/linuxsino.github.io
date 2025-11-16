@@ -7,35 +7,43 @@
   <link rel="stylesheet" href="style.css">
   <style>
     .team-section {
-      margin-bottom: 3rem;
+      margin-bottom: 4rem;
     }
     
     .team-section h3 {
       color: #2c3e50;
       border-bottom: 2px solid #3498db;
-      padding-bottom: 0.3em;
-      margin: 2rem 0 1rem 0;
-      font-size: 1.4em;
+      padding-bottom: 0.5em;
+      margin: 3rem 0 2rem 0;
+      font-size: 1.5em;
     }
     
-    .team-grid {
+    .phd-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
       gap: 2rem;
       margin: 2rem 0;
     }
     
-    .team-member {
+    .phd-member {
       background: white;
       padding: 2rem;
       border-radius: 8px;
       box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-      border-left: 4px solid #3498db;
-      transition: transform 0.3s ease;
+      text-align: center;
     }
     
-    .team-member:hover {
-      transform: translateY(-5px);
+    .phd-photo {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      background: #f8f9fa;
+      margin: 0 auto 1rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #bdc3c7;
+      font-size: 0.9em;
     }
     
     .member-name {
@@ -45,53 +53,71 @@
       color: #2c3e50;
     }
     
+    .member-name-chinese {
+      color: #666;
+      margin-bottom: 1rem;
+      font-size: 1em;
+    }
+    
     .member-role {
       color: #3498db;
       font-weight: 600;
-      margin-bottom: 1rem;
+      margin-bottom: 0.5rem;
     }
     
     .member-advisors {
       color: #666;
       font-style: italic;
-      margin-bottom: 1rem;
       font-size: 0.9em;
     }
     
-    .member-thesis {
-      color: #555;
-      line-height: 1.5;
-      margin-top: 1rem;
-      padding-top: 1rem;
-      border-top: 1px solid #eee;
+    .student-list {
+      background: white;
+      padding: 2rem;
+      border-radius: 8px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+      margin: 1rem 0;
     }
     
-    .former-member {
-      background: #f8f9fa;
-      border-left-color: #95a5a6;
+    .student-item {
+      padding: 1rem 0;
+      border-bottom: 1px solid #eee;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
     }
     
-    .visiting-researcher {
-      background: #e8f4fd;
-      border-left-color: #9b59b6;
+    .student-item:last-child {
+      border-bottom: none;
     }
     
-    .status-badge {
+    .student-name {
+      font-weight: 600;
+      color: #2c3e50;
+    }
+    
+    .student-name-chinese {
+      color: #666;
+      margin-left: 1rem;
+    }
+    
+    .student-role {
+      color: #7f8c8d;
+      font-size: 0.9em;
+    }
+    
+    .university-badge {
       display: inline-block;
-      padding: 0.2rem 0.8rem;
-      background: #3498db;
-      color: white;
-      border-radius: 12px;
+      padding: 0.3rem 0.8rem;
+      background: #e8f4fd;
+      color: #3498db;
+      border-radius: 4px;
       font-size: 0.8em;
-      margin-left: 0.5rem;
+      margin-left: 1rem;
     }
     
-    .status-alumni {
-      background: #95a5a6;
-    }
-    
-    .status-visiting {
-      background: #9b59b6;
+    .former-students {
+      background: #f8f9fa;
     }
   </style>
 </head>
@@ -131,169 +157,237 @@
       
 <h2>Research Team</h2>
 
+<!-- LUT University Section -->
 <div class="team-section">
-  <h3>Current PhD Students</h3>
-  
-  <div class="team-grid">
-    <div class="team-member">
-      <div class="member-name">Bohao Xing</div>
-      <div class="member-role">PhD Student</div>
-      <div class="member-advisors">Co-advised by Prof. Heikki Kälviäinen</div>
+  <h3>LUT University</h3>
+
+  <!-- PhD Students -->
+  <div class="team-section">
+    <h4>PhD Students</h4>
+    <div class="phd-grid">
+      <div class="phd-member">
+        <div class="phd-photo">Photo</div>
+        <div class="member-name">Bohao Xing</div>
+        <div class="member-name-chinese">邢博浩</div>
+        <div class="member-role">PhD Student</div>
+        <div class="member-advisors">Co-advised by Prof. Heikki Kälviäinen</div>
+      </div>
+      
+      <div class="phd-member">
+        <div class="phd-photo">Photo</div>
+        <div class="member-name">Rong Gao</div>
+        <div class="member-name-chinese">高榕</div>
+        <div class="member-role">PhD Student</div>
+        <div class="member-advisors">Co-advised by Prof. Heikki Kälviäinen</div>
+      </div>
+      
+      <div class="phd-member">
+        <div class="phd-photo">Photo</div>
+        <div class="member-name">Deng Li</div>
+        <div class="member-role">PhD Student</div>
+        <div class="member-advisors">Co-advised by Prof. Bihan Wen</div>
+      </div>
     </div>
-    
-    <div class="team-member">
-      <div class="member-name">Rong Gao</div>
-      <div class="member-role">PhD Student</div>
-      <div class="member-advisors">Co-advised by Prof. Heikki Kälviäinen</div>
-    </div>
-    
-    <div class="team-member">
-      <div class="member-name">Deng Li</div>
-      <div class="member-role">PhD Student</div>
-      <div class="member-advisors">Co-advised by Prof. Bihan Wen</div>
+  </div>
+
+  <!-- Master Students -->
+  <div class="team-section">
+    <h4>Master Students</h4>
+    <div class="student-list">
+      <div class="student-item">
+        <div>
+          <span class="student-name">Xinrui Li</span>
+        </div>
+        <div class="student-role">Master Student</div>
+      </div>
+      
+      <div class="student-item">
+        <div>
+          <span class="student-name">Durbar Partha</span>
+        </div>
+        <div class="student-role">Master Student</div>
+      </div>
     </div>
   </div>
 </div>
 
+<!-- Tianjin University Section -->
 <div class="team-section">
-  <h3>Current Master Students</h3>
-  
-  <div class="team-grid">
-    <div class="team-member">
-      <div class="member-name">Xinrui Li</div>
-      <div class="member-role">Master Student</div>
-    </div>
-    
-    <div class="team-member">
-      <div class="member-name">Durbar Partha</div>
-      <div class="member-role">Master Student</div>
+  <h3>Tianjin University</h3>
+
+  <!-- Master Students -->
+  <div class="team-section">
+    <h4>Master Students</h4>
+    <div class="student-list">
+      <div class="student-item">
+        <div>
+          <span class="student-name">Rong Gao</span>
+          <span class="student-name-chinese">高榕</span>
+        </div>
+        <div class="student-role">Master Student</div>
+      </div>
+      
+      <div class="student-item">
+        <div>
+          <span class="student-name">Bohao Xing</span>
+          <span class="student-name-chinese">邢博浩</span>
+        </div>
+        <div class="student-role">Master Student</div>
+      </div>
+      
+      <div class="student-item">
+        <div>
+          <span class="student-name">Yuting Zhang</span>
+          <span class="student-name-chinese">张雨婷</span>
+        </div>
+        <div class="student-role">Master Student</div>
+      </div>
+      
+      <div class="student-item">
+        <div>
+          <span class="student-name">Chao Liu</span>
+          <span class="student-name-chinese">刘超</span>
+        </div>
+        <div class="student-role">Master Student</div>
+      </div>
+      
+      <div class="student-item">
+        <div>
+          <span class="student-name">Kaishen Yuan</span>
+          <span class="student-name-chinese">苑凯深</span>
+        </div>
+        <div class="student-role">Master Student</div>
+      </div>
+      
+      <div class="student-item">
+        <div>
+          <span class="student-name">Chao Hao</span>
+          <span class="student-name-chinese">郝超</span>
+        </div>
+        <div class="student-role">Master Student</div>
+      </div>
+      
+      <div class="student-item">
+        <div>
+          <span class="student-name">Zhuozhao Hu</span>
+          <span class="student-name-chinese">胡卓昭</span>
+        </div>
+        <div class="student-role">Master Student</div>
+      </div>
+      
+      <div class="student-item">
+        <div>
+          <span class="student-name">Xinxu Ge</span>
+          <span class="student-name-chinese">葛新旭</span>
+        </div>
+        <div class="student-role">Master Student</div>
+      </div>
+      
+      <div class="student-item">
+        <div>
+          <span class="student-name">Chao Gao</span>
+          <span class="student-name-chinese">高超</span>
+        </div>
+        <div class="student-role">Master Student</div>
+      </div>
     </div>
   </div>
 </div>
 
+<!-- Visiting Researchers -->
 <div class="team-section">
   <h3>Visiting Researchers</h3>
-  
-  <div class="team-grid">
-    <div class="team-member visiting-researcher">
-      <div class="member-name">Assoc. Prof. Ling Chen</div>
-      <div class="member-role">Visiting Researcher</div>
-      <div class="member-advisors">Southwest University, China</div>
-      <span class="status-badge status-visiting">Visiting</span>
+  <div class="student-list">
+    <div class="student-item">
+      <div>
+        <span class="student-name">Assoc. Prof. Ling Chen</span>
+        <span class="university-badge">Southwest University, China</span>
+      </div>
+      <div class="student-role">Visiting Researcher</div>
     </div>
   </div>
 </div>
 
+<!-- Former Students -->
 <div class="team-section">
   <h3>Former Students</h3>
-  
-  <div class="team-grid">
-    <div class="team-member former-member">
-      <div class="member-name">Matti Aalto</div>
-      <div class="member-role">Bachelor Student</div>
-      <div class="member-thesis">
-        <strong>Thesis:</strong> Enhancing image retrieval with contrastive learning
+  <div class="student-list former-students">
+    <div class="student-item">
+      <div>
+        <span class="student-name">Manh Cuong Le</span>
+        <span class="university-badge">Now PhD @ Linkoping University</span>
       </div>
-      <span class="status-badge status-alumni">Alumni</span>
+      <div class="student-role">Master Student</div>
     </div>
     
-    <div class="team-member former-member">
-      <div class="member-name">Aime Barema</div>
-      <div class="member-role">Master Student</div>
-      <div class="member-advisors">Co-advised by Prof. Heikki Kälviäinen</div>
-      <div class="member-thesis">
-        <strong>Thesis:</strong> Exploring multimodality micro-gesture detection for emotion understanding
+    <div class="student-item">
+      <div>
+        <span class="student-name">Aime Barema</span>
       </div>
-      <span class="status-badge status-alumni">Alumni</span>
+      <div class="student-role">Master Student</div>
     </div>
     
-    <div class="team-member former-member">
-      <div class="member-name">Socrates Waka Onyando</div>
-      <div class="member-role">Master Student</div>
-      <div class="member-thesis">
-        <strong>Thesis:</strong> Micro-gesture recognition via visual-text contrastive learning
+    <div class="student-item">
+      <div>
+        <span class="student-name">Socrates Waka Onyando</span>
       </div>
-      <span class="status-badge status-alumni">Alumni</span>
+      <div class="student-role">Master Student</div>
     </div>
     
-    <div class="team-member former-member">
-      <div class="member-name">Liu Yang</div>
-      <div class="member-role">Master Student</div>
-      <div class="member-thesis">
-        <strong>Thesis:</strong> Face anti-spoofing by using diffusion model
+    <div class="student-item">
+      <div>
+        <span class="student-name">Liu Yang</span>
       </div>
-      <span class="status-badge status-alumni">Alumni</span>
+      <div class="student-role">Master Student</div>
     </div>
     
-    <div class="team-member former-member">
-      <div class="member-name">Leevi Hovatov</div>
-      <div class="member-role">Master Student</div>
-      <div class="member-advisors">Co-advised by Dr. Lingli Zhu</div>
-      <div class="member-thesis">
-        <strong>Thesis:</strong> Road detection from lidar data using deep learning methods
+    <div class="student-item">
+      <div>
+        <span class="student-name">Leevi Hovatov</span>
       </div>
-      <span class="status-badge status-alumni">Alumni</span>
+      <div class="student-role">Master Student</div>
     </div>
     
-    <div class="team-member former-member">
-      <div class="member-name">Ali Lzadkhah</div>
-      <div class="member-role">Master Student</div>
-      <div class="member-thesis">
-        <strong>Thesis:</strong> Surface defect detection and classification with deep learning methods in semiconductor industry
+    <div class="student-item">
+      <div>
+        <span class="student-name">Ali Lzadkhah</span>
       </div>
-      <span class="status-badge status-alumni">Alumni</span>
+      <div class="student-role">Master Student</div>
     </div>
     
-    <div class="team-member former-member">
-      <div class="member-name">Swapnil Baad</div>
-      <div class="member-role">Master Student</div>
-      <div class="member-thesis">
-        <strong>Thesis:</strong> Estimating glue-layer defects on plywood through computer vision methods
+    <div class="student-item">
+      <div>
+        <span class="student-name">Swapnil Baad</span>
       </div>
-      <span class="status-badge status-alumni">Alumni</span>
+      <div class="student-role">Master Student</div>
     </div>
     
-    <div class="team-member former-member">
-      <div class="member-name">Simone Gherardi</div>
-      <div class="member-role">Master Student</div>
-      <div class="member-advisors">Co-advised by Prof. Giacomo Boracchi</div>
-      <div class="member-thesis">
-        <strong>Thesis:</strong> Human micro-gesture recognition by adversarial training
+    <div class="student-item">
+      <div>
+        <span class="student-name">Simone Gherardi</span>
       </div>
-      <span class="status-badge status-alumni">Alumni</span>
+      <div class="student-role">Master Student</div>
     </div>
     
-    <div class="team-member former-member">
-      <div class="member-name">Josline Banza Mwape</div>
-      <div class="member-role">Master Student</div>
-      <div class="member-advisors">Co-advised by Prof. Heikki Kälviäinen</div>
-      <div class="member-thesis">
-        <strong>Thesis:</strong> Multimodality non-contact human heart rate sensing
+    <div class="student-item">
+      <div>
+        <span class="student-name">Josline Banza Mwape</span>
       </div>
-      <span class="status-badge status-alumni">Alumni</span>
+      <div class="student-role">Master Student</div>
     </div>
     
-    <div class="team-member former-member">
-      <div class="member-name">Lihtamo Atte Oskari</div>
-      <div class="member-role">Bachelor Student</div>
-      <div class="member-advisors">Co-advised by Dr. Anton Klåvus</div>
-      <div class="member-thesis">
-        <strong>Thesis:</strong> Computational methods for annotation of metabolites in untargeted LC-MS analysis
+    <div class="student-item">
+      <div>
+        <span class="student-name">Matti Aalto</span>
       </div>
-      <span class="status-badge status-alumni">Alumni</span>
+      <div class="student-role">Bachelor Student</div>
     </div>
     
-    <div class="team-member former-member">
-      <div class="member-name">Manh Cuong Le</div>
-      <div class="member-role">Master Student</div>
-      <div class="member-advisors">Co-advised by Prof. Heikki Kälviäinen</div>
-      <div class="member-thesis">
-        <strong>Thesis:</strong> Skeleton-based Human Action Recognition Using Spatio-temporal Attention Graph Convolutional Networks
+    <div class="student-item">
+      <div>
+        <span class="student-name">Lihtamo Atte Oskari</span>
       </div>
-      <div style="color: #27ae60; font-weight: 600; margin-top: 0.5rem;">
-        Now PhD student @ Linkoping University
-      </div>
-      <span class="status-badge status-alumni">Alumni</span>
+      <div class="student-role">Bachelor Student</div>
     </div>
   </div>
 </div>
