@@ -18,14 +18,14 @@
       font-size: 1.3em;
     }
     
-    .phd-grid {
+    .team-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
       gap: 1.5rem;
       margin: 1rem 0;
     }
     
-    .phd-member {
+    .team-member {
       background: white;
       padding: 1.5rem;
       border-radius: 8px;
@@ -33,7 +33,7 @@
       text-align: center;
     }
     
-    .phd-photo {
+    .member-photo {
       width: 100px;
       height: 100px;
       border-radius: 50%;
@@ -83,79 +83,23 @@
       margin-bottom: 0.3rem;
     }
     
-    .university {
-      color: #7f8c8d;
-      font-size: 0.85em;
-    }
-    
-    .student-list {
-      background: white;
-      padding: 1rem;
-      border-radius: 6px;
-      box-shadow: 0 1px 5px rgba(0,0,0,0.1);
-      margin: 0.5rem 0;
-    }
-    
-    .student-item {
-      padding: 0.8rem 0;
-      border-bottom: 1px solid #eee;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
-    
-    .student-item:last-child {
-      border-bottom: none;
-    }
-    
-    .student-info {
-      display: flex;
-      align-items: center;
-      gap: 0.8rem;
-      flex: 1;
-    }
-    
-    .student-name {
+    .member-graduation {
+      color: #27ae60;
       font-weight: 600;
-      color: #2c3e50;
-      min-width: 120px;
-      font-size: 0.95em;
+      font-size: 0.85em;
+      margin-bottom: 0.3rem;
     }
     
-    .student-name a {
-      color: inherit;
-      text-decoration: none;
-    }
-    
-    .student-name a:hover {
-      color: #3498db;
-    }
-    
-    .student-name-chinese {
-      color: #666;
-      min-width: 60px;
-      font-size: 0.9em;
-    }
-    
-    .student-university {
+    .member-university {
       color: #7f8c8d;
       font-size: 0.85em;
-      min-width: 100px;
-      text-align: right;
     }
     
-    .former-students {
-      background: #f8f9fa;
-    }
-    
-    .university-badge {
-      display: inline-block;
-      padding: 0.15rem 0.4rem;
-      background: #e8f4fd;
-      color: #3498db;
-      border-radius: 3px;
-      font-size: 0.75em;
-      margin-left: 0.3rem;
+    .current-status {
+      color: #e74c3c;
+      font-weight: 600;
+      font-size: 0.8em;
+      margin-top: 0.3rem;
     }
   </style>
 </head>
@@ -195,263 +139,276 @@
       
 <h2>Research Team</h2>
 
-<!-- PhD Students -->
+<!-- Current PhD Students -->
 <div class="team-section">
-  <h3>PhD Students</h3>
-  <div class="phd-grid">
-    <div class="phd-member">
-      <div class="phd-photo">Photo</div>
+  <h3>Current PhD Students</h3>
+  <div class="team-grid">
+    <div class="team-member">
+      <div class="member-photo">Photo</div>
       <div class="member-name">
         <a href="https://xxtars.github.io/" target="_blank">Bohao Xing</a>
       </div>
       <div class="member-name-chinese">邢博浩</div>
       <div class="member-role">PhD Student</div>
       <div class="member-advisors">Co-advised by Prof. Heikki Kälviäinen</div>
-      <div class="university">@ LUT University</div>
+      <div class="member-university">LUT University</div>
     </div>
     
-    <div class="phd-member">
-      <div class="phd-photo">Photo</div>
+    <div class="team-member">
+      <div class="member-photo">Photo</div>
       <div class="member-name">
         <a href="https://sites.google.com/view/ronggao/" target="_blank">Rong Gao</a>
       </div>
       <div class="member-name-chinese">高榕</div>
       <div class="member-role">PhD Student</div>
       <div class="member-advisors">Co-advised by Prof. Heikki Kälviäinen</div>
-      <div class="university">@ LUT University</div>
+      <div class="member-university">LUT University</div>
     </div>
     
-    <div class="phd-member">
-      <div class="phd-photo">Photo</div>
+    <div class="team-member">
+      <div class="member-photo">Photo</div>
       <div class="member-name">
         <a href="https://sites.google.com/view/dengli/" target="_blank">Deng Li</a>
       </div>
       <div class="member-role">PhD Student</div>
       <div class="member-advisors">Co-advised by Prof. Bihan Wen</div>
-      <div class="university">@ LUT University</div>
+      <div class="member-university">LUT University</div>
     </div>
   </div>
 </div>
 
-<!-- Master Students -->
+<!-- Current Master Students -->
 <div class="team-section">
-  <h3>Master Students</h3>
-  <div class="student-list">
-    <div class="student-item">
-      <div class="student-info">
-        <span class="student-name">Rong Gao</span>
-        <span class="student-name-chinese">高榕</span>
-      </div>
-      <div class="student-university">@ Tianjin University</div>
+  <h3>Current Master Students</h3>
+  <div class="team-grid">
+    <div class="team-member">
+      <div class="member-photo">Photo</div>
+      <div class="member-name">Rong Gao</div>
+      <div class="member-name-chinese">高榕</div>
+      <div class="member-role">Master Student</div>
+      <div class="member-university">Tianjin University</div>
     </div>
     
-    <div class="student-item">
-      <div class="student-info">
-        <span class="student-name">Bohao Xing</span>
-        <span class="student-name-chinese">邢博浩</span>
-      </div>
-      <div class="student-university">@ Tianjin University</div>
+    <div class="team-member">
+      <div class="member-photo">Photo</div>
+      <div class="member-name">Bohao Xing</div>
+      <div class="member-name-chinese">邢博浩</div>
+      <div class="member-role">Master Student</div>
+      <div class="member-university">Tianjin University</div>
     </div>
     
-    <div class="student-item">
-      <div class="student-info">
-        <span class="student-name">Chao Liu</span>
-        <span class="student-name-chinese">刘超</span>
-      </div>
-      <div class="student-university">@ Tianjin University</div>
+    <div class="team-member">
+      <div class="member-photo">Photo</div>
+      <div class="member-name">Chao Liu</div>
+      <div class="member-name-chinese">刘超</div>
+      <div class="member-role">Master Student</div>
+      <div class="member-university">Tianjin University</div>
     </div>
     
-    <div class="student-item">
-      <div class="student-info">
-        <span class="student-name">Chao Hao</span>
-        <span class="student-name-chinese">郝超</span>
-      </div>
-      <div class="student-university">@ Tianjin University</div>
+    <div class="team-member">
+      <div class="member-photo">Photo</div>
+      <div class="member-name">Chao Hao</div>
+      <div class="member-name-chinese">郝超</div>
+      <div class="member-role">Master Student</div>
+      <div class="member-university">Tianjin University</div>
     </div>
     
-    <div class="student-item">
-      <div class="student-info">
-        <span class="student-name">
-          <a href="https://scholar.google.com/citations?user=Z35mObIAAAAJ&hl=en" target="_blank">Xinxu Ge</a>
-        </span>
-        <span class="student-name-chinese">葛新旭</span>
+    <div class="team-member">
+      <div class="member-photo">Photo</div>
+      <div class="member-name">
+        <a href="https://scholar.google.com/citations?user=Z35mObIAAAAJ&hl=en" target="_blank">Xinxu Ge</a>
       </div>
-      <div class="student-university">@ Tianjin University</div>
+      <div class="member-name-chinese">葛新旭</div>
+      <div class="member-role">Master Student</div>
+      <div class="member-university">Tianjin University</div>
     </div>
     
-    <div class="student-item">
-      <div class="student-info">
-        <span class="student-name">Zhuozhao Hu</span>
-        <span class="student-name-chinese">胡卓昭</span>
-      </div>
-      <div class="student-university">@ Tianjin University</div>
+    <div class="team-member">
+      <div class="member-photo">Photo</div>
+      <div class="member-name">Zhuozhao Hu</div>
+      <div class="member-name-chinese">胡卓昭</div>
+      <div class="member-role">Master Student</div>
+      <div class="member-university">Tianjin University</div>
     </div>
     
-    <div class="student-item">
-      <div class="student-info">
-        <span class="student-name">Chao Gao</span>
-        <span class="student-name-chinese">高超</span>
-      </div>
-      <div class="student-university">@ Tianjin University</div>
+    <div class="team-member">
+      <div class="member-photo">Photo</div>
+      <div class="member-name">Chao Gao</div>
+      <div class="member-name-chinese">高超</div>
+      <div class="member-role">Master Student</div>
+      <div class="member-university">Tianjin University</div>
     </div>
     
-    <div class="student-item">
-      <div class="student-info">
-        <span class="student-name">
-          <a href="https://lutpub.lut.fi/handle/10024/170111" target="_blank">Xinrui Li</a>
-        </span>
+    <div class="team-member">
+      <div class="member-photo">Photo</div>
+      <div class="member-name">
+        <a href="https://lutpub.lut.fi/handle/10024/170111" target="_blank">Xinrui Li</a>
       </div>
-      <div class="student-university">@ LUT University</div>
+      <div class="member-role">Master Student</div>
+      <div class="member-university">LUT University</div>
     </div>
     
-    <div class="student-item">
-      <div class="student-info">
-        <span class="student-name">
-          <a href="https://lutpub.lut.fi/handle/10024/170090" target="_blank">Durbar Partha</a>
-        </span>
-        <span class="university-badge">Now PhD @ KTU & RMIT</span>
+    <div class="team-member">
+      <div class="member-photo">Photo</div>
+      <div class="member-name">
+        <a href="https://lutpub.lut.fi/handle/10024/170090" target="_blank">Durbar Partha</a>
       </div>
-      <div class="student-university">@ LUT University</div>
+      <div class="member-role">Master Student</div>
+      <div class="member-university">LUT University</div>
     </div>
   </div>
 </div>
 
-<!-- Former Students -->
+<!-- Alumni -->
 <div class="team-section">
-  <h3>Former Students</h3>
-  <div class="student-list former-students">
-    <div class="student-item">
-      <div class="student-info">
-        <span class="student-name">
-          <a href="https://yuankaishen2001.github.io/Kkkkkkyle/" target="_blank">Kaishen Yuan</a>
-        </span>
-        <span class="student-name-chinese">苑凯深</span>
-        <span class="university-badge">Now PhD @ HKUST(GZ)</span>
+  <h3>Alumni</h3>
+  <div class="team-grid">
+    <div class="team-member">
+      <div class="member-photo">Photo</div>
+      <div class="member-name">
+        <a href="https://yuankaishen2001.github.io/Kkkkkkyle/" target="_blank">Kaishen Yuan</a>
       </div>
-      <div class="student-university">@ Tianjin University</div>
+      <div class="member-name-chinese">苑凯深</div>
+      <div class="member-role">Master Student</div>
+      <div class="member-graduation">Graduated: 2023</div>
+      <div class="member-university">Tianjin University</div>
+      <div class="current-status">PhD @ HKUST(GZ)</div>
     </div>
     
-    <div class="student-item">
-      <div class="student-info">
-        <span class="student-name">
-          <a href="https://keke-nice.github.io/" target="_blank">Yuting Zhang</a>
-        </span>
-        <span class="student-name-chinese">张雨婷</span>
-        <span class="university-badge">Now PhD @ HKUST(GZ)</span>
+    <div class="team-member">
+      <div class="member-photo">Photo</div>
+      <div class="member-name">
+        <a href="https://keke-nice.github.io/" target="_blank">Yuting Zhang</a>
       </div>
-      <div class="student-university">@ Tianjin University</div>
+      <div class="member-name-chinese">张雨婷</div>
+      <div class="member-role">Master Student</div>
+      <div class="member-graduation">Graduated: 2023</div>
+      <div class="member-university">Tianjin University</div>
+      <div class="current-status">PhD @ HKUST(GZ)</div>
     </div>
     
-    <div class="student-item">
-      <div class="student-info">
-        <span class="student-name">
-          <a href="https://scholar.google.com/citations?user=c4yDMc8AAAAJ&hl=en" target="_blank">Chao Hao</a>
-        </span>
-        <span class="student-name-chinese">郝超</span>
-        <span class="university-badge">Now PhD @ PolyU</span>
+    <div class="team-member">
+      <div class="member-photo">Photo</div>
+      <div class="member-name">
+        <a href="https://scholar.google.com/citations?user=c4yDMc8AAAAJ&hl=en" target="_blank">Chao Hao</a>
       </div>
-      <div class="student-university">@ Tianjin University</div>
+      <div class="member-name-chinese">郝超</div>
+      <div class="member-role">Master Student</div>
+      <div class="member-graduation">Graduated: 2023</div>
+      <div class="member-university">Tianjin University</div>
+      <div class="current-status">PhD @ PolyU</div>
     </div>
     
-    <div class="student-item">
-      <div class="student-info">
-        <span class="student-name">
-          <a href="https://scholar.google.com/citations?user=aGtNlKgAAAAJ&hl=en" target="_blank">Manh Cuong Le</a>
-        </span>
-        <span class="university-badge">Now PhD @ Linkoping</span>
+    <div class="team-member">
+      <div class="member-photo">Photo</div>
+      <div class="member-name">
+        <a href="https://scholar.google.com/citations?user=aGtNlKgAAAAJ&hl=en" target="_blank">Manh Cuong Le</a>
       </div>
-      <div class="student-university">@ LUT University</div>
+      <div class="member-role">Master Student</div>
+      <div class="member-graduation">Graduated: 2022</div>
+      <div class="member-university">LUT University</div>
+      <div class="current-status">PhD @ Linkoping University</div>
     </div>
     
-    <div class="student-item">
-      <div class="student-info">
-        <span class="student-name">
-          <a href="https://lutpub.lut.fi/handle/10024/167821" target="_blank">Aime Barema</a>
-        </span>
+    <div class="team-member">
+      <div class="member-photo">Photo</div>
+      <div class="member-name">
+        <a href="https://lutpub.lut.fi/handle/10024/167821" target="_blank">Aime Barema</a>
       </div>
-      <div class="student-university">@ LUT University</div>
+      <div class="member-role">Master Student</div>
+      <div class="member-graduation">Graduated: 2023</div>
+      <div class="member-university">LUT University</div>
     </div>
     
-    <div class="student-item">
-      <div class="student-info">
-        <span class="student-name">
-          <a href="https://lutpub.lut.fi/handle/10024/167678" target="_blank">Socrates Waka Onyando</a>
-        </span>
-        <span class="university-badge">Now PhD @ Strasbourg</span>
+    <div class="team-member">
+      <div class="member-photo">Photo</div>
+      <div class="member-name">
+        <a href="https://lutpub.lut.fi/handle/10024/167678" target="_blank">Socrates Waka Onyando</a>
       </div>
-      <div class="student-university">@ LUT University</div>
+      <div class="member-role">Master Student</div>
+      <div class="member-graduation">Graduated: 2023</div>
+      <div class="member-university">LUT University</div>
+      <div class="current-status">PhD @ University of Strasbourg</div>
     </div>
     
-    <div class="student-item">
-      <div class="student-info">
-        <span class="student-name">
-          <a href="https://lutpub.lut.fi/handle/10024/166987" target="_blank">Liu Yang</a>
-        </span>
+    <div class="team-member">
+      <div class="member-photo">Photo</div>
+      <div class="member-name">
+        <a href="https://lutpub.lut.fi/handle/10024/166987" target="_blank">Liu Yang</a>
       </div>
-      <div class="student-university">@ LUT University</div>
+      <div class="member-role">Master Student</div>
+      <div class="member-graduation">Graduated: 2022</div>
+      <div class="member-university">LUT University</div>
     </div>
     
-    <div class="student-item">
-      <div class="student-info">
-        <span class="student-name">
-          <a href="https://lutpub.lut.fi/handle/10024/166968" target="_blank">Leevi Hovatov</a>
-        </span>
+    <div class="team-member">
+      <div class="member-photo">Photo</div>
+      <div class="member-name">
+        <a href="https://lutpub.lut.fi/handle/10024/166968" target="_blank">Leevi Hovatov</a>
       </div>
-      <div class="student-university">@ LUT University</div>
+      <div class="member-role">Master Student</div>
+      <div class="member-graduation">Graduated: 2022</div>
+      <div class="member-university">LUT University</div>
     </div>
     
-    <div class="student-item">
-      <div class="student-info">
-        <span class="student-name">
-          <a href="https://lutpub.lut.fi/handle/10024/166117" target="_blank">Ali Lzadkhah</a>
-        </span>
+    <div class="team-member">
+      <div class="member-photo">Photo</div>
+      <div class="member-name">
+        <a href="https://lutpub.lut.fi/handle/10024/166117" target="_blank">Ali Lzadkhah</a>
       </div>
-      <div class="student-university">@ LUT University</div>
+      <div class="member-role">Master Student</div>
+      <div class="member-graduation">Graduated: 2022</div>
+      <div class="member-university">LUT University</div>
     </div>
     
-    <div class="student-item">
-      <div class="student-info">
-        <span class="student-name">
-          <a href="https://lutpub.lut.fi/handle/10024/166091" target="_blank">Swapnil Baad</a>
-        </span>
+    <div class="team-member">
+      <div class="member-photo">Photo</div>
+      <div class="member-name">
+        <a href="https://lutpub.lut.fi/handle/10024/166091" target="_blank">Swapnil Baad</a>
       </div>
-      <div class="student-university">@ LUT University</div>
+      <div class="member-role">Master Student</div>
+      <div class="member-graduation">Graduated: 2022</div>
+      <div class="member-university">LUT University</div>
     </div>
     
-    <div class="student-item">
-      <div class="student-info">
-        <span class="student-name">
-          <a href="https://lutpub.lut.fi/handle/10024/166032" target="_blank">Simone Gherardi</a>
-        </span>
+    <div class="team-member">
+      <div class="member-photo">Photo</div>
+      <div class="member-name">
+        <a href="https://lutpub.lut.fi/handle/10024/166032" target="_blank">Simone Gherardi</a>
       </div>
-      <div class="student-university">@ LUT University</div>
+      <div class="member-role">Master Student</div>
+      <div class="member-graduation">Graduated: 2022</div>
+      <div class="member-university">LUT University</div>
     </div>
     
-    <div class="student-item">
-      <div class="student-info">
-        <span class="student-name">
-          <a href="https://lutpub.lut.fi/handle/10024/165808" target="_blank">Josline Banza Mwape</a>
-        </span>
+    <div class="team-member">
+      <div class="member-photo">Photo</div>
+      <div class="member-name">
+        <a href="https://lutpub.lut.fi/handle/10024/165808" target="_blank">Josline Banza Mwape</a>
       </div>
-      <div class="student-university">@ LUT University</div>
+      <div class="member-role">Master Student</div>
+      <div class="member-graduation">Graduated: 2022</div>
+      <div class="member-university">LUT University</div>
     </div>
     
-    <div class="student-item">
-      <div class="student-info">
-        <span class="student-name">
-          <a href="https://lutpub.lut.fi/handle/10024/167757" target="_blank">Matti Aalto</a>
-        </span>
+    <div class="team-member">
+      <div class="member-photo">Photo</div>
+      <div class="member-name">
+        <a href="https://lutpub.lut.fi/handle/10024/167757" target="_blank">Matti Aalto</a>
       </div>
-      <div class="student-university">@ LUT University</div>
+      <div class="member-role">Bachelor Student</div>
+      <div class="member-graduation">Graduated: 2023</div>
+      <div class="member-university">LUT University</div>
     </div>
     
-    <div class="student-item">
-      <div class="student-info">
-        <span class="student-name">
-          <a href="http://lutpub.lut.fi/handle/10024/165524" target="_blank">Atte Lihtamo</a>
-        </span>
+    <div class="team-member">
+      <div class="member-photo">Photo</div>
+      <div class="member-name">
+        <a href="http://lutpub.lut.fi/handle/10024/165524" target="_blank">Atte Lihtamo</a>
       </div>
-      <div class="student-university">@ LUT University</div>
+      <div class="member-role">Bachelor Student</div>
+      <div class="member-graduation">Graduated: 2022</div>
+      <div class="member-university">LUT University</div>
     </div>
   </div>
 </div>
