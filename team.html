@@ -5,6 +5,95 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Xin Liu – Team</title>
   <link rel="stylesheet" href="style.css">
+  <style>
+    .team-section {
+      margin-bottom: 3rem;
+    }
+    
+    .team-section h3 {
+      color: #2c3e50;
+      border-bottom: 2px solid #3498db;
+      padding-bottom: 0.3em;
+      margin: 2rem 0 1rem 0;
+      font-size: 1.4em;
+    }
+    
+    .team-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2rem;
+      margin: 2rem 0;
+    }
+    
+    .team-member {
+      background: white;
+      padding: 2rem;
+      border-radius: 8px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+      border-left: 4px solid #3498db;
+      transition: transform 0.3s ease;
+    }
+    
+    .team-member:hover {
+      transform: translateY(-5px);
+    }
+    
+    .member-name {
+      font-weight: bold;
+      font-size: 1.2em;
+      margin-bottom: 0.5rem;
+      color: #2c3e50;
+    }
+    
+    .member-role {
+      color: #3498db;
+      font-weight: 600;
+      margin-bottom: 1rem;
+    }
+    
+    .member-advisors {
+      color: #666;
+      font-style: italic;
+      margin-bottom: 1rem;
+      font-size: 0.9em;
+    }
+    
+    .member-thesis {
+      color: #555;
+      line-height: 1.5;
+      margin-top: 1rem;
+      padding-top: 1rem;
+      border-top: 1px solid #eee;
+    }
+    
+    .former-member {
+      background: #f8f9fa;
+      border-left-color: #95a5a6;
+    }
+    
+    .visiting-researcher {
+      background: #e8f4fd;
+      border-left-color: #9b59b6;
+    }
+    
+    .status-badge {
+      display: inline-block;
+      padding: 0.2rem 0.8rem;
+      background: #3498db;
+      color: white;
+      border-radius: 12px;
+      font-size: 0.8em;
+      margin-left: 0.5rem;
+    }
+    
+    .status-alumni {
+      background: #95a5a6;
+    }
+    
+    .status-visiting {
+      background: #9b59b6;
+    }
+  </style>
 </head>
 <body>
   <div class="container">
@@ -17,11 +106,12 @@
   </div>
   
   <nav class="main-nav">
-    <a href="index.html" class="nav-item active">Home</a>
+    <a href="index.html" class="nav-item">Home</a>
     <a href="publication.html" class="nav-item">Publications</a>
     <a href="research.html" class="nav-item">Research</a>
-    <a href="team.html" class="nav-item">Team</a>
+    <a href="team.html" class="nav-item active">Team</a>
     <a href="position.html" class="nav-item">Positions</a>
+    <a href="news.html" class="nav-item">News</a>
     <a href="https://scholar.google.com/citations?user=xHkC5U0AAAAJ" target="_blank" class="nav-item external">
       Google Scholar
       <svg class="ext-icon" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor">
@@ -39,8 +129,174 @@
 
     <main class="main">
       
-<h2>Team</h2>
-<p>Team information to be added.</p>
+<h2>Research Team</h2>
+
+<div class="team-section">
+  <h3>Current PhD Students</h3>
+  
+  <div class="team-grid">
+    <div class="team-member">
+      <div class="member-name">Bohao Xing</div>
+      <div class="member-role">PhD Student</div>
+      <div class="member-advisors">Co-advised by Prof. Heikki Kälviäinen</div>
+    </div>
+    
+    <div class="team-member">
+      <div class="member-name">Rong Gao</div>
+      <div class="member-role">PhD Student</div>
+      <div class="member-advisors">Co-advised by Prof. Heikki Kälviäinen</div>
+    </div>
+    
+    <div class="team-member">
+      <div class="member-name">Deng Li</div>
+      <div class="member-role">PhD Student</div>
+      <div class="member-advisors">Co-advised by Prof. Bihan Wen</div>
+    </div>
+  </div>
+</div>
+
+<div class="team-section">
+  <h3>Current Master Students</h3>
+  
+  <div class="team-grid">
+    <div class="team-member">
+      <div class="member-name">Xinrui Li</div>
+      <div class="member-role">Master Student</div>
+    </div>
+    
+    <div class="team-member">
+      <div class="member-name">Durbar Partha</div>
+      <div class="member-role">Master Student</div>
+    </div>
+  </div>
+</div>
+
+<div class="team-section">
+  <h3>Visiting Researchers</h3>
+  
+  <div class="team-grid">
+    <div class="team-member visiting-researcher">
+      <div class="member-name">Assoc. Prof. Ling Chen</div>
+      <div class="member-role">Visiting Researcher</div>
+      <div class="member-advisors">Southwest University, China</div>
+      <span class="status-badge status-visiting">Visiting</span>
+    </div>
+  </div>
+</div>
+
+<div class="team-section">
+  <h3>Former Students</h3>
+  
+  <div class="team-grid">
+    <div class="team-member former-member">
+      <div class="member-name">Matti Aalto</div>
+      <div class="member-role">Bachelor Student</div>
+      <div class="member-thesis">
+        <strong>Thesis:</strong> Enhancing image retrieval with contrastive learning
+      </div>
+      <span class="status-badge status-alumni">Alumni</span>
+    </div>
+    
+    <div class="team-member former-member">
+      <div class="member-name">Aime Barema</div>
+      <div class="member-role">Master Student</div>
+      <div class="member-advisors">Co-advised by Prof. Heikki Kälviäinen</div>
+      <div class="member-thesis">
+        <strong>Thesis:</strong> Exploring multimodality micro-gesture detection for emotion understanding
+      </div>
+      <span class="status-badge status-alumni">Alumni</span>
+    </div>
+    
+    <div class="team-member former-member">
+      <div class="member-name">Socrates Waka Onyando</div>
+      <div class="member-role">Master Student</div>
+      <div class="member-thesis">
+        <strong>Thesis:</strong> Micro-gesture recognition via visual-text contrastive learning
+      </div>
+      <span class="status-badge status-alumni">Alumni</span>
+    </div>
+    
+    <div class="team-member former-member">
+      <div class="member-name">Liu Yang</div>
+      <div class="member-role">Master Student</div>
+      <div class="member-thesis">
+        <strong>Thesis:</strong> Face anti-spoofing by using diffusion model
+      </div>
+      <span class="status-badge status-alumni">Alumni</span>
+    </div>
+    
+    <div class="team-member former-member">
+      <div class="member-name">Leevi Hovatov</div>
+      <div class="member-role">Master Student</div>
+      <div class="member-advisors">Co-advised by Dr. Lingli Zhu</div>
+      <div class="member-thesis">
+        <strong>Thesis:</strong> Road detection from lidar data using deep learning methods
+      </div>
+      <span class="status-badge status-alumni">Alumni</span>
+    </div>
+    
+    <div class="team-member former-member">
+      <div class="member-name">Ali Lzadkhah</div>
+      <div class="member-role">Master Student</div>
+      <div class="member-thesis">
+        <strong>Thesis:</strong> Surface defect detection and classification with deep learning methods in semiconductor industry
+      </div>
+      <span class="status-badge status-alumni">Alumni</span>
+    </div>
+    
+    <div class="team-member former-member">
+      <div class="member-name">Swapnil Baad</div>
+      <div class="member-role">Master Student</div>
+      <div class="member-thesis">
+        <strong>Thesis:</strong> Estimating glue-layer defects on plywood through computer vision methods
+      </div>
+      <span class="status-badge status-alumni">Alumni</span>
+    </div>
+    
+    <div class="team-member former-member">
+      <div class="member-name">Simone Gherardi</div>
+      <div class="member-role">Master Student</div>
+      <div class="member-advisors">Co-advised by Prof. Giacomo Boracchi</div>
+      <div class="member-thesis">
+        <strong>Thesis:</strong> Human micro-gesture recognition by adversarial training
+      </div>
+      <span class="status-badge status-alumni">Alumni</span>
+    </div>
+    
+    <div class="team-member former-member">
+      <div class="member-name">Josline Banza Mwape</div>
+      <div class="member-role">Master Student</div>
+      <div class="member-advisors">Co-advised by Prof. Heikki Kälviäinen</div>
+      <div class="member-thesis">
+        <strong>Thesis:</strong> Multimodality non-contact human heart rate sensing
+      </div>
+      <span class="status-badge status-alumni">Alumni</span>
+    </div>
+    
+    <div class="team-member former-member">
+      <div class="member-name">Lihtamo Atte Oskari</div>
+      <div class="member-role">Bachelor Student</div>
+      <div class="member-advisors">Co-advised by Dr. Anton Klåvus</div>
+      <div class="member-thesis">
+        <strong>Thesis:</strong> Computational methods for annotation of metabolites in untargeted LC-MS analysis
+      </div>
+      <span class="status-badge status-alumni">Alumni</span>
+    </div>
+    
+    <div class="team-member former-member">
+      <div class="member-name">Manh Cuong Le</div>
+      <div class="member-role">Master Student</div>
+      <div class="member-advisors">Co-advised by Prof. Heikki Kälviäinen</div>
+      <div class="member-thesis">
+        <strong>Thesis:</strong> Skeleton-based Human Action Recognition Using Spatio-temporal Attention Graph Convolutional Networks
+      </div>
+      <div style="color: #27ae60; font-weight: 600; margin-top: 0.5rem;">
+        Now PhD student @ Linkoping University
+      </div>
+      <span class="status-badge status-alumni">Alumni</span>
+    </div>
+  </div>
+</div>
 
     </main>
   </div>
