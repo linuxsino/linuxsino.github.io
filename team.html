@@ -42,23 +42,31 @@
     }
     
     .member-photo {
-      width: 100px;
-      height: 100px;
+      width: 140px;  /* 从100px增加到140px */
+      height: 140px; /* 从100px增加到140px */
       border-radius: 50%;
       background: #f8f9fa;
-      margin: 0 auto 0.8rem;
+      margin: 0 auto 1rem; /* 增加底部间距 */
       display: flex;
       align-items: center;
       justify-content: center;
       color: #bdc3c7;
-      font-size: 0.8em;
-      border: 2px solid #e9ecef;
+      font-size: 1em; /* 稍微增大字体 */
+      border: 3px solid #e9ecef; /* 边框也稍微加粗 */
+      overflow: hidden; /* 确保图片不会溢出 */
+    }
+    
+    .member-photo img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 50%;
     }
     
     .member-name {
       font-weight: bold;
-      font-size: 1.1em;
-      margin-bottom: 0.2rem;
+      font-size: 1.2em; /* 稍微增大姓名字体 */
+      margin-bottom: 0.3rem;
       color: #2c3e50;
     }
     
@@ -73,28 +81,28 @@
     
     .member-name-chinese {
       color: #666;
-      margin-bottom: 0.5rem;
-      font-size: 0.9em;
+      margin-bottom: 0.6rem; /* 增加间距 */
+      font-size: 0.95em;
     }
     
     .member-advisors {
       color: #666;
       font-style: italic;
       font-size: 0.85em;
-      margin-bottom: 0.3rem;
+      margin-bottom: 0.4rem; /* 增加间距 */
     }
     
     .member-graduation {
       color: #27ae60;
       font-weight: 600;
       font-size: 0.85em;
-      margin-bottom: 0.3rem;
+      margin-bottom: 0.4rem; /* 增加间距 */
     }
     
     .member-university {
       color: #7f8c8d;
       font-size: 0.85em;
-      margin-bottom: 0.3rem;
+      margin-bottom: 0.4rem; /* 增加间距 */
     }
     
     .current-status {
@@ -146,7 +154,7 @@
   <div class="team-grid">
     <div class="phd-member">
       <div class="member-photo">
-        <img src="images/team/bohao_xing.jpg" alt="Bohao Xing" style="width: 100%; height: 100%; border-radius: 50%; object-fit: cover;">
+        <img src="images/team/bohao_xing.jpg" alt="Bohao Xing">
       </div>
       <div class="member-name">
         <a href="https://xxtars.github.io/" target="_blank">Bohao Xing</a>
@@ -158,7 +166,7 @@
     
     <div class="phd-member">
       <div class="member-photo">
-        <img src="images/team/rong_gao.jpg" alt="Rong Gao" style="width: 100%; height: 100%; border-radius: 50%; object-fit: cover;">
+        <img src="images/team/rong_gao.jpg" alt="Rong Gao">
       </div>
       <div class="member-name">
         <a href="https://sites.google.com/view/ronggao/" target="_blank">Rong Gao</a>
@@ -170,7 +178,7 @@
     
     <div class="phd-member">
       <div class="member-photo">
-        <img src="images/team/deng_li.jpg" alt="Deng Li" style="width: 100%; height: 100%; border-radius: 50%; object-fit: cover;">
+        <img src="images/team/deng_li.jpg" alt="Deng Li">
       </div>
       <div class="member-name">
         <a href="https://sites.google.com/view/dengli/" target="_blank">Deng Li</a>
