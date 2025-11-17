@@ -3,8 +3,151 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Xin Liu – Position</title>
+  <title>Xin Liu – Positions</title>
   <link rel="stylesheet" href="style.css">
+  <style>
+    .position-section {
+      margin-bottom: 3rem;
+    }
+    
+    .position-section h2 {
+      color: #2c3e50;
+      border-bottom: 2px solid #3498db;
+      padding-bottom: 0.3em;
+      margin: 2rem 0 1.5rem 0;
+      font-size: 1.5em;
+    }
+    
+    .position-card {
+      background: white;
+      padding: 2rem;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      margin-bottom: 2rem;
+    }
+    
+    .position-title {
+      color: #2c3e50;
+      font-size: 1.4em;
+      font-weight: bold;
+      margin-bottom: 1rem;
+    }
+    
+    .position-subtitle {
+      color: #3498db;
+      font-size: 1.1em;
+      font-weight: 600;
+      margin-bottom: 1.5rem;
+    }
+    
+    .position-content {
+      line-height: 1.6;
+      color: #333;
+    }
+    
+    .position-content h3 {
+      color: #2c3e50;
+      margin: 1.5rem 0 0.8rem 0;
+      font-size: 1.2em;
+    }
+    
+    .position-content ul {
+      margin: 0.5rem 0 1rem 1.5rem;
+    }
+    
+    .position-content li {
+      margin-bottom: 0.5rem;
+    }
+    
+    .language-switch {
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+    
+    .language-btn {
+      background: #3498db;
+      color: white;
+      border: none;
+      padding: 0.5rem 1rem;
+      margin: 0 0.5rem;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 0.9em;
+    }
+    
+    .language-btn.active {
+      background: #2c3e50;
+    }
+    
+    .language-btn:hover {
+      background: #2980b9;
+    }
+    
+    .language-content {
+      display: none;
+    }
+    
+    .language-content.active {
+      display: block;
+    }
+    
+    .highlight {
+      background: #f8f9fa;
+      padding: 1.5rem;
+      border-radius: 6px;
+      border-left: 4px solid #3498db;
+      margin: 1.5rem 0;
+    }
+    
+    .contact-info {
+      background: #e8f4fd;
+      padding: 1.5rem;
+      border-radius: 6px;
+      margin-top: 2rem;
+    }
+    
+    .research-areas {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 1rem;
+      margin: 1rem 0;
+    }
+    
+    .research-area {
+      background: #f8f9fa;
+      padding: 1rem;
+      border-radius: 6px;
+      text-align: center;
+    }
+    
+    .trustworthy-framework {
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      color: white;
+      padding: 2rem;
+      border-radius: 12px;
+      margin: 2rem 0;
+    }
+    
+    .framework-stages {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.5rem;
+      margin-top: 1.5rem;
+    }
+    
+    .framework-stage {
+      background: rgba(255,255,255,0.1);
+      padding: 1.5rem;
+      border-radius: 8px;
+      text-align: center;
+    }
+    
+    .stage-number {
+      font-size: 2em;
+      font-weight: bold;
+      margin-bottom: 0.5rem;
+    }
+  </style>
 </head>
 <body>
   <div class="container">
@@ -17,11 +160,12 @@
   </div>
   
   <nav class="main-nav">
-    <a href="index.html" class="nav-item active">Home</a>
+    <a href="index.html" class="nav-item">Home</a>
     <a href="publication.html" class="nav-item">Publications</a>
     <a href="research.html" class="nav-item">Research</a>
     <a href="team.html" class="nav-item">Team</a>
-    <a href="position.html" class="nav-item">Positions</a>
+    <a href="position.html" class="nav-item active">Positions</a>
+    <a href="news.html" class="nav-item">News</a>
     <a href="https://scholar.google.com/citations?user=xHkC5U0AAAAJ" target="_blank" class="nav-item external">
       Google Scholar
       <svg class="ext-icon" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor">
@@ -36,12 +180,217 @@
     <div class="contact">Email: linuxsino@gmail.com</div>
   </div>
 </aside>
+
     <main class="main">
       
-<h2>Contact</h2>
-<p>Email: <a href="mailto:Xin.Liu@lut.fi">Xin.Liu@lut.fi</a></p>
-<p>Phone: +358 41 476 4800</p>
-<p>Office: CVPR Lab, LUT University, Lappeenranta, Finland</p>
+<div class="language-switch">
+  <button class="language-btn active" onclick="switchLanguage('en')">English</button>
+  <button class="language-btn" onclick="switchLanguage('zh')">中文</button>
+</div>
+
+<!-- English Version -->
+<div id="en-content" class="language-content active">
+  <h2>Open Positions</h2>
+  
+  <div class="position-section">
+    <div class="position-card">
+      <div class="position-title">Visiting Students and Scholars</div>
+      <div class="position-subtitle">Long-term Recruitment | Cross-disciplinary Welcome</div>
+      
+      <div class="position-content">
+        <p>Our research group is actively seeking motivated visiting students and scholars to join our dynamic team working on <strong>Trustworthy Affective Computing</strong>. We welcome applicants from diverse academic backgrounds to collaborate on cutting-edge research projects.</p>
+        
+        <div class="trustworthy-framework">
+          <h3 style="color: white; text-align: center;">Trustworthy Affective Computing Framework</h3>
+          <div class="framework-stages">
+            <div class="framework-stage">
+              <div class="stage-number">1</div>
+              <h4>Input Authenticity</h4>
+              <p>Liveness detection, anti-spoofing, physiological signal verification</p>
+            </div>
+            <div class="framework-stage">
+              <div class="stage-number">2</div>
+              <h4>Causal Reasoning</h4>
+              <p>Psychology-guided analysis, micro-behavior understanding, action unit mapping</p>
+            </div>
+            <div class="framework-stage">
+              <div class="stage-number">3</div>
+              <h4>Trustworthy Output</h4>
+              <p>Ethical constraints, hallucination detection, psychological consistency</p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="highlight">
+          <strong>We particularly encourage students from the following disciplines to apply:</strong>
+          <div class="research-areas">
+            <div class="research-area">Computer Science</div>
+            <div class="research-area">Communication Engineering</div>
+            <div class="research-area">Electronic Engineering</div>
+            <div class="research-area">Information Technology</div>
+            <div class="research-area">Automation</div>
+            <div class="research-area">Mathematics</div>
+            <div class="research-area">Psychology</div>
+            <div class="research-area">Related Fields</div>
+          </div>
+        </div>
+        
+        <h3>Research Focus Areas</h3>
+        <ul>
+          <li><strong>Trustworthy Affective Computing</strong>: From identity-dependent to de-identified emotion recognition</li>
+          <li><strong>Micro-gesture and Micro-expression Analysis</strong>: Subconscious behavior understanding</li>
+          <li><strong>Facial Action Unit Detection</strong>: Psychology-constrained emotion mapping</li>
+          <li><strong>Remote Physiological Measurement</strong>: Contactless vital sign monitoring</li>
+          <li><strong>Multimodal Emotion Understanding</strong>: Integrating visual, textual, and physiological signals</li>
+          <li><strong>AI Ethics and Psychological Consistency</strong>: Ensuring trustworthy emotional AI</li>
+        </ul>
+        
+        <h3>Requirements</h3>
+        <ul>
+          <li>Currently enrolled in or recently graduated from a Bachelor's, Master's, or PhD program</li>
+          <li>Strong academic background in related fields</li>
+          <li>Programming experience (Python, PyTorch, TensorFlow, etc.)</li>
+          <li>Good communication skills in English</li>
+          <li>Self-motivated and passionate about trustworthy AI research</li>
+        </ul>
+        
+        <h3>Benefits</h3>
+        <ul>
+          <li>Work on cutting-edge trustworthy affective computing research</li>
+          <li>Access to state-of-the-art computing facilities and datasets</li>
+          <li>Opportunity to collaborate with leading researchers in affective computing</li>
+          <li>Potential for co-authorship in high-impact publications</li>
+          <li>Flexible duration (3-12 months)</li>
+        </ul>
+        
+        <div class="contact-info">
+          <h3>How to Apply</h3>
+          <p>Interested candidates should send the following documents to <strong>linuxsino@gmail.com</strong>:</p>
+          <ul>
+            <li>Curriculum Vitae (CV)</li>
+            <li>Academic transcripts</li>
+            <li>Brief statement of research interests</li>
+            <li>Expected duration of visit</li>
+            <li>Any relevant research experience or publications</li>
+          </ul>
+          <p>We review applications on a rolling basis and welcome inquiries at any time.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Chinese Version -->
+<div id="zh-content" class="language-content">
+  <h2>招生与职位信息</h2>
+  
+  <div class="position-section">
+    <div class="position-card">
+      <div class="position-title">访问学生与学者招聘</div>
+      <div class="position-subtitle">长期有效 | 欢迎跨学科申请</div>
+      
+      <div class="position-content">
+        <p>我们研究团队长期招收访问学生和学者加入我们的<strong>可信情感计算</strong>研究。我们欢迎来自不同学术背景的申请者与我们合作开展前沿研究项目。</p>
+        
+        <div class="trustworthy-framework">
+          <h3 style="color: white; text-align: center;">可信情感计算框架</h3>
+          <div class="framework-stages">
+            <div class="framework-stage">
+              <div class="stage-number">1</div>
+              <h4>输入真实性</h4>
+              <p>活体检测、反欺骗、生理信号验证</p>
+            </div>
+            <div class="framework-stage">
+              <div class="stage-number">2</div>
+              <h4>因果推理</h4>
+              <p>心理学引导分析、微行为理解、动作单元映射</p>
+            </div>
+            <div class="framework-stage">
+              <div class="stage-number">3</div>
+              <h4>可信输出</h4>
+              <p>伦理约束、幻觉检测、心理一致性</p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="highlight">
+          <strong>特别欢迎以下学科背景的学生申请：</strong>
+          <div class="research-areas">
+            <div class="research-area">计算机科学</div>
+            <div class="research-area">通信工程</div>
+            <div class="research-area">电子工程</div>
+            <div class="research-area">信息技术</div>
+            <div class="research-area">自动化</div>
+            <div class="research-area">数学</div>
+            <div class="research-area">心理学</div>
+            <div class="research-area">相关领域</div>
+          </div>
+        </div>
+        
+        <h3>主要研究方向</h3>
+        <ul>
+          <li><strong>可信情感计算</strong>：从身份依赖到去身份化的情感识别</li>
+          <li><strong>微手势与微表情分析</strong>：潜意识行为理解</li>
+          <li><strong>面部动作单元检测</strong>：心理学约束的情感映射</li>
+          <li><strong>远程生理测量</strong>：非接触式生命体征监测</li>
+          <li><strong>多模态情感理解</strong>：整合视觉、文本和生理信号</li>
+          <li><strong>AI伦理与心理一致性</strong>：确保可信的情感AI</li>
+        </ul>
+        
+        <h3>申请要求</h3>
+        <ul>
+          <li>在读或近期毕业的本科生、硕士生或博士生</li>
+          <li>相关领域的扎实学术背景</li>
+          <li>编程经验（Python、PyTorch、TensorFlow等）</li>
+          <li>良好的英语沟通能力</li>
+          <li>自我驱动且对可信AI研究充满热情</li>
+        </ul>
+        
+        <h3>项目优势</h3>
+        <ul>
+          <li>参与前沿的可信情感计算研究</li>
+          <li>使用先进的计算设备和数据集</li>
+          <li>与情感计算领域顶尖研究人员合作的机会</li>
+          <li>在高水平期刊会议上合作发表论文的机会</li>
+          <li>灵活的访问时长（3-12个月）</li>
+        </ul>
+        
+        <div class="contact-info">
+          <h3>申请方式</h3>
+          <p>有意者请将以下材料发送至：<strong>linuxsino@gmail.com</strong></p>
+          <ul>
+            <li>个人简历（CV）</li>
+            <li>成绩单</li>
+            <li>研究兴趣简述</li>
+            <li>预期的访问时间</li>
+            <li>相关研究经验或发表论文（如有）</li>
+          </ul>
+          <p>我们常年接收申请，欢迎随时咨询。</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+function switchLanguage(lang) {
+  // Hide all language contents
+  document.querySelectorAll('.language-content').forEach(content => {
+    content.classList.remove('active');
+  });
+  
+  // Show selected language content
+  document.getElementById(lang + '-content').classList.add('active');
+  
+  // Update button states
+  document.querySelectorAll('.language-btn').forEach(btn => {
+    btn.classList.remove('active');
+  });
+  
+  // Activate the clicked button
+  event.target.classList.add('active');
+}
+</script>
 
     </main>
   </div>
