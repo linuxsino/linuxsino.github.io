@@ -130,7 +130,7 @@ body {
 .main ol[reversed] {
   list-style-type: none;
   padding-left: 0;
-  counter-reset: publication-counter 70;
+  counter-reset: publication-counter 71;
   margin-top: 0;
 }
 
