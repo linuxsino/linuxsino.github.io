@@ -6,45 +6,57 @@
   <title>Xin Liu – Home</title>
   <link rel="stylesheet" href="style.css">
   <style>
-    /* 招募消息高亮样式 */
-    .recruitment-highlight {
-      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-      color: white;
+    /* 招募消息柔和样式 */
+    .recruitment-message {
+      background: #e8f4fd;
+      border-left: 4px solid #3498db;
       padding: 1.2rem 1.5rem;
       border-radius: 8px;
       margin-bottom: 1.5rem;
-      font-weight: 500;
-      font-size: 1.1em;
-      box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3);
-      border-left: 4px solid #ffd700;
+      font-size: 1.05em;
+      color: #2c3e50;
+      box-shadow: 0 2px 8px rgba(52, 152, 219, 0.1);
     }
     
-    .recruitment-highlight a {
-      color: #ffd700;
+    .recruitment-message a {
+      color: #3498db;
       text-decoration: none;
       font-weight: 600;
+      transition: color 0.2s ease;
     }
     
-    .recruitment-highlight a:hover {
+    .recruitment-message a:hover {
+      color: #2980b9;
       text-decoration: underline;
     }
     
-    /* SJTU logo 样式 */
-    .profile-section {
-      position: relative;
+    .recruitment-icon {
+      margin-right: 0.5rem;
+      color: #3498db;
     }
     
-    .sjtu-logo {
-      width: 60px;
-      height: 60px;
+    /* SJTU logo 放在 Biography 旁边 */
+    .bio-header {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      margin-bottom: 1.5rem;
+    }
+    
+    .bio-header h2 {
+      margin: 0;
+    }
+    
+    .bio-sjtu-logo {
+      width: 50px;
+      height: 50px;
       border-radius: 50%;
       background: white;
-      padding: 5px;
-      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-      margin-top: 1rem;
+      padding: 3px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
     }
     
-    .sjtu-logo img {
+    .bio-sjtu-logo img {
       width: 100%;
       height: 100%;
       object-fit: contain;
@@ -57,10 +69,6 @@
 <aside class="sidebar">
   <div class="profile-section">
     <img src="images/xin_liu.jpg" alt="Xin Liu" class="profile-img">
-    <!-- SJTU logo -->
-    <div class="sjtu-logo">
-      <img src="images/sjtu-logo.png" alt="Shanghai Jiao Tong University">
-    </div>
     <h1>Xin Liu</h1>
     <p class="position">Associate Professor (Tenured)<br>Shanghai Jiao Tong University</p>
   </div>
@@ -90,7 +98,19 @@
 
     <main class="main">
       <!-- Biography部分 - 中英整合 -->
-      <h2>Biography</h2>
+      <div class="bio-header">
+        <h2>Biography</h2>
+        <div class="bio-sjtu-logo">
+          <img src="images/sjtu-logo.png" alt="Shanghai Jiao Tong University">
+        </div>
+      </div>
+      
+      <!-- 招募消息柔和显示 -->
+      <div class="recruitment-message">
+        <span class="recruitment-icon">📌</span>
+        <strong>I am recruiting</strong> visiting students, undergraduate, master's, and PhD students to join the <strong>Center for Affective Computing and Intelligent Interaction</strong> at Shanghai Jiao Tong University. 
+        <a href="position.html">More info &raquo;</a>
+      </div>
       
 <p><strong>Dr. Xin Liu</strong> is a Tenured Associate Professor at the <a href="https://psychology.sjtu.edu.cn/" target="_blank">School of Psychology</a>, <a href="https://en.sjtu.edu.cn/" target="_blank">Shanghai Jiao Tong University</a> (2026–present). Prior to this, he served as an Associate Professor at <a href="https://www.lut.fi/en" target="_blank">LUT University</a> in Finland (2021–2025) and as an Associate Professor at <a href="http://www.tju.edu.cn/english/index.htm" target="_blank">Tianjin University</a>, China. He continues his affiliation with LUT University as an Adjunct Doctoral Supervisor.</p>
 
@@ -104,16 +124,9 @@
 
       <p>他的研究致力于人工智能与心理学的交叉前沿探索，旨在通过计算机视觉与机器学习技术，为情感理解与心理健康评估提供客观的计算方法与工具。核心研究方向为可信情感智能与人机共情，在情感多模态大模型、微姿态与微表情分析、远程生理信号检测等领域取得系列创新成果。先后主持国家自然科学基金、芬兰科学院、芬兰教育部、芬兰国家IT科学研究中心、澳大利亚教育部等国内外重要科研项目，研究成果获得KAUTE基金会、诺基亚等知名企业及基金会资助。在PAMI、IJCV、CVPR、ICLR等国际顶级期刊和会议上发表论文80余篇，获批专利20余项。目前担任包括中科院一区期刊IEEE Transactions on Multimedia在内的三本国际期刊编委。</p>
 
-      <!-- News部分 -->
+      <!-- News部分 - 只保留2025年10月至今 -->
       <div class="news-section">
         <h2>News</h2>
-        
-        <!-- 招募消息高亮显示 -->
-        <div class="recruitment-highlight">
-          🔔 <strong>I am recruiting</strong> visiting students, undergraduate, master's, and PhD students to join the <strong>Center for Affective Computing and Intelligent Interaction</strong> at Shanghai Jiao Tong University. 
-          <a href="position.html">More info &raquo;</a>
-        </div>
-        
         <ul class="news-list">
           <li class="news-item">
             <span class="news-date">[03.2026]</span>
@@ -167,7 +180,7 @@
         </div>
       </div>
 
-      <!-- Selected Publications部分 -->
+      <!-- Selected Publications部分 - 添加新论文 -->
       <div class="news-section">
         <h2>Selected Publications</h2>
         <ul class="publications">
