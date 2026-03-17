@@ -60,29 +60,37 @@
     }
     
     .language-switch {
-      text-align: center;
+      display: flex;
+      justify-content: flex-end;
+      gap: 0.5rem;
       margin-bottom: 2rem;
     }
     
     .language-btn {
-      background: none;
-      color: #3498db;
-      border: 1px solid #3498db;
-      padding: 0.3rem 1rem;
-      margin: 0 0.3rem;
-      border-radius: 3px;
+      background: transparent;
+      color: #666;
+      border: 1px solid #ddd;
+      padding: 0.4rem 1.2rem;
+      border-radius: 20px;
       cursor: pointer;
       font-size: 0.9em;
+      font-weight: 500;
+      transition: all 0.2s ease;
+    }
+    
+    .language-btn:hover {
+      background: #f0f0f0;
+      border-color: #ccc;
     }
     
     .language-btn.active {
       background: #3498db;
       color: white;
+      border-color: #3498db;
     }
     
-    .language-btn:hover {
-      background: #3498db;
-      color: white;
+    .language-btn.active:hover {
+      background: #2980b9;
     }
     
     .language-content {
@@ -144,8 +152,8 @@
     <main class="main">
       
 <div class="language-switch">
-  <button class="language-btn active" onclick="switchLanguage('en')">English</button>
-  <button class="language-btn" onclick="switchLanguage('zh')">中文</button>
+  <button class="language-btn active" onclick="switchLanguage('en')">🇬🇧 English</button>
+  <button class="language-btn" onclick="switchLanguage('zh')">🇨🇳 中文</button>
 </div>
 
 <!-- English Version -->
