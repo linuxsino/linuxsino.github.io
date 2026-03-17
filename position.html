@@ -3,115 +3,108 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Long-term Motivation Tracing – Xin Liu</title>
-  <link rel="stylesheet" href="../style.css">
+  <title>Xin Liu – Positions</title>
+  <link rel="stylesheet" href="style.css">
   <style>
-    .technique-header {
-      margin: 2rem 0;
-      padding-bottom: 1rem;
-      border-bottom: 2px solid #f39c12;
+    .position-section {
+      margin-bottom: 3rem;
     }
     
-    .technique-description {
-      line-height: 1.6;
-      margin-bottom: 2rem;
+    .position-section h2 {
       color: #2c3e50;
+      border-bottom: 2px solid #3498db;
+      padding-bottom: 0.3em;
+      margin: 2rem 0 1.5rem 0;
+      font-size: 1.5em;
     }
     
-    .technique-details {
+    .position-card {
       background: white;
-      padding: 1.5rem;
-      border-radius: 4px;
-      margin: 2rem 0;
-      border-left: 3px solid #f39c12;
-    }
-    
-    .back-link {
-      display: inline-block;
-      margin-top: 2rem;
-      color: #3498db;
-      text-decoration: none;
-      font-weight: 600;
-    }
-    
-    .back-link:hover {
-      text-decoration: underline;
-    }
-    
-    .publication-item {
-      background: white;
-      padding: 1.5rem;
-      border-radius: 4px;
-      margin: 1.5rem 0;
-      border-left: 3px solid #3498db;
-    }
-    
-    .publication-title {
-      font-weight: bold;
-      margin-bottom: 0.5rem;
-      color: #2c3e50;
-    }
-    
-    .publication-authors {
-      color: #666;
-      font-style: italic;
-      margin-bottom: 0.5rem;
-    }
-    
-    .publication-venue {
-      color: #3498db;
-      font-weight: 600;
-      margin-bottom: 1rem;
-    }
-    
-    .research-highlight {
-      background-color: #f8f9fa;
-      border-left: 4px solid #f39c12;
-      padding: 1.5rem;
-      margin: 1.5rem 0;
-      border-radius: 0 4px 4px 0;
-    }
-    
-    .research-nav {
-      background: #f8f9fa;
-      padding: 1rem;
+      padding: 2rem;
       border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
       margin-bottom: 2rem;
     }
     
-    .research-nav h4 {
+    .position-title {
       color: #2c3e50;
+      font-size: 1.4em;
+      font-weight: bold;
       margin-bottom: 1rem;
+    }
+    
+    .position-subtitle {
+      color: #3498db;
       font-size: 1.1em;
+      font-weight: 600;
+      margin-bottom: 1.5rem;
     }
     
-    .research-nav-links {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 0.8rem;
+    .position-content {
+      line-height: 1.6;
+      color: #333;
     }
     
-    .research-nav-link {
-      padding: 0.3rem 0.8rem;
-      background: white;
-      border-radius: 20px;
-      color: #666;
-      text-decoration: none;
+    .position-content h3 {
+      color: #2c3e50;
+      margin: 1.5rem 0 0.8rem 0;
+      font-size: 1.2em;
+    }
+    
+    .position-content ul {
+      margin: 0.5rem 0 1rem 1.5rem;
+    }
+    
+    .position-content li {
+      margin-bottom: 0.5rem;
+    }
+    
+    .language-switch {
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+    
+    .language-btn {
+      background: none;
+      color: #3498db;
+      border: 1px solid #3498db;
+      padding: 0.3rem 1rem;
+      margin: 0 0.3rem;
+      border-radius: 3px;
+      cursor: pointer;
       font-size: 0.9em;
-      border: 1px solid #ddd;
-      transition: all 0.2s ease;
     }
     
-    .research-nav-link:hover {
+    .language-btn.active {
       background: #3498db;
       color: white;
-      border-color: #3498db;
     }
     
-    .research-nav-link.active {
-      background: #f39c12;
+    .language-btn:hover {
+      background: #3498db;
       color: white;
-      border-color: #f39c12;
+    }
+    
+    .language-content {
+      display: none;
+    }
+    
+    .language-content.active {
+      display: block;
+    }
+    
+    .highlight {
+      background: #f8f9fa;
+      padding: 1.5rem;
+      border-radius: 6px;
+      margin: 1.5rem 0;
+    }
+    
+    .contact-info {
+      background: #e8f4fd;
+      padding: 1.5rem;
+      border-radius: 6px;
+      margin-top: 2rem;
     }
   </style>
 </head>
@@ -120,18 +113,18 @@
     
 <aside class="sidebar">
   <div class="profile-section">
-    <img src="../images/xin_liu.jpg" alt="Xin Liu" class="profile-img">
+    <img src="images/xin_liu.jpg" alt="Xin Liu" class="profile-img">
     <h1>Xin Liu</h1>
     <p class="position">Associate Professor (Tenured)<br>Shanghai Jiao Tong University</p>
   </div>
   
   <nav class="main-nav">
-    <a href="../index.html" class="nav-item">Home</a>
-    <a href="../publication.html" class="nav-item">Publications</a>
-    <a href="../research.html" class="nav-item active">Research</a>
-    <a href="../team.html" class="nav-item">Team</a>
-    <a href="../position.html" class="nav-item">Positions</a>
-    <a href="../news.html" class="nav-item">News</a>
+    <a href="index.html" class="nav-item">Home</a>
+    <a href="publication.html" class="nav-item">Publications</a>
+    <a href="research.html" class="nav-item">Research</a>
+    <a href="team.html" class="nav-item">Team</a>
+    <a href="position.html" class="nav-item active">Positions</a>
+    <a href="news.html" class="nav-item">News</a>
     <a href="https://scholar.google.com/citations?user=xHkC5U0AAAAJ" target="_blank" class="nav-item external">
       Google Scholar
       <svg class="ext-icon" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor">
@@ -150,73 +143,158 @@
 
     <main class="main">
       
-<!-- 研究二级页面导航 -->
-<div class="research-nav">
-  <h4>Research Areas</h4>
-  <div class="research-nav-links">
-    <a href="liveness-detection.html" class="research-nav-link">Liveness Detection</a>
-    <a href="micro-expression-consistency.html" class="research-nav-link">Micro-expression Consistency</a>
-    <a href="temporal-physiological-signals.html" class="research-nav-link">Temporal Physiological Signals</a>
-    <a href="subconscious-micro-behavior.html" class="research-nav-link">Subconscious Micro-behavior</a>
-    <a href="facial-action-unit-mapping.html" class="research-nav-link">Facial Action Unit Mapping</a>
-    <a href="long-term-motivation-tracing.html" class="research-nav-link active">Long-term Motivation Tracing</a>
-    <a href="emotional-hallucination-detection.html" class="research-nav-link">Emotional Hallucination Detection</a>
-    <a href="causal-chain-constraints.html" class="research-nav-link">Causal Chain Constraints</a>
-    <a href="ethical-intervention-modules.html" class="research-nav-link">Ethical Intervention Modules</a>
-    <a href="artistic-sports-understanding.html" class="research-nav-link">Artistic Sports Understanding</a>
+<div class="language-switch">
+  <button class="language-btn active" onclick="switchLanguage('en')">English</button>
+  <button class="language-btn" onclick="switchLanguage('zh')">中文</button>
+</div>
+
+<!-- English Version -->
+<div id="en-content" class="language-content active">
+  <h2>Open Positions</h2>
+  
+  <div class="position-section">
+    <div class="position-card">
+      <div class="position-title">Visiting Students and Scholars</div>
+      <div class="position-subtitle">Long-term Recruitment | Cross-disciplinary Welcome</div>
+      
+      <div class="position-content">
+        <p>We are looking for motivated visiting students and scholars to join our research on <strong>Trustworthy Affective Computing</strong> at the School of Psychology, Shanghai Jiao Tong University. We welcome applicants from diverse backgrounds.</p>
+        
+        <div class="highlight">
+          <strong>Core Research Directions:</strong>
+          <ul>
+            <li><strong>Human-Machine Empathy</strong> – Developing AI systems that can understand and respond to human emotions empathetically</li>
+            <li><strong>Trustworthy Affective Computing</strong> – Building reliable, ethical, and psychologically-consistent emotion AI</li>
+            <li><strong>Multimodal Large Language Models for Emotion</strong> – Advancing emotion understanding through MLLMs</li>
+          </ul>
+        </div>
+        
+        <h3>Preferred Research Experience</h3>
+        <p>Candidates with research experience in the following areas will be given priority:</p>
+        <ul>
+          <li>Large Language Models (LLMs) and Multimodal Large Language Models (MLLMs)</li>
+          <li>Micro-gesture and Micro-expression Analysis</li>
+          <li>Facial Action Unit Detection</li>
+          <li>Remote Physiological Measurement</li>
+          <li>Multimodal Emotion Understanding</li>
+          <li>AI Ethics and Psychological Consistency</li>
+        </ul>
+        
+        <h3>Requirements</h3>
+        <ul>
+          <li>Currently enrolled in or recently graduated from Bachelor's, Master's, or PhD program</li>
+          <li>Strong background in related fields</li>
+          <li>Programming experience (Python, PyTorch, TensorFlow, etc.)</li>
+          <li>Good English communication skills</li>
+          <li>Self-motivated and passionate about research</li>
+        </ul>
+        
+        <h3>Benefits</h3>
+        <ul>
+          <li>Work on cutting-edge affective computing research</li>
+          <li>Access to advanced computing facilities</li>
+          <li>Collaboration with leading researchers</li>
+          <li>Potential for co-authorship in publications</li>
+          <li>Flexible duration (3-12 months)</li>
+        </ul>
+        
+        <div class="contact-info">
+          <h3>How to Apply</h3>
+          <p>Send the following documents to <strong>xin.liu@sjtu.edu.cn</strong>:</p>
+          <ul>
+            <li>Curriculum Vitae (CV)</li>
+            <li>Academic transcripts</li>
+            <li>Brief statement of research interests</li>
+            <li>Expected duration of visit</li>
+            <li>Any relevant research experience</li>
+          </ul>
+          <p>We review applications on a rolling basis.</p>
+        </div>
+      </div>
+    </div>
   </div>
 </div>
+
+<!-- Chinese Version -->
+<div id="zh-content" class="language-content">
+  <h2>招生与职位信息</h2>
+  
+  <div class="position-section">
+    <div class="position-card">
+      <div class="position-title">访问学生与学者招聘</div>
+      <div class="position-subtitle">长期有效 | 欢迎跨学科申请</div>
       
-<h2>Long-term Motivation Tracing</h2>
-
-<div class="technique-header">
-  <h3>Analyzing persistent emotional states beyond instantaneous expressions</h3>
+      <div class="position-content">
+        <p>我们招收访问学生和学者加入上海交通大学心理学院<strong>可信情感计算</strong>研究团队。欢迎不同学术背景的申请者。</p>
+        
+        <div class="highlight">
+          <strong>核心研究方向：</strong>
+          <ul>
+            <li><strong>人机共情</strong> – 开发能够共情理解并回应人类情感的AI系统</li>
+            <li><strong>可信情感智能</strong> – 构建可靠、合乎伦理且具有心理一致性的情感AI</li>
+            <li><strong>情感多模态大模型</strong> – 通过多模态大模型推进情感理解</li>
+          </ul>
+        </div>
+        
+        <h3>优先考虑的研究经历</h3>
+        <p>具备以下研究方向经历的申请者将获得优先考虑：</p>
+        <ul>
+          <li>大语言模型与多模态大语言模型</li>
+          <li>微手势与微表情分析</li>
+          <li>面部动作单元检测</li>
+          <li>远程生理测量</li>
+          <li>多模态情感理解</li>
+          <li>AI伦理与心理一致性</li>
+        </ul>
+        
+        <h3>申请要求</h3>
+        <ul>
+          <li>在读或近期毕业的本科生、硕士生或博士生</li>
+          <li>相关领域的扎实学术背景</li>
+          <li>编程经验（Python、PyTorch、TensorFlow等）</li>
+          <li>良好的英语沟通能力</li>
+          <li>自我驱动且对科研充满热情</li>
+        </ul>
+        
+        <h3>项目优势</h3>
+        <ul>
+          <li>参与前沿情感计算研究</li>
+          <li>使用先进的计算设备</li>
+          <li>与顶尖研究人员合作</li>
+          <li>合作发表论文的机会</li>
+          <li>灵活的访问时长（3-12个月）</li>
+        </ul>
+        
+        <div class="contact-info">
+          <h3>申请方式</h3>
+          <p>请将以下材料发送至：<strong>xin.liu@sjtu.edu.cn</strong></p>
+          <ul>
+            <li>个人简历（CV）</li>
+            <li>成绩单</li>
+            <li>研究兴趣简述</li>
+            <li>预期的访问时间</li>
+            <li>相关研究经验（如有）</li>
+          </ul>
+          <p>我们常年接收申请。</p>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
 
-<div class="technique-description">
-  <p>Our research in long-term motivation tracing focuses on understanding and analyzing persistent emotional states and underlying motivations that extend beyond momentary emotional expressions. This approach enables comprehensive emotional understanding by considering temporal dynamics and contextual factors in emotion analysis.</p>
-</div>
-
-<div class="research-highlight">
-  <strong>Research Focus:</strong> Developing de-identified multimodal emotion recognition and reasoning systems that can trace emotional motivations across extended time sequences while preserving privacy through identity-free analysis.
-</div>
-
-<div class="technique-details">
-  <h4>Key Contributions</h4>
-  <ul>
-    <li><strong>DEEMO Framework:</strong> De-identity multimodal emotion recognition and reasoning for privacy-preserving emotional analysis</li>
-    <li><strong>EALD-MLLM System:</strong> Emotion analysis in long-sequential and de-identity videos with multimodal large language models</li>
-    <li><strong>Identity-free AI Emotion Intelligence:</strong> Comprehensive micro-gesture understanding for tracing emotional motivations</li>
-    <li><strong>Sequence Reasoning:</strong> Leveraging temporal patterns for action anticipation and emotional state prediction</li>
-  </ul>
-</div>
-
-<!-- Publications -->
-<div class="publication-item">
-  <div class="publication-title">DEEMO: De-identity Multimodal Emotion Recognition and Reasoning</div>
-  <div class="publication-authors">D. Li, B. Xing, X. Liu*, B. Xia, B. Wen, and H. Kälviäinen</div>
-  <div class="publication-venue">ACM International Conference on Multimedia (ACMMM), 2025</div>
-</div>
-
-<div class="publication-item">
-  <div class="publication-title">EALD-MLLM: Emotion Analysis in Long-sequential and De-identity videos with Multi-modal Large Language Model</div>
-  <div class="publication-authors">D. Li, X. Liu, B. Xing, B. Xia, Y. Zong, B. Wen, H. Kälviäinen</div>
-  <div class="publication-venue">Preprint</div>
-</div>
-
-<div class="publication-item">
-  <div class="publication-title">Identity-free Artificial Emotional Intelligence via Micro-Gesture Understanding</div>
-  <div class="publication-authors">R. Gao, X. Liu*, B. Xing, Z. Yu, B. W. Schuller, and H. Kälviäinen</div>
-  <div class="publication-venue">IEEE Transactions on Affective Computing, 2026</div>
-</div>
-
-<div class="publication-item">
-  <div class="publication-title">From Recognition to Prediction: Leveraging Sequence Reasoning for Action Anticipation</div>
-  <div class="publication-authors">X. Liu, C. Hao, Z. Yu, H. Yue, and J. Yang</div>
-  <div class="publication-venue">ACM Transactions on Multimedia Computing, Communications, and Applications, 2024</div>
-</div>
-
-<a href="../research.html" class="back-link">&laquo; Back to Research Framework</a>
+<script>
+function switchLanguage(lang) {
+  document.querySelectorAll('.language-content').forEach(content => {
+    content.classList.remove('active');
+  });
+  document.getElementById(lang + '-content').classList.add('active');
+  
+  document.querySelectorAll('.language-btn').forEach(btn => {
+    btn.classList.remove('active');
+  });
+  event.target.classList.add('active');
+}
+</script>
 
     </main>
   </div>
